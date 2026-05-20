@@ -1,0 +1,622 @@
+{
+  "meta": {
+    "sourceFiles": [
+      "sachkunde_part_001.json",
+      "sachkunde_part_002.json",
+      "sachkunde_part_003.json"
+    ],
+    "inputQuestions": 43,
+    "totalQuestions": 43
+  },
+  "bank": [
+    {
+      "rawId": "5.01",
+      "text": "Was ist Notwehr? Notwehr ist diejenige , die ist, um einen Angriff von sich oder einem anderen abzuwenden. Lösung: Notwehr ist diejenige Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden.",
+      "options": []
+    },
+    {
+      "rawId": "5.02",
+      "text": "Was ist Notwehr? Notwehr ist diejenige Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden.",
+      "options": []
+    },
+    {
+      "rawId": "5.03",
+      "text": "Notwehr ist...",
+      "options": [
+        {
+          "label": "a",
+          "text": "jede Abwehr eines gegenwärtigen und rechtswidrigen Angriffs von sich und anderen."
+        },
+        {
+          "label": "b",
+          "text": "jede Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden."
+        },
+        {
+          "label": "c",
+          "text": "jede Verteidigung, die erforderlich ist, um jeden Angriff von sich oder einem anderen abzuwenden."
+        }
+      ]
+    },
+    {
+      "rawId": "5.04",
+      "text": "Gegen wen findet im Falle der Notwehr die Verteidigungshandlung statt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Angreifer"
+        },
+        {
+          "label": "b",
+          "text": "Zuschauer"
+        },
+        {
+          "label": "c",
+          "text": "Angegriffener"
+        }
+      ]
+    },
+    {
+      "rawId": "5.05",
+      "text": "In Notwehr darf man handeln bei einem Angriff...",
+      "options": [
+        {
+          "label": "a",
+          "text": "nur auf Leib und Leben."
+        },
+        {
+          "label": "b",
+          "text": "auf jedes Individual-Rechtsgut."
+        },
+        {
+          "label": "c",
+          "text": "nur gegen das Eigentum."
+        }
+      ]
+    },
+    {
+      "rawId": "5.06",
+      "text": "Welches sind Voraussetzungen der Notwehr?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Verteidigungslage"
+        },
+        {
+          "label": "b",
+          "text": "Verteidigungswille"
+        },
+        {
+          "label": "c",
+          "text": "Erforderlichkeit"
+        }
+      ]
+    },
+    {
+      "rawId": "5.07",
+      "text": "Durch eine Notwehrhandlung entfällt die/der …?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Rechtswidrigkeit"
+        },
+        {
+          "label": "b",
+          "text": "Vorsatz"
+        },
+        {
+          "label": "c",
+          "text": "Schuld"
+        }
+      ]
+    },
+    {
+      "rawId": "5.08",
+      "text": "Notwehr mit einer Schusswaffe ist nicht gerechtfertigt...",
+      "options": [
+        {
+          "label": "a",
+          "text": "bei Beleidigung."
+        },
+        {
+          "label": "b",
+          "text": "bei lebensgefährlichem tätlichem Angriff auf den Ehepartner."
+        }
+      ]
+    },
+    {
+      "rawId": "5.09",
+      "text": "Schusswaffengebrauch als Notwehr kann als letztes Mittel zulässig sein,",
+      "options": [
+        {
+          "label": "a",
+          "text": "wenn dem Angriff ausgewichen werden kann."
+        },
+        {
+          "label": "b",
+          "text": "wenn der Angriff mit einem Messer erfolgt."
+        },
+        {
+          "label": "c",
+          "text": "wenn der Angreifer mit der Faust droht."
+        }
+      ]
+    },
+    {
+      "rawId": "5.10",
+      "text": "Ist ein Schusswaffengebrauch in Notwehr zulässig, wenn der Angegriffene dem Angriff ausweichen kann?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, niemals"
+        },
+        {
+          "label": "b",
+          "text": "Ist der Einsatz eines milderen Mittels zur Abwehr des Angriffs möglich, ist der Schusswaffengebrauch nicht zulässig."
+        },
+        {
+          "label": "c",
+          "text": "Grundsätzlich ist dem Angegriffenen ein Ausweichen nicht zumutbar, da dies seine Ehre verletzt."
+        }
+      ]
+    },
+    {
+      "rawId": "5.11",
+      "text": "Soll im Notwehrfall vor dem Gebrauch der Schusswaffe gewarnt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, das ist Voraussetzung für einen rechtmäßigen Schusswaffengebrauch."
+        },
+        {
+          "label": "b",
+          "text": "Ja, soweit die Umstände es erlauben."
+        },
+        {
+          "label": "c",
+          "text": "Nein, das ist nicht erforderlich."
+        }
+      ]
+    },
+    {
+      "rawId": "5.12",
+      "text": "Darf in einer Notwehrsituation immer von der Schusswaffe Gebrauch gemacht werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur wenn kein milderes Mittel zur Verfügung steht, um den Angriff abzuwehren."
+        },
+        {
+          "label": "b",
+          "text": "Der Schusswaffengebrauch ist stets als allerletzter Ausweg aus einer bedrohlichen Situation zu betrachten."
+        },
+        {
+          "label": "c",
+          "text": "Ja, immer"
+        }
+      ]
+    },
+    {
+      "rawId": "5.13",
+      "text": "Sollte im Notwehrfall der Angreifer vor dem Gebrauch der Schusswaffe gewarnt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Wenn möglich durch Zuruf und/oder Warnschuss."
+        },
+        {
+          "label": "c",
+          "text": "Das Zeigen der Waffe reicht aus, um den Angriff zu beenden."
+        }
+      ]
+    },
+    {
+      "rawId": "5.14",
+      "text": "Soll im Notwehrfall der Angreifer vor dem Gebrauch der Schusswaffe gewarnt werden? Ja, soweit es die Umstände erlauben. (Es sollte vor dem Schusswaffengebrauch durch Zuruf, Warnschuss oder auf andere Weise gewarnt werden.)",
+      "options": []
+    },
+    {
+      "rawId": "5.15",
+      "text": "Dürfen Sie in jeder Notwehrsituation von der Schusswaffe Gebrauch machen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, immer"
+        },
+        {
+          "label": "b",
+          "text": "Nein, allenfalls bei einem Angriff auf Leben, Leib oder erhebliche Rechtsgüter des Einzelnen."
+        },
+        {
+          "label": "c",
+          "text": "Ja, auch wenn der Angriff durch mildere Mittel abgewehrt werden kann."
+        }
+      ]
+    },
+    {
+      "rawId": "5.16",
+      "text": "Wie lange besteht eine Notwehrsituation fort?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bis der Angreifer weggelaufen ist."
+        },
+        {
+          "label": "b",
+          "text": "Solange der Angriff andauert."
+        },
+        {
+          "label": "c",
+          "text": "Bis ich den Angreifer der Polizei übergeben habe."
+        }
+      ]
+    },
+    {
+      "rawId": "5.17",
+      "text": "Wie lange besteht eine Notwehrsituation fort?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bis der Gegner bewusstlos bzw. geflüchtet ist."
+        },
+        {
+          "label": "b",
+          "text": "Solange der Angriff andauert."
+        },
+        {
+          "label": "c",
+          "text": "Bis ich gefahrlos dem Angriff ausweichen kann, wenn ich dadurch keine wesentlichen Rechtsgüter aufgeben muss."
+        },
+        {
+          "label": "d",
+          "text": "Auf jeden Fall bis die Polizei eintrifft."
+        }
+      ]
+    },
+    {
+      "rawId": "5.18",
+      "text": "Was versteht man unter „Putativnotwehr“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Überschreitung der Notwehr."
+        },
+        {
+          "label": "b",
+          "text": "Ein gegenwärtiger, rechtswidriger Angriff wird von einem anderen Angegriffenen abgewehrt."
+        },
+        {
+          "label": "c",
+          "text": "Irrtümliche Annahme einer Notwehrsituation."
+        }
+      ]
+    },
+    {
+      "rawId": "5.19",
+      "text": "Worauf müssen Sie bei Notwehr vorrangig achten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Unversehrtheit meines Eigentums."
+        },
+        {
+          "label": "b",
+          "text": "Die Verteidigung mit allen Mitteln."
+        },
+        {
+          "label": "c",
+          "text": "Eine angemessene Verteidigung. (Verhältnismäßigkeit)"
+        }
+      ]
+    },
+    {
+      "rawId": "5.20",
+      "text": "Was bedeutet Notwehrüberschreitung? Notwehrüberschreitung oder Notwehrexzess liegt vor, wenn der Verteidiger das erforderliche Maß der Abwehr überschreitet.",
+      "options": []
+    },
+    {
+      "rawId": "5.21",
+      "text": "Erklären Sie den Begriff „Notwehrexzess“ und seine strafrechtliche Bedeutung! Beim Notwehrexzess wird das zulässige Maß der Abwehr überschritten. Das Handeln wird nur dann entschuldigt, wenn in Furcht, Verwirrung oder Schrecken über die Grenzen der Notwehr hinausgegangen worden ist.",
+      "options": []
+    },
+    {
+      "rawId": "5.22",
+      "text": "Was ist Notstand? Bei einem Notstand besteht eine gegenwärtige Gefahr für ein Rechtsgut, die nur durch Verletzung eines anderen Rechtsgutes abgewendet werden kann, wobei eine Abwägung der widerstreitenden Interessen stattfinden muss, in deren Ergebnis das als minderwertiger erkannte Rechtsgut geopfert wird.",
+      "options": []
+    },
+    {
+      "rawId": "5.23",
+      "text": "Was bedeutet rechtfertigender Notstand? In rechtfertigendem Notstand handelt, wer in einer gegenwärtigen, nicht anders abwendbaren Gefahr für Leben, Leib, Freiheit, Ehre, Eigentum oder ein anderes Rechtsgut eine Tat begeht, um die Gefahr von sich oder einem Anderen abzuwenden, wenn bei Abwägung der widerstreitenden Interessen das geschützte Interesse das beeinträchtigte wesentlich überwiegt.",
+      "options": []
+    },
+    {
+      "rawId": "5.24",
+      "text": "Was bedeutet entschuldigender Notstand? Wer in einer gegenwärtigen, nicht anders abwendbaren Gefahr für Leben, Leib oder Freiheit eine rechtswidrige Tat begeht, um die Gefahr von sich, einem Angehörigen oder einer anderen ihm nahestehenden Person abzuwenden, handelt ohne Schuld.",
+      "options": []
+    },
+    {
+      "rawId": "5.25",
+      "text": "Welche Situation beurteilen Sie als Notstandslage?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sie finden eine geladene Jagdwaffe im Wald."
+        },
+        {
+          "label": "b",
+          "text": "Sie werden durch ein herrenloses Tier angegriffen."
+        },
+        {
+          "label": "c",
+          "text": "Sie werden durch eine Person angegriffen."
+        }
+      ]
+    },
+    {
+      "rawId": "5.26",
+      "text": "Nennen Sie vier wesentliche Voraussetzungen für den rechtfertigenden Notstand!",
+      "options": [
+        {
+          "label": "1",
+          "text": "Gegenwärtige Gefahr liegt vor."
+        },
+        {
+          "label": "2",
+          "text": "Rechtsgüter sind bedroht (Leben, Leib, Freiheit, Ehre, Eigentum)."
+        },
+        {
+          "label": "3",
+          "text": "Das zu schützende Rechtsgut ist wesentlich höherwertiger als das beeinträchtigte."
+        },
+        {
+          "label": "4",
+          "text": "Die Abwehrhandlung muss angemessen sein."
+        }
+      ]
+    },
+    {
+      "rawId": "5.27",
+      "text": "Welches sind die Voraussetzungen des rechtfertigenden Notstandes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "gegenwärtige, nicht mit geringerem Eingriff abwehrbare Gefahr für ein Rechtsgut; wesentliches Überwiegen des geschützten Interesses"
+        },
+        {
+          "label": "b",
+          "text": "Absicht, die Gefahr nicht von sich oder einem anderen abzuwenden"
+        },
+        {
+          "label": "c",
+          "text": "gegenwärtiger rechtswidriger Angriff"
+        }
+      ]
+    },
+    {
+      "rawId": "5.28",
+      "text": "Was versteht man unter Nothilfe? Die Abwehr eines Angriffes gegen einen Anderen; sie ist ein Unterfall der Notwehr; die Voraussetzungen sind gleich.",
+      "options": []
+    },
+    {
+      "rawId": "5.29",
+      "text": "Nothilfe ist diejenige Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff...",
+      "options": [
+        {
+          "label": "a",
+          "text": "von sich selbst abzuwenden."
+        },
+        {
+          "label": "b",
+          "text": "von einem anderen abzuwenden."
+        },
+        {
+          "label": "c",
+          "text": "vom eigenen Auto abzuwenden."
+        }
+      ]
+    },
+    {
+      "rawId": "5.30",
+      "text": "Was ist ein gegenwärtiger Angriff? Jede unmittelbar bevorstehende, gerade stattfindende oder fortdauernde Verletzung eines Rechtsgutes.",
+      "options": []
+    },
+    {
+      "rawId": "5.31",
+      "text": "Welche Verteidigungshandlung ist erforderlich, um einen Angriff abzuwenden? Die Erforderlichkeit bestimmt sich nach Stärke und Gefährlichkeit des Angriffs; grundsätzlich ist das mildeste Mittel zur Abwehr zu wählen, das erfolgversprechend ist.",
+      "options": []
+    },
+    {
+      "rawId": "5.32",
+      "text": "Wann ist ein Angriff gegenwärtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn er abgeschlossen ist."
+        },
+        {
+          "label": "b",
+          "text": "Wenn er unmittelbar bevorsteht."
+        },
+        {
+          "label": "c",
+          "text": "Solange er andauert."
+        }
+      ]
+    },
+    {
+      "rawId": "5.33",
+      "text": "Wann ist ein Angriff gegenwärtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn zu befürchten ist, dass durch eine Drohung des Angreifers zukünftig eine Gefahr für Leib und Leben eintreten könnte."
+        },
+        {
+          "label": "b",
+          "text": "Wenn ein Angriff unmittelbar bevorsteht oder noch nicht beendet ist."
+        },
+        {
+          "label": "c",
+          "text": "Wenn der Angreifer in die Flucht geschlagen ist, aber mit einem späteren Angriff droht."
+        }
+      ]
+    },
+    {
+      "rawId": "5.34",
+      "text": "Wann ist die Gefahr gegenwärtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Es kann jeden Augenblick ein Schaden eintreten."
+        },
+        {
+          "label": "b",
+          "text": "Es wird vielleicht ein Schaden eintreten."
+        },
+        {
+          "label": "c",
+          "text": "Es ist ein Schaden eingetreten."
+        }
+      ]
+    },
+    {
+      "rawId": "5.35",
+      "text": "Was bedeutet „rechtswidrig“? Ein Angriff ist rechtswidrig, wenn er gegen eine Rechtsnorm verstößt und ein Rechtfertigungsgrund nicht gegeben ist.",
+      "options": []
+    },
+    {
+      "rawId": "5.36",
+      "text": "Was ist Ihre Pflicht nach einem abgewehrten Angriff?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ich habe keinerlei Pflichten gegenüber dem Angreifer."
+        },
+        {
+          "label": "b",
+          "text": "Ich bin zum Schadensersatz verpflichtet."
+        },
+        {
+          "label": "c",
+          "text": "Wenn die Notwendigkeit erkennbar und die Situation zumutbar ist, habe ich Hilfe zu leisten."
+        }
+      ]
+    },
+    {
+      "rawId": "5.37",
+      "text": "Regelungen über Notwehr und Notstand finden Sie im...",
+      "options": [
+        {
+          "label": "a",
+          "text": "Grundgesetz"
+        },
+        {
+          "label": "b",
+          "text": "Waffengesetz"
+        },
+        {
+          "label": "c",
+          "text": "Strafgesetzbuch / BGB"
+        }
+      ]
+    },
+    {
+      "rawId": "5.38",
+      "text": "Was sind u.a. Rechtfertigungsgründe nach dem Strafgesetzbuch?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Notwehr"
+        },
+        {
+          "label": "b",
+          "text": "Nothilfe"
+        },
+        {
+          "label": "c",
+          "text": "Notstand"
+        }
+      ]
+    },
+    {
+      "rawId": "5.39",
+      "text": "Welches ist das höchste Rechtsgut?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Freiheit"
+        },
+        {
+          "label": "b",
+          "text": "Eigentum"
+        },
+        {
+          "label": "c",
+          "text": "Leib / Leben"
+        }
+      ]
+    },
+    {
+      "rawId": "5.40",
+      "text": "Bei der Abwehr eines nicht auf Kommando angreifenden Hundes handeln Sie...",
+      "options": [
+        {
+          "label": "a",
+          "text": "in Notwehr."
+        },
+        {
+          "label": "b",
+          "text": "in Nothilfe."
+        },
+        {
+          "label": "c",
+          "text": "in Notstand."
+        }
+      ]
+    },
+    {
+      "rawId": "5.41",
+      "text": "Dürfen Sie auch bei der Gefahr des Verlustes geringwertiger Gegenstände von der Schusswaffe Gebrauch machen? Nein (Bei der Gefahr des Verlustes geringwertiger Gegenstände ist Schusswaffengebrauch keine durch Notwehr gebotene Verteidigungshandlung.)",
+      "options": []
+    },
+    {
+      "rawId": "5.42",
+      "text": "Sie beobachten wie jemand mit einer Schusswaffe bedroht wird. Sie greifen mit Ihrer Schusswaffe ein. Dabei wird der Angreifer verletzt. Es stellt sich hinterher heraus, dass kein rechtswidriger Angriff vorlag, weil es sich um Filmaufnahmen handelte. Sie handelten in…",
+      "options": [
+        {
+          "label": "a",
+          "text": "Putativnotwehr (scheinbare Notwehr)."
+        },
+        {
+          "label": "b",
+          "text": "Notstand."
+        },
+        {
+          "label": "c",
+          "text": "Notwehrexzess."
+        }
+      ]
+    },
+    {
+      "rawId": "5.43",
+      "text": "Eine Person bricht Ihren PKW auf. Sie sehen das vom Fenster Ihres Hauses aus und schießen. Die Person wird dabei verletzt. Wie ist die Situation zu beurteilen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Einsatz der Schusswaffe war durch Notwehr gerechtfertigt."
+        },
+        {
+          "label": "b",
+          "text": "Die Notwehr wurde überschritten (Notwehrexzess)."
+        },
+        {
+          "label": "c",
+          "text": "Der Einsatz der Schusswaffe war durch Nothilfe gerechtfertigt."
+        }
+      ]
+    }
+  ]
+}
