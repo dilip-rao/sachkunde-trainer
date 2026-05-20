@@ -1,0 +1,1604 @@
+{
+  "bank": [
+    {
+      "rawId": "K2.01",
+      "text": "Was ist eine Kurzwaffe? Eine Kurzwaffe ist eine Schusswaffe, deren Lauf und Verschluss in geschlossener Stellung insgesamt kürzer als 30 cm sind und/oder deren kürzeste bestimmungsgemäße verwendbare die Gesamtlänge von 60 cm nicht überschreitet.",
+      "options": []
+    },
+    {
+      "rawId": "K2.02",
+      "text": "Was versteht man unter halbautomatischen Schusswaffen? Dies sind Schusswaffen, die nach Abgabe eines Schusses selbsttätig erneut schussbereit sind und bei denen aus demselben Lauf durch erneute Betätigung des Abzuges jeweils ein weiterer Schuss abgegeben werden kann (ausgenommen Double-Action-Revolver).",
+      "options": []
+    },
+    {
+      "rawId": "K2.03",
+      "text": "Was sind die typischen Merkmale einer halbautomatischen Büchse?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durch einmaliges Betätigen des Abzuges kann ich mehrere Schüsse hintereinander abgeben."
+        },
+        {
+          "label": "b",
+          "text": "Nach Abgabe eines Schusses wird die Büchse selbsttätig erneut schussbereit und es kann aus demselben Lauf durch erneute Betätigung des Abzuges jeweils ein weiterer Schuss abgegeben werden."
+        },
+        {
+          "label": "c",
+          "text": "Hierbei handelt es sich um eine Militärwaffe."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.04",
+      "text": "Was ist der Unterschied zwischen Pistole und Revolver?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Pistole hat ein Patronenlager im Lauf, der Revolver hat mehrere Patronenlager in der Trommel, getrennt vom Lauf."
+        },
+        {
+          "label": "b",
+          "text": "Der Revolver hat einen Hahn, eine Pistole nicht."
+        },
+        {
+          "label": "c",
+          "text": "Pistolen sind leichter gebaut als Revolver."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.05",
+      "text": "Welches sind die wesentlichen Teile eines Revolvers im waffenrechtlichen Sinne?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Lauf"
+        },
+        {
+          "label": "2",
+          "text": "Griffstück (Rahmen)"
+        },
+        {
+          "label": "3",
+          "text": "Trommel"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.06",
+      "text": "Was ist das typische Merkmal eines Revolvers?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Magazin im Griffstück."
+        },
+        {
+          "label": "b",
+          "text": "Die Trommel ist zugleich Patronenlager und Magazin."
+        },
+        {
+          "label": "c",
+          "text": "Ein außenliegendes Schlagstück."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.07",
+      "text": "Was ist ein typisches Merkmal einer halbautomatischen Pistole?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Trommel zur Aufnahme von Patronen"
+        },
+        {
+          "label": "b",
+          "text": "Magazin zur Aufnahme von Patronen"
+        },
+        {
+          "label": "c",
+          "text": "Lauf vom Patronenlager getrennt"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.08",
+      "text": "Welcher Unterschied besteht zwischen Büchse und Flinte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Büchse für Kugelschuss, Flinte für Schrotschuss / Flintenlaufgeschosse."
+        },
+        {
+          "label": "b",
+          "text": "Büchsen haben Kammerstängel und Zylinderverschluss, Flinten haben immer einen Kipplauf."
+        },
+        {
+          "label": "c",
+          "text": "Keine Unterschiede."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.09",
+      "text": "Besonderes Merkmal einer Flinte ist, dass ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "mit ihr Flintenmunition verschossen wird."
+        },
+        {
+          "label": "b",
+          "text": "sie einen gezogenen Lauf besitzt."
+        },
+        {
+          "label": "c",
+          "text": "Sie einen Kipplauf besitzt."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.10",
+      "text": "Was ist bei der Flinte der „Choke“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Laufverengung im Bereich des Patronenlagers"
+        },
+        {
+          "label": "b",
+          "text": "Laufverengung im Bereich der Mündung"
+        },
+        {
+          "label": "c",
+          "text": "Rückstoß beim Schuss"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.11",
+      "text": "Welche der nachfolgenden Aussagen ist richtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit halbautomatischen Waffen kann man mehrere Schüsse aus demselben Lauf abgeben, ohne dass man Patronen per Hand nachladen muss."
+        },
+        {
+          "label": "b",
+          "text": "Mit halbautomatischen Waffen kann man durch einmaliges Betätigen des Abzugs mehrere Schüsse aus demselben Lauf abgeben."
+        },
+        {
+          "label": "c",
+          "text": "Mit halbautomatischen Waffen kann man einen Schuss abgeben, dann muss stets eine neue Patrone aus dem Magazin per Hand durchgeladen werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.12",
+      "text": "Was versteht man unter dem Begriff „halbautomatische Waffe“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Waffe, die nach Abgabe eines Schusses selbsttätig erneut schussbereit wird und bei der durch nochmalige Betätigung des Abzuges ein weiterer Schuss aus demselben Lauf abgegeben werden kann."
+        },
+        {
+          "label": "b",
+          "text": "Eine Waffe, die nach Abgabe eines Schusses durch manuelles Vorund Zurückziehen des Verschlusshebels die leere Patronenhülse auswirft und eine neue Patrone aus dem Magazin zuführt."
+        },
+        {
+          "label": "c",
+          "text": "Eine Waffe, bei der nach Abgabe eines Schusses die leere Patronenhülse automatisch ausgeworfen wird, eine neue Patrone aber manuell per Hand geladen werden muss."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.13",
+      "text": "Was sind „wesentliche Teile“ von Schusswaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Griffstück, oder sonstige Waffenteile von Kurzwaffen, soweit sie für die Aufnahme des Auslösemechanismus bestimmt sind."
+        },
+        {
+          "label": "b",
+          "text": "Das Gehäuse"
+        },
+        {
+          "label": "c",
+          "text": "Der Verschluss"
+        },
+        {
+          "label": "d",
+          "text": "Das Patronenoder Kartuschenlager (wenn dieses nicht bereits Bestandteil des Laufes ist)"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.14",
+      "text": "Aus welchen wesentlichen Teilen besteht eine Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Lauf, Patronenlager, Verschluss, Gehäuse, Griffstück bei Kurzwaffen"
+        },
+        {
+          "label": "b",
+          "text": "Patrone, Visierung, Abzug"
+        },
+        {
+          "label": "c",
+          "text": "Magazin, Schaft, Schlagbolzen"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.15",
+      "text": "Was ist ein „wesentlicher Teil“ einer Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Verschluss"
+        },
+        {
+          "label": "b",
+          "text": "Abzug"
+        },
+        {
+          "label": "c",
+          "text": "Magazin"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.16",
+      "text": "Welche der nachfolgenden Aussagen ist richtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Repetierwaffen haben immer ein Magazin."
+        },
+        {
+          "label": "b",
+          "text": "Revolver haben immer eine Trommel."
+        },
+        {
+          "label": "c",
+          "text": "Pistolen haben immer ein Magazin."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.17",
+      "text": "Was versteht man bei Sportwaffen unter dem Begriff „Kleinkaliberwaffe“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Waffe in einem Kaliber unter"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.40",
+      "text": "mm.",
+      "options": [
+        {
+          "label": "b",
+          "text": "Eine Waffe im Kaliber .22lr (.22 lfB)."
+        },
+        {
+          "label": "c",
+          "text": "Eine Waffe mit einer Mündungsenergie unter 7,5 Joule."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.18",
+      "text": "Was ist ein Drilling?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Repetierwaffe"
+        },
+        {
+          "label": "b",
+          "text": "Eine halbautomatische Waffe"
+        },
+        {
+          "label": "c",
+          "text": "Eine Einzellader-Schusswaffe"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.19",
+      "text": "Was sind Einzellader? Schusswaffen ohne Magazine mit einem oder mehreren Läufen, die vor jedem Schuss aus demselben Lauf von Hand geladen werden.",
+      "options": []
+    },
+    {
+      "rawId": "K2.20",
+      "text": "Eine Kleinkaliberpatrone besteht aus... Hülse, Geschoss, Zündsatz, Treibladung.",
+      "options": []
+    },
+    {
+      "rawId": "K2.21",
+      "text": "Aus welchen Teilen besteht eine Zentralfeuerpatrone?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zündhütchen, Treibladung, Hülse, Geschoss"
+        },
+        {
+          "label": "b",
+          "text": "Pressling und Geschoss"
+        },
+        {
+          "label": "c",
+          "text": "Hülse, Treibladung, Zündsatz"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.22",
+      "text": "Was versteht man unter Randfeuerpatronen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle Patronen mit Rand."
+        },
+        {
+          "label": "b",
+          "text": "Alle Patronen mit Zündsatz im Hülsenrand."
+        },
+        {
+          "label": "c",
+          "text": "Alle Patronen mit speziellen Geschossen (z.B. Scharfrandgeschosse)."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.23",
+      "text": "Welche Zündarten gibt es?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zentralfeuerzündung"
+        },
+        {
+          "label": "b",
+          "text": "Randfeuerzündung"
+        },
+        {
+          "label": "c",
+          "text": "Vorratszündung"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.24",
+      "text": "Was bedeutet „R“ bei der Patronenbezeichnung „7 x 57R“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "„R“ steht für „RASANT“."
+        },
+        {
+          "label": "b",
+          "text": "„R“ steht für Rand."
+        },
+        {
+          "label": "c",
+          "text": "„R“ steht für „Randfeuerzündung“."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.25",
+      "text": "Welche sichtbaren Merkmale kennzeichnen eine Randfeuerpatrone?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Patrone ohne Zündhütchen"
+        },
+        {
+          "label": "b",
+          "text": "Zündhütchen am Patronenboden"
+        },
+        {
+          "label": "c",
+          "text": "Hülse aus Nickel"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.26",
+      "text": "Was ist eine Pufferpatrone?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Platzpatrone."
+        },
+        {
+          "label": "b",
+          "text": "Eine Patrone mit besonders geringer Treibladung."
+        },
+        {
+          "label": "c",
+          "text": "Eine Patrone ohne Zündhütchen und ohne Ladung zum Üben."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.27",
+      "text": "Was bedeutet die Bezeichnung „Magnum“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Es handelt sich um eine ausländische Patrone."
+        },
+        {
+          "label": "b",
+          "text": "Eine in ihrer Kaliberklasse besonders starke Patrone."
+        },
+        {
+          "label": "c",
+          "text": "Eine Patrone mit übergroßem Durchmesser."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.28",
+      "text": "Welche Bedeutung haben folgende hervorgehobene Angaben in Patronenbezeichnungen:",
+      "options": [
+        {
+          "label": "a",
+          "text": "7.63 Mauser"
+        },
+        {
+          "label": "b",
+          "text": ".30-06 Springfield"
+        },
+        {
+          "label": "c",
+          "text": "7 x 57 R?"
+        },
+        {
+          "label": "a",
+          "text": "Angabe über den Hersteller / Entwickler."
+        },
+        {
+          "label": "b",
+          "text": "Angabe über das Einführungsjahr, (1906 militärisch eingeführt)."
+        },
+        {
+          "label": "c",
+          "text": "Bei den Büchsenpatronen bedeutet der Zusatz „R“, dass die Hülse der Patrone einen Rand hat."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.29",
+      "text": "Was bedeutet die Zahl 12 bei Schrotpatronen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Durchmesser des Laufs beträgt 12 mm."
+        },
+        {
+          "label": "b",
+          "text": "In der Schrotpatrone befinden sich 12 gleich große Kugeln."
+        },
+        {
+          "label": "c",
+          "text": "Die Zahl 12 ergibt sich aus der Anzahl der Bleikugeln vom Laufinnendurchmesser, die zusammen die Masse von einem englischen Pfund (453,6g) ergeben."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.30",
+      "text": "Schrotmunition im Kaliber 16 …",
+      "options": [
+        {
+          "label": "a",
+          "text": "ist größer als Kaliber 12."
+        },
+        {
+          "label": "b",
+          "text": "ist kleiner als Kaliber 12."
+        },
+        {
+          "label": "c",
+          "text": "entspricht dem internationalen Kalibermaß 2 x 8 mm."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.31",
+      "text": "Was bezeichnet die Zahl „12“ bei dem entsprechenden Flintenkaliber?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Den Innendurchmesser des Laufes in Millimetern."
+        },
+        {
+          "label": "b",
+          "text": "Den Innendurchmesser des Laufes in Zoll (Inch)."
+        },
+        {
+          "label": "c",
+          "text": "Der Innendurchmesser des Laufes entspricht dem Durchmesser einer Bleikugel mit dem Gewicht eines zwölftel (1/12) Pfundes (englisches Maß, ca. 454 Gramm) Blei -> es handelt sich also um einen „Zwölftelpfünder“."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.32",
+      "text": "Woran erkennt man die für eine Waffe zugelassene Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn die Angaben auf der kleinsten Verpackungseinheit mit den Angaben auf der Waffe übereinstimmen."
+        },
+        {
+          "label": "b",
+          "text": "Wenn man die Munition von einem Sportwaffenhändler hat."
+        },
+        {
+          "label": "c",
+          "text": "Wenn sie ins Patronenlager eingeführt werden kann."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.33",
+      "text": "Welche der folgenden Aussagen über Schalldämpfer ist richtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Schalldämpfer verringert den Mündungsknall."
+        },
+        {
+          "label": "b",
+          "text": "Ein Schalldämpfer kann die Mündungsgeschwindigkeit des Geschosses beeinflussen."
+        },
+        {
+          "label": "c",
+          "text": "Ein Schalldämpfer kann die Präzision der Waffe beeinflussen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.34",
+      "text": "Was bewirkt ein Schalldämpfer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Er verringert den Mündungsknall beim Schuss."
+        },
+        {
+          "label": "b",
+          "text": "Er verstärkt den Rückstoß beim Schuss."
+        },
+        {
+          "label": "c",
+          "text": "Er verringert den Geschossknall."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.35",
+      "text": "Was sind Schalldämpfer? Schalldämpfer sind Vorrichtungen, die der wesentlichen Dämpfung des Mündungsknalls dienen und für Schusswaffen bestimmt sind.",
+      "options": []
+    },
+    {
+      "rawId": "K2.36",
+      "text": "Was bewirkt ein Schalldämpfer nicht?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Er verringert den Mündungsknall beim Schuss."
+        },
+        {
+          "label": "b",
+          "text": "Er verstärkt den Rückstoß beim Schuss."
+        },
+        {
+          "label": "c",
+          "text": "Er verringert den Geschossknall."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.37",
+      "text": "Was versteht man unter einem Kompensator?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Vorrichtung am Waffenlauf, die das Hochschlagen beim Schuss verringern soll."
+        },
+        {
+          "label": "b",
+          "text": "Eine Vorrichtung im Verschluss von halbautomatischen Waffen, die den Rückstoß verringern soll."
+        },
+        {
+          "label": "c",
+          "text": "Eine Vorrichtung am Magazin, die dessen Kapazität erhöht."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.38",
+      "text": "Was versteht man unter einem Einstecklauf?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wechsellauf, der anstelle des Laufes in die Verschlusshülse der Waffe eingesetzt und durch Einstecken befestigt wird."
+        },
+        {
+          "label": "b",
+          "text": "Ein Lauf ohne eigenen Verschluss, der in die Läufe von Waffen größeren Kalibers eingesteckt werden kann."
+        },
+        {
+          "label": "c",
+          "text": "Ein Lauf mit eigenem Verschluss, der in die Läufe von Waffen größeren Kalibers eingesteckt werden kann."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.39",
+      "text": "Was versteht man unter einem Nachtzielgerät?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Gerät, das mit Montagevorrichtung für Schusswaffen versehen ist und durch Bildwandler oder mittels elektronischer Verstärkung ein Zielen bei Nacht ermöglicht."
+        },
+        {
+          "label": "b",
+          "text": "Ein Zielfernrohr mit besonders großen Linsen, das ein Erkennen des Zieles auch bei schlechten Lichtverhältnissen ermöglicht."
+        },
+        {
+          "label": "c",
+          "text": "Eine selbstleuchtende oder fluoreszierende Visiereinrichtung, die ein Zielen auch bei Dunkelheit ermöglicht."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.40",
+      "text": "Was versteht man unter Kaliber?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Den Außendurchmesser eines Laufes."
+        },
+        {
+          "label": "b",
+          "text": "Den Innendurchmesser des Laufes."
+        },
+        {
+          "label": "c",
+          "text": "Den Durchmesser des Einzelgeschosses."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.41",
+      "text": "Was versteht man unter Kaliber? Das Kaliber weist auf den Durchmesser des Geschosses bzw. Innendurchmesser des Laufes hin. (In Waffen mit gezogenen Läufen unterscheidet man zwischen: - Feldkaliber = Laufdurchmesser sich gegenüber liegender Felder - Zugkaliber = Laufdurchmesser sich gegenüberliegender Züge - Geschosskaliber = Geschossdurchmesser)",
+      "options": []
+    },
+    {
+      "rawId": "K2.42",
+      "text": "Was versteht man unter Kaliber?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durchmesser der Hülse"
+        },
+        {
+          "label": "b",
+          "text": "Innendurchmesser des Laufes"
+        },
+        {
+          "label": "c",
+          "text": "Außendurchmesser des Laufes"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.43",
+      "text": "Darf Munition im Kaliber .22lr auch aus Kurzwaffen verschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja"
+        },
+        {
+          "label": "b",
+          "text": "Nur mit Genehmigung des Schießleiters."
+        },
+        {
+          "label": "c",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.44",
+      "text": "Warum ist z.B. die Munitionsbezeichnung „9 mm“ nicht ausreichend?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Weil es verschiedene 9 mm-Patronen gibt."
+        },
+        {
+          "label": "b",
+          "text": "Weil die Kaliberangabe in der Regel nie ganz exakt ist, sondern auf gerundeten Werten beruht."
+        },
+        {
+          "label": "c",
+          "text": "Weil die Kaliberangabe keine Information über die zulässigen Treibladungsmittel (Schwarzoder Nitrozellulosepulver) enthält."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.45",
+      "text": "Was versteht man unter Double-Action-Only Pistolen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Pistolen, deren Abzug jedes Mal vorgespannt werden muss."
+        },
+        {
+          "label": "b",
+          "text": "Pistolen, bei denen nur der erste Schuss mittels Spannabzug abgefeuert wird."
+        },
+        {
+          "label": "c",
+          "text": "Pistolen, bei denen jeder Schuss mittels Spannabzug abgefeuert wird."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.46",
+      "text": "Welche der nebenstehenden Schusswaffen können auch halbautomatische Waffen sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Büchsen"
+        },
+        {
+          "label": "b",
+          "text": "Doppelflinten"
+        },
+        {
+          "label": "c",
+          "text": "Pistolen"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.47",
+      "text": "Was versteht man unter dem Begriff „Double-Action-Pistole“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Waffe mit Spannabzug (auch im entspannten Zustand kann durch Betätigen des Abzugs ein Schuss abgegeben werden)."
+        },
+        {
+          "label": "b",
+          "text": "Eine Waffe, die für mindestens zwei Schießsportdisziplinen zugelassen ist."
+        },
+        {
+          "label": "c",
+          "text": "Eine Waffe, bei der durch Betätigen der Sicherung im gespannten Zustand sowohl der Hahn (das Schlagstück) entspannt, als auch der Schlagbolzen gesichert wird."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.48",
+      "text": "Bei einem Teilmantelgeschoss...",
+      "options": [
+        {
+          "label": "a",
+          "text": "liegt in der Regel an der Spitze der Bleikern frei."
+        },
+        {
+          "label": "b",
+          "text": "ist das Geschoss immer verkupfert."
+        },
+        {
+          "label": "c",
+          "text": "liegt nur am Geschossboden der Bleikern frei."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.49",
+      "text": "Welche Läufe weisen Züge und Felder auf?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Glatte Läufe"
+        },
+        {
+          "label": "b",
+          "text": "Gezogene Läufe"
+        },
+        {
+          "label": "c",
+          "text": "Polygonläufe"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.50",
+      "text": "Züge und Felder sind typische Merkmale von...",
+      "options": [
+        {
+          "label": "a",
+          "text": "gezogenen Läufen."
+        },
+        {
+          "label": "b",
+          "text": "glatten Läufen."
+        },
+        {
+          "label": "c",
+          "text": "gezogenen wie glatten Läufen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.51",
+      "text": "Das Feldkaliber ist im Verhältnis zum Zugkaliber…",
+      "options": [
+        {
+          "label": "a",
+          "text": "größer."
+        },
+        {
+          "label": "b",
+          "text": "kleiner."
+        },
+        {
+          "label": "c",
+          "text": "gleich groß."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.52",
+      "text": "Müssen Pistolen manuelle Sicherungen haben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Auf jeden Fall."
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        },
+        {
+          "label": "c",
+          "text": "Nur halbautomatische Pistolen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.53",
+      "text": "Welche Arten von Sicherungen an Schusswaffen unterscheiden Sie",
+      "options": [
+        {
+          "label": "a",
+          "text": "nach der Art der Betätigung (mind. 3)"
+        },
+        {
+          "label": "b",
+          "text": "nach der Wirkung (mind. 3)?"
+        },
+        {
+          "label": "a",
+          "text": "Die Betätigung erfolgt z.B. durch: Schieber, Druckknopf, Hebel, Flügel"
+        },
+        {
+          "label": "b",
+          "text": "Die Sicherung wirkt auf: Abzug, Stange, Schlagstück, Schlagbolzen"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.54",
+      "text": "Woran erkennt man, ob eine Schusswaffe gesichert oder entsichert ist? In der Regel ist im entsicherten Zustand ein roter Punkt oder ein „F“ (= Feuer, fire, feu) und im gesicherten Zustand ein „S“ (= sicher, safe, sûr) sichtbar.",
+      "options": []
+    },
+    {
+      "rawId": "K2.55",
+      "text": "Wozu dient der Verschluss?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Er soll die Waffe gegen Wegnahme sichern."
+        },
+        {
+          "label": "b",
+          "text": "Er soll den Rückstoß mindern."
+        },
+        {
+          "label": "c",
+          "text": "Er soll das Patronenlager nach hinten abschließen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.56",
+      "text": "Bei einer halbautomatischen Waffe können mehrere Schüsse abgefeuert werden...",
+      "options": [
+        {
+          "label": "a",
+          "text": "durch jeweiliges Betätigen des Abzuges."
+        },
+        {
+          "label": "b",
+          "text": "durch einmaliges Betätigen des Abzuges."
+        },
+        {
+          "label": "c",
+          "text": "nach erneutem manuellen Spannen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.57",
+      "text": "Was ist ein Einstecklauf und welchen Zweck hat er?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Einstecklauf ist ein Lauf ohne eigenen Verschluss, der in einen Lauf von Waffen größeren Kalibers eingesteckt werden kann, um Munition mit einem kleineren Kaliber verschießen zu können."
+        },
+        {
+          "label": "b",
+          "text": "Ein Einstecklauf ist ein Lauf mit eigenem Verschluss, mit dem ein kleineres oder größeres Kaliber verschossen werden kann."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.58",
+      "text": "Wie ist in der Regel die Schussfolge bei Bockflinten beim nicht umschaltbaren Einzelabzug?",
+      "options": [
+        {
+          "label": "a",
+          "text": "oben / unten"
+        },
+        {
+          "label": "b",
+          "text": "unten / oben"
+        },
+        {
+          "label": "c",
+          "text": "rechts / links"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.59",
+      "text": "Wie groß ist die (ungefähre) Anfangsgeschwindigkeit der Geschosse mittlerer Büchsenkaliber für Zentralfeuerpatronen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "200 - 300 m/s"
+        },
+        {
+          "label": "b",
+          "text": "700 – 1000 m/s"
+        },
+        {
+          "label": "c",
+          "text": "1500 – 1700 m/s"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.60",
+      "text": "Was bezeichnet in der Ballistik das Kürzel „v“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geschossenergie"
+        },
+        {
+          "label": "b",
+          "text": "Höchstreichweite des Geschosses"
+        },
+        {
+          "label": "c",
+          "text": "Geschossgeschwindigkeit"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.61",
+      "text": "Was bedeutet die Bezeichnung „vo“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Fluggeschwindigkeit rotierender Schrote nahe dem Nullpunkt."
+        },
+        {
+          "label": "b",
+          "text": "Die Geschossgeschwindigkeit reduziert sich auf Null."
+        },
+        {
+          "label": "c",
+          "text": "Die Geschossgeschwindigkeit beim Verlassen der Mündung."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.62",
+      "text": "Was bedeutet der ballistische Begriff „v100“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geschossgeschwindigkeit"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.100",
+      "text": "Meter vor der Mündung.",
+      "options": [
+        {
+          "label": "b",
+          "text": "Gefahrenbereich des Geschosses bei 100 Metern."
+        },
+        {
+          "label": "c",
+          "text": "Geschossenergie 100 Meter vor der Mündung."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.63",
+      "text": "Die Faustregel für die Reichweite von Schroten in Metern beträgt...",
+      "options": [
+        {
+          "label": "a",
+          "text": "1000 x Schrotgröße in mm."
+        },
+        {
+          "label": "b",
+          "text": "100 x Schrotgröße in mm."
+        },
+        {
+          "label": "c",
+          "text": "10 x Schrotgröße in mm."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.64",
+      "text": "Welches Geschoss hat die größte Durchschlagskraft?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bleigeschoss"
+        },
+        {
+          "label": "b",
+          "text": "Vollmantelgeschoss"
+        },
+        {
+          "label": "c",
+          "text": "Teilmantelgeschoss"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.65",
+      "text": "Was versteht man unter der Höchstreichweite eines Geschosses?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Strecke zwischen Schützenstand und Geschossfang."
+        },
+        {
+          "label": "b",
+          "text": "Das Produkt aus Treibladung und Geschossgewicht."
+        },
+        {
+          "label": "c",
+          "text": "Die Entfernung zwischen Laufmündung und maximal entferntem Auftreffpunkt des Geschosses."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.66",
+      "text": "Der Gefährdungsbereich von Geschossen der Patrone im Kaliber .300 WinMag beträgt...",
+      "options": [
+        {
+          "label": "a",
+          "text": "3000 m."
+        },
+        {
+          "label": "b",
+          "text": "5000 m."
+        },
+        {
+          "label": "c",
+          "text": "7000 m."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.67",
+      "text": "Welche Höchstreichweite haben Geschosse der Patrone im Kaliber .44 Rem. Mag.?",
+      "options": [
+        {
+          "label": "a",
+          "text": "1500 m"
+        },
+        {
+          "label": "b",
+          "text": "3000 m"
+        },
+        {
+          "label": "c",
+          "text": "2000 m"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.68",
+      "text": "Welche Höchstreichweite haben Geschosse der Patrone im Kaliber 9mmLuger?",
+      "options": [
+        {
+          "label": "a",
+          "text": "1500 m."
+        },
+        {
+          "label": "b",
+          "text": "2000 m."
+        },
+        {
+          "label": "c",
+          "text": "1000 m."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.69",
+      "text": "Wie groß ist der Gefährdungsbereich der Schrote bei einer Korngröße von",
+      "options": []
+    },
+    {
+      "rawId": "K2.02",
+      "text": "mm Durchmesser?",
+      "options": [
+        {
+          "label": "a",
+          "text": "150 m"
+        },
+        {
+          "label": "b",
+          "text": "200 m"
+        },
+        {
+          "label": "c",
+          "text": "250 m"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.70",
+      "text": "Die Höchstreichweite eines Geschosses im Kaliber .22lr beträgt ca. ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "1000 m."
+        },
+        {
+          "label": "b",
+          "text": "1500 m."
+        },
+        {
+          "label": "c",
+          "text": "2000 m."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.71",
+      "text": "Die Höchstreichweite oder Reichweite von ca. 1500 m kann erreicht werden von einem Geschoss der Patrone...",
+      "options": [
+        {
+          "label": "a",
+          "text": ".22lr"
+        },
+        {
+          "label": "b",
+          "text": ".32 S&W Long N.P. (Wadcutter)."
+        },
+        {
+          "label": "c",
+          "text": "9 mm Luger."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.72",
+      "text": "Was versteht man unter Gefährdungsbereich eines Geschosses?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Höchstreichweite"
+        },
+        {
+          "label": "b",
+          "text": "Den Streukreis"
+        },
+        {
+          "label": "c",
+          "text": "Die günstigste Schussentfernung"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.73",
+      "text": "Nennen Sie die Gefahrenbereiche der Geschosse folgender Munitionssorten: ca.",
+      "options": [
+        {
+          "label": "1",
+          "text": "4 mm M20 : 300m"
+        },
+        {
+          "label": "2",
+          "text": ".22lr : 1500m"
+        },
+        {
+          "label": "3",
+          "text": ".223 Rem. : 4300"
+        },
+        {
+          "label": "4",
+          "text": "9 mm Luger : 2000m"
+        },
+        {
+          "label": "5",
+          "text": ".32 S&W Long N.P. : 1200m"
+        },
+        {
+          "label": "6",
+          "text": ".38 Special : 1500m"
+        },
+        {
+          "label": "7",
+          "text": ".44 Rem. Magnum : 2000m"
+        },
+        {
+          "label": "8",
+          "text": ".308 Win. : 5000m"
+        },
+        {
+          "label": "9",
+          "text": "12/70 Flintenlaufgeschoss : 1200m"
+        },
+        {
+          "label": "10",
+          "text": "Schrotpatronen Schrot 3 mm : 300m"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.74",
+      "text": "Welcher Begriff gehört nicht zur Ballistik?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Gasdruck"
+        },
+        {
+          "label": "b",
+          "text": "Geschossflugbahn"
+        },
+        {
+          "label": "c",
+          "text": "Abzugsgewicht"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.75",
+      "text": "Womit befasst sich u.a. die Außenballistik?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit Wettereinflüssen"
+        },
+        {
+          "label": "b",
+          "text": "Mit der Geschossflugbahn"
+        },
+        {
+          "label": "c",
+          "text": "Mit der Geschossform"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.76",
+      "text": "Womit befasst sich u.a. die Innenballistik?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit dem rotationslosen Geschossweg."
+        },
+        {
+          "label": "b",
+          "text": "Mit der Strecke zwischen Patronen-lager und Auftreffpunkt."
+        },
+        {
+          "label": "c",
+          "text": "Mit dem Gasdruckverlauf"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.77",
+      "text": "Was versteht man unter der Streuung der Geschosse?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine schlechte Schießleistung."
+        },
+        {
+          "label": "b",
+          "text": "Die Abweichung einer Reihe von Treffern zueinander bei gleichem Haltepunkt."
+        },
+        {
+          "label": "c",
+          "text": "Die Verformung des Geschosses beim Aufprall."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.78",
+      "text": "Welche Flugbahnbeschreibung ist richtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Geschoss beschreibt auf seiner Flugbahn eine ungleichförmige Kurve, die mit zunehmender Entfernung von der Mündung immer steiler abfällt."
+        },
+        {
+          "label": "b",
+          "text": "Das Geschoss steigt auf seiner Flugbahn bis zur Mitte auf und fällt zum Ziel ebenso ab."
+        },
+        {
+          "label": "c",
+          "text": "Die Visierlinie ist gleichzeitig auch die Flugbahn des Geschosses."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.79",
+      "text": "Was bedeutet der ballistische Begriff „Steighöhe eines Geschosses“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die maximale Höhe eines Geschosses in der sogenannten „ballistischen Kurve“."
+        },
+        {
+          "label": "b",
+          "text": "Gefahrenbereich des Geschosses bei höchster Steigung."
+        },
+        {
+          "label": "c",
+          "text": "Die Entfernung zwischen Laufmündung und Scheitelpunkt der Geschossbahn bei senkrecht nach oben abgegebenem Schuss."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.80",
+      "text": "Was bedeutet der ballistische Begriff „E0“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geschossgeschwindigkeit auf 100 m."
+        },
+        {
+          "label": "b",
+          "text": "Steighöhe des Geschosses (Gefahrenbereich)."
+        },
+        {
+          "label": "c",
+          "text": "Bewegungsenergie des Geschosses beim Verlassen des Laufes."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.81",
+      "text": "Wovon hängt die Eindringtiefe eines Geschosses ab?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Je geringer das Geschossgewicht und die -härte, desto tiefer das Eindringen."
+        },
+        {
+          "label": "b",
+          "text": "Je größer die Querschnittsbelastung, je härter das Geschoss, desto tiefer das Eindringen bei gleicher Auftreffenergie und gleichem Zielmedium."
+        },
+        {
+          "label": "c",
+          "text": "Je schwerer und stumpfer das Geschoss, desto größer ist die Geschwindigkeit und das Eindringen."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.82",
+      "text": "Was bewirkt der Drall?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Flugverhalten des Geschosses wird erheblich stabilisiert."
+        },
+        {
+          "label": "b",
+          "text": "Die Reichweite des Geschosses verkürzt sich erheblich."
+        },
+        {
+          "label": "c",
+          "text": "Die Bewegungsenergie des Geschosses erhöht sich erheblich."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.83",
+      "text": "Welchen Zweck hat der Drall? Der Drall ist für die Flugstabilität des Geschosses erforderlich.",
+      "options": []
+    },
+    {
+      "rawId": "K2.84",
+      "text": "Was versteht man unter der Länge des Dralls?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Länge eines gezogenen Laufes."
+        },
+        {
+          "label": "b",
+          "text": "Die Strecke, auf der sich das Geschoss einmal um seine eigene Längsachse dreht."
+        },
+        {
+          "label": "c",
+          "text": "Die Länge eines speziell gehärteten Laufes einer Schusswaffe."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.85",
+      "text": "Was bedeutet der ballistische Begriff „Geschossrotation“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Fluggeschwindigkeit rotierender Schrote."
+        },
+        {
+          "label": "b",
+          "text": "Die mathematisch festgelegte Energie des rotierenden Geschosses bei verlassen des Laufes."
+        },
+        {
+          "label": "c",
+          "text": "Die Drehung des Geschosses um seine Längsachse."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.86",
+      "text": "Wodurch wird der Geschossknall erzeugt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das verbrannte Pulver erzeugt den Knall im Inneren der Schusswaffe."
+        },
+        {
+          "label": "b",
+          "text": "Durch die Expansion der vor dem Geschoss komprimierten Luft bei überschallschnellen Geschossen."
+        },
+        {
+          "label": "c",
+          "text": "Das nicht vollständig verbrannte Pulvergas vermischt sich mit Sauerstoff und bewirkt den Knall."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.87",
+      "text": "Wodurch entsteht der Mündungsknall?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durch die mit Überschallgeschwindigkeit austretenden Gase."
+        },
+        {
+          "label": "b",
+          "text": "Die dem Geschoss folgenden Pulvergase stoßen auf die kalte Umgebungsluft."
+        },
+        {
+          "label": "c",
+          "text": "Durch das nicht vollständig verbrannte Pulver."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.88",
+      "text": "Warum weisen Langwaffenläufe im Bereich des Patronenlagers stärkere Wandungen auf als im vorderen Laufteil?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Damit eine bessere Montage der Visiereinrichtung erfolgen kann."
+        },
+        {
+          "label": "b",
+          "text": "Weil in diesem Bereich der höchste Gasdruck auftritt."
+        },
+        {
+          "label": "c",
+          "text": "Weil in diesem Bereich Hersteller, Beschusszeichen und Nummer am besten sichtbar angebracht werden können."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.89",
+      "text": "Was verstehen Sie unter dem Begriff „Basküle“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Visiereinrichtung für Spezialgewehre"
+        },
+        {
+          "label": "b",
+          "text": "Vorderschaft einer „Pump Action“"
+        },
+        {
+          "label": "c",
+          "text": "Verschlusskasten einer Kipplaufwaffe"
+        }
+      ]
+    },
+    {
+      "rawId": "K2.90",
+      "text": "Wie wird eine Schusswaffe dauerhaft unbrauchbar gemacht, um sie ohne Erwerbsberechtigung erwerben zu können? (sog. Dekorationswaffe): Dauerhaft unbrauchbar gemacht wird eine Schusswaffe durch den Inhaber einer Waffenbearbeitungsoder Waffenherstellungserlaubnis, wenn sie gemäß den Vorgaben der Durchführungsverordnung (EU) 2015/2403 (Deaktivierungsdurchführungsverordnung) bearbeitet wurde, sodass mit allgemein gebräuchlichen Werkzeugen die Schussfähigkeit der Waffe oder der wesentlichen Teile nicht wiederhergestellt werden kann und dies durch das Anbringen eines Zulassungszeichens (Ortszeichen in der Raute) und durch das Ausstellen einer Deaktivierungsbescheinigung durch ein Beschussamt bestätigt wird.",
+      "options": []
+    },
+    {
+      "rawId": "K2.91",
+      "text": "Wie wird eine Schusswaffe dauerhaft unbrauchbar gemacht, um sie ohne Erwerbsberechtigung erwerben zu können? (sog. Dekorationswaffe)",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Büchsenmacher macht mehrere wesentliche Teile dauerhaft unbrauchbar und bringt sein Markenzeichen auf der Dekorationswaffe an."
+        },
+        {
+          "label": "b",
+          "text": "Ein Waffenhändler macht alle wesentlichen Teile vorübergehend unbrauchbar und bringt ein Beschusszeichen auf der Dekorationswaffe anbringen."
+        },
+        {
+          "label": "c",
+          "text": "Der Inhaber einer Waffenbearbeitungsoder Waffenherstellungserlaubnis macht alle wesentlichen Teile gemäß den Vorgaben der Durchführungsverordnung (EU) 2015/2403 (Deaktivierungsdurchführungsverordnung) unbrauchbar und lässt vom Beschussamt das Zulassungszeichen anbringen. Das Beschussamt stellt überdies eine Deaktivierungsbescheinigung aus."
+        }
+      ]
+    },
+    {
+      "rawId": "K2.92",
+      "text": "Wann sind Feuerwaffen oder deren wesentliche Teile dauerhaft unbrauchbar gemacht?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn die Waffe mit einem Blockiersystem vorübergehend blockiert wurde."
+        },
+        {
+          "label": "b",
+          "text": "Wenn sie gemäß ihrem Waffentyp und in jedem wesentlichen Bestandteil den Maßgaben Durchführungsverordnung (EU) 2015/2403 (Deaktivierungsdurchführungsverordnung) entsprechen."
+        },
+        {
+          "label": "c",
+          "text": "Wenn der Lauf der Waffe verzogen ist."
+        }
+      ]
+    }
+  ]
+}
