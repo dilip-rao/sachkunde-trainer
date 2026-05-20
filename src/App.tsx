@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Opt = { label: string; text: string; correct?: boolean };
 type Q = { rawId: string; text: string; options: Opt[]; multi?: boolean };
