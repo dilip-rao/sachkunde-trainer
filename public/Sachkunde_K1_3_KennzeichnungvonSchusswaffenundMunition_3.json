@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "sourceFiles": [
+      "Sachkunde_KennzeichnungvonSchusswaffenundMunition.json",
+      "sachkunde_part_002.json",
+      "sachkunde_part_003.json"
+    ],
+    "inputQuestions": 35,
+    "totalQuestions": 35
+  },
+  "bank": [
+    {
+      "rawId": "3.01",
+      "text": "Bei welchen Dekorationswaffen ist kein Zulassungszeichen (Ortszeichen des Beschussamtes in der Raute) erforderlich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bei allen offensichtlich unbrauchbaren und nicht mehr schussfähigen Waffen, die vor dem 01.01.1970 hergestellt wurden."
+        },
+        {
+          "label": "b",
+          "text": "Bei allen Schusswaffen, die vor dem 01.04.2003 nach dem damals geltenden Waffenrecht unbrauchbar gemacht wurden."
+        },
+        {
+          "label": "c",
+          "text": "Bei allen Schusswaffen, deren Modell vor dem 01.01.1871 hergestellt oder entwickelt wurde."
+        }
+      ]
+    },
+    {
+      "rawId": "3.02",
+      "text": "Welches Kennzeichen muss u.a. auf einem Großkaliber-Revolver angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bezeichnung der Munition"
+        },
+        {
+          "label": "b",
+          "text": "Herstellerzeichen"
+        },
+        {
+          "label": "c",
+          "text": "Warnhinweis „Gefährlich…“"
+        }
+      ]
+    },
+    {
+      "rawId": "3.03",
+      "text": "Welche Kennzeichnung trägt üblicherweise eine Feuerwaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Name des Besitzers"
+        },
+        {
+          "label": "b",
+          "text": "Beschusszeichen"
+        },
+        {
+          "label": "c",
+          "text": "Lauflänge"
+        }
+      ]
+    },
+    {
+      "rawId": "3.04",
+      "text": "Welche Kennzeichnung trägt üblicherweise eine Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Name, Firma oder Marke eines Waffenherstellers oder -händlers, der im Geltungsbereich dieses Gesetzes eine gewerbliche Niederlassung hat."
+        },
+        {
+          "label": "b",
+          "text": "Landeskürzel des Herstellungslandes"
+        },
+        {
+          "label": "c",
+          "text": "die Bezeichnung der Munition; sofern keine Munition verwendet wird, die Bezeichnung der Geschosse"
+        },
+        {
+          "label": "d",
+          "text": "Beschusszeichen e) Herstellungsnummer f) bei Importwaffen unter anderem auch Einfuhrland (Länderkürzel) und Einfuhrjahr."
+        }
+      ]
+    },
+    {
+      "rawId": "3.05",
+      "text": "Welche der nebenstehenden Kennzeichen sind nicht auf einer waffenbesitzkartenpflichtigen Schusswaffe zu finden? a) b) c) seit 20.10.2014:",
+      "options": []
+    },
+    {
+      "rawId": "3.06",
+      "text": "Wie sind Schreckschuss-, Reizstoffund Signalwaffen gekennzeichnet, deren Erwerb und Besitz erlaubnisfrei ist? Durch das Zulassungszeichen „PTB im Kreis“ (PTB = Physikalisch-Technische Bundesanstalt).",
+      "options": []
+    },
+    {
+      "rawId": "3.07",
+      "text": "Welche Kennzeichnung muss eine erlaubnispflichtige Feuerwaffe mindestens aufweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Herstelleroder Händlerzeichen, Seriennummer, Modell, Bezeichnung der Munition"
+        },
+        {
+          "label": "b",
+          "text": "Herstelleroder Händlerzeichen, Herstellungsland (Länderkürzel), Seriennummer, Beschusszeichen, Bezeichnung der Munition, bei Importwaffen unter anderem auch Einfuhrland (Landeskürzel) und Einfuhrjahr"
+        },
+        {
+          "label": "c",
+          "text": "Herstelleroder Händlerzeichen, Seriennummer, Herstellungsjahr, Bezeichnung der Munition"
+        }
+      ]
+    },
+    {
+      "rawId": "3.08",
+      "text": "Welche Kennzeichen müssen auf der kleinsten Verpackungseinheit von Patronen angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Herstelleroder Fertigungszeichen, Fertigungsserie, Patronendaten, Zulassungszeichen"
+        },
+        {
+          "label": "b",
+          "text": "Herstellungsdatum, Patronenkaliber"
+        },
+        {
+          "label": "c",
+          "text": "keine"
+        }
+      ]
+    },
+    {
+      "rawId": "3.09",
+      "text": "Handfeuerwaffen müssen Beschusszeichen tragen. Was wird geprüft? - Haltbarkeit, - Funktionssicherheit, - Maßhaltigkeit und - richtige Kennzeichnung",
+      "options": []
+    },
+    {
+      "rawId": "3.10",
+      "text": "Welche Waffenteile unterliegen, bei Einfuhr in den Geltungsbereich des Waffengesetzes, der Kennzeichnungspflicht des § 24 Abs. 1 des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mindestens ein wesentliches Waffenteil muss entsprechend den gesetzlichen Vorgaben gekennzeichnet sein."
+        },
+        {
+          "label": "b",
+          "text": "Alle wesentlichen Waffenteile müssen entsprechend den gesetzlichen Vorgaben gekennzeichnet sein."
+        },
+        {
+          "label": "c",
+          "text": "Es ist ausreichend wenn sich eine Seriennummer auf dem Lauf der Waffe befindet."
+        }
+      ]
+    },
+    {
+      "rawId": "3.11",
+      "text": "Welche Kennzeichnung muss die Randfeuerpatrone aufweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kaliberangabe auf der Hülse"
+        },
+        {
+          "label": "b",
+          "text": "Herstellerzeichen auf der Hülse"
+        },
+        {
+          "label": "c",
+          "text": "Kaliber und Herstellerzeichen auf der Hülse"
+        }
+      ]
+    },
+    {
+      "rawId": "3.12",
+      "text": "Welche Kennzeichnung muss die Zentralfeuerpatrone aufweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kaliberangabe und Geschossart auf dem Hülsenboden"
+        },
+        {
+          "label": "b",
+          "text": "Herstellerzeichen auf dem Hülsenhals"
+        },
+        {
+          "label": "c",
+          "text": "Herstellerzeichen und Bezeichnung der Munition auf der Hülse"
+        }
+      ]
+    },
+    {
+      "rawId": "3.13",
+      "text": "Was bedeutet der Zusatz „R“ in der Munitionsbezeichnung?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Patrone mit Rand"
+        },
+        {
+          "label": "b",
+          "text": "Randfeuerpatrone"
+        },
+        {
+          "label": "c",
+          "text": "Patrone für Revolver (R = Revolver)"
+        }
+      ]
+    },
+    {
+      "rawId": "3.14",
+      "text": "Welche zusätzlichen Angaben müssen Schrotpatronen im Kaliber 12/70 aufweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "keine zusätzlichen Angaben erforderlich"
+        },
+        {
+          "label": "b",
+          "text": "auf der Hülse die Längenangabe 70"
+        },
+        {
+          "label": "c",
+          "text": "Angabe der Anzahl der Schrote"
+        }
+      ]
+    },
+    {
+      "rawId": "3.15",
+      "text": "Welche Kennzeichen müssen auf Zentralfeuermunition angebracht sein? Auf der Hülse der Munition müssen das Herstellerzeichen und die Bezeichnung der Munition angebracht sein.",
+      "options": []
+    },
+    {
+      "rawId": "3.16",
+      "text": "Welche Kennzeichen müssen auf der kleinsten Verpackungseinheit der Munition angebracht sein? - das Herstellerzeichen - das Fertigungszeichen (Fertigungsserie) - die Bezeichnung der Munition - Zulassungszeichen",
+      "options": []
+    },
+    {
+      "rawId": "3.17",
+      "text": "Welche Kennzeichnung muss auf einer Randfeuerpatrone angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bezeichnung der Munition"
+        },
+        {
+          "label": "b",
+          "text": "Randfeuer"
+        },
+        {
+          "label": "c",
+          "text": "Herstellerzeichen"
+        }
+      ]
+    },
+    {
+      "rawId": "3.18",
+      "text": "Welche Kennzeichen müssen auf der kleinsten Munitionsverpackungseinheit angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Herstellerzeichen, Bezeichnung der Munition, Anzahl der Patronen in der Packung, Fertigungsserie (Losnummer), Zulassungszeichen"
+        },
+        {
+          "label": "b",
+          "text": "Herstellerzeichen, Bezeichnung der Munition, Anzahl der Patronen in der Packung, Herstellungsjahr, Zulassungszeichen"
+        },
+        {
+          "label": "c",
+          "text": "Herstellerzeichen, Bezeichnung der Munition, Anzahl der Patronen in der Packung, Fertigungsserie (Losnummer), Herstellungsdatum"
+        }
+      ]
+    },
+    {
+      "rawId": "3.19",
+      "text": "Welche Kennzeichnung muss auf einer Zentralfeuerpatrone angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bezeichnung der Munition und Geschossart"
+        },
+        {
+          "label": "b",
+          "text": "Bezeichnung der Munition und Herstellerzeichen"
+        },
+        {
+          "label": "c",
+          "text": "Bezeichnung der Munition und Losnummer"
+        }
+      ]
+    },
+    {
+      "rawId": "3.20",
+      "text": "Welche Bedeutung hat ein Beschusszeichen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sicherheitsüberprüfung der Waffe beim zuständigen TÜV"
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe ist durch die PhysikalischTechnische Bundesanstalt auf Funktionsfähigkeit geprüft."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe ist auf Haltbarkeit, Funktionssicherheit, Maßhaltigkeit und richtige Kennzeichnung durch ein anerkanntes Beschussamt geprüft."
+        }
+      ]
+    },
+    {
+      "rawId": "3.21",
+      "text": "Woran erkennt man, ob eine Schusswaffe zum Schießen zugelassen ist? Die Waffe muss ein gültiges Prüfund/oder Beschusszeichen tragen.",
+      "options": []
+    },
+    {
+      "rawId": "3.22",
+      "text": "Wann ist eine Schusswaffe erneut zum Beschuss vorzulegen? Wenn ein wesentliches Teil ausgetauscht, verändert oder instandgesetzt worden ist.",
+      "options": []
+    },
+    {
+      "rawId": "3.23",
+      "text": "Auf welchem Waffenteil muss das Beschusszeichen auch angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Auf dem Lauf"
+        },
+        {
+          "label": "b",
+          "text": "Auf dem Schaft"
+        },
+        {
+          "label": "c",
+          "text": "Auf dem Visier"
+        }
+      ]
+    },
+    {
+      "rawId": "3.24",
+      "text": "Welches Beschusszeichen trägt ein in der Bundesrepublik beschossener Revolver .357 Magnum?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bundesadler V / CIP S seit 20.10.2014"
+        },
+        {
+          "label": "b",
+          "text": "Bundesadler N / CIP N seit 20.10.2014"
+        },
+        {
+          "label": "c",
+          "text": "Bundesadler SP / CIP PN seit 20.10.2014"
+        }
+      ]
+    },
+    {
+      "rawId": "3.25",
+      "text": "Was bedeutet das Beschusszeichen Bundesadler N bzw. CIP N? seit 20.10.2014",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe ist behördlich geprüft und zum Schießen zugelassen."
+        },
+        {
+          "label": "b",
+          "text": "Die Gebühren sind bezahlt."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe ist gebraucht."
+        }
+      ]
+    },
+    {
+      "rawId": "3.26",
+      "text": "Welche Schusswaffe muss ein amtliches Beschusszeichen tragen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein jetzt hergestellter Nachbau einer Steinschlosspistole (Original 18. Jhdt.)"
+        },
+        {
+          "label": "b",
+          "text": "Ein Druckluftgewehr, das dem Geschoss eine Energie von ca. 10 Joule erteilt."
+        },
+        {
+          "label": "c",
+          "text": "Ordonnanzgewehr aus dem 2. Weltkrieg"
+        },
+        {
+          "label": "d",
+          "text": "Bauartgeprüfter Schreckschussrevolver im Kaliber bis 6 mm"
+        }
+      ]
+    },
+    {
+      "rawId": "3.27",
+      "text": "Welche Beschussstempelung trägt üblicherweise eine in der Bundesrepublik Deutschland beschossene Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Beschusszeichen in Form eines Bundesadlers (seit 20.10.2014 CIP-Zeichen) mit darunter liegendem Kennbuchstaben für die Art des Beschusses."
+        },
+        {
+          "label": "b",
+          "text": "Ortszeichen für das Beschussamt"
+        },
+        {
+          "label": "c",
+          "text": "Zahlen oder Buchstabencodierung für das Beschussdatum"
+        }
+      ]
+    },
+    {
+      "rawId": "3.28",
+      "text": "Welche Bedeutung hat ein Beschusszeichen, bei dem ein Bundesadler (seit 20.10.2014 CIP-Zeichen) mit den darunter liegenden Buchstaben „PN“ abgebildet ist?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe ist für das Schießen mit allen Munitionssorten (Schwarzpulver und rauchloses Pulver) im entsprechenden Kaliber zugelassen. (PN = Prüfung Normal)"
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe ist für das Schießen mit allen Munitionssorten im entsprechenden Kaliber zugelassen, die mit rauchlosem Pulver geladen sind. (PN = Prüfung Nitro)"
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe ist für das Schießen mit allen Munitionssorten im entsprechenden Kaliber zugelassen, die mit Schwarzpulver geladen sind. (PN = poudre noir)"
+        }
+      ]
+    },
+    {
+      "rawId": "3.29",
+      "text": "Was wird bei einem amtlichen Beschuss geprüft?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe wird auf Haltbarkeit, Funktionssicherheit, Maßhaltigkeit und Kennzeichnung geprüft."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe wird auf Lebensdauer, Konstruktionsschlüssigkeit und Funktionstauglichkeit geprüft."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe wird auf Präzision, Fertigungstoleranzen und Materialhärte geprüft."
+        }
+      ]
+    },
+    {
+      "rawId": "3.30",
+      "text": "Auf welchen Waffenteilen muss das Beschusszeichen (auch) angebracht sein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Lauf, Verschluss"
+        },
+        {
+          "label": "b",
+          "text": "Schaft, Visier"
+        },
+        {
+          "label": "c",
+          "text": "Sicherung, Magazin"
+        }
+      ]
+    },
+    {
+      "rawId": "3.31",
+      "text": "Welche der folgenden Waffenteile unterliegen der Beschusspflicht?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Einsteckläufe für Zentralfeuerpatronen"
+        },
+        {
+          "label": "b",
+          "text": "Wechseltrommeln"
+        },
+        {
+          "label": "c",
+          "text": "Wechselsysteme"
+        }
+      ]
+    },
+    {
+      "rawId": "3.32",
+      "text": "Werden in Deutschland auch Beschusszeichen anderer Staaten anerkannt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, aller Staaten, die eine Sicherheitsprüfung vorschreiben."
+        },
+        {
+          "label": "b",
+          "text": "Ja, aber nur Staaten, die dem Übereinkommen über die gegenseitige Anerkennung von Beschusszeichen und Prüfzeichen beigetreten sind (C.I.P.)."
+        },
+        {
+          "label": "c",
+          "text": "Nein, alle Schusswaffen müssen vor ihrem Gebrauch von deutschen Beschussämtern geprüft sein."
+        }
+      ]
+    },
+    {
+      "rawId": "3.33",
+      "text": "Bei welchen der folgenden ehemaligen Staaten ist der dortige amtliche Beschuss auch in der Bundesrepublik Deutschland weiterhin gültig? (D.h. die dort beschossenen Waffen müssen nicht von einem deutschen Beschussamt erneut beschossen werden.)",
+      "options": [
+        {
+          "label": "a",
+          "text": "CSSR"
+        },
+        {
+          "label": "b",
+          "text": "DDR"
+        },
+        {
+          "label": "c",
+          "text": "Deutsches Reich (sollte sich ein Hakenkreuz auf der Waffe befinden, müsste das Hakenkreuz vom Beschussamt mit einem „X“ versehen werden)"
+        }
+      ]
+    },
+    {
+      "rawId": "3.34",
+      "text": "Welche Schusswaffe muss neben dem Zulassungszeichen „F im Fünfeck“ noch als weiteres Zulassungszeichen „PTB im Quadrat“ tragen? (PTB = Physikalisch-Technische Bundesanstalt)",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluftwaffen mit einer Bewegungsenergie bis zu 7,5 Joule."
+        },
+        {
+          "label": "b",
+          "text": "Schusswaffen mit kleinerem Kaliber als .22lr und einer Bewegungsenergie bis zu 10 Joule."
+        },
+        {
+          "label": "c",
+          "text": "Feuerwaffen, deren Geschossen eine Bewegungsenergie von nicht mehr als 7,5 Joule erteilt wird."
+        }
+      ]
+    },
+    {
+      "rawId": "3.35",
+      "text": "Welche Bedeutung hat das Zeichen „F im Fünfeck“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Zeichen „F im Fünfeck“ kennzeichnet Waffen, die von volljährigen Personen erlaubnisfrei erworben werden dürfen."
+        },
+        {
+          "label": "b",
+          "text": "Das Zeichen „F im Fünfeck“ kennzeichnet Waffen, deren Geschossenergie E0 maximal 7,5 Joule beträgt."
+        },
+        {
+          "label": "c",
+          "text": "Das Zeichen „F im Fünfeck“ kennzeichnet Waffen, deren Mündungsgeschwindigkeit unter 7,5 m/s. liegt."
+        }
+      ]
+    }
+  ]
+}
