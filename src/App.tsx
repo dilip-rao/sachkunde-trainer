@@ -7,8 +7,8 @@ type Q = { rawId: string; text: string; options: Opt[]; multi?: boolean };
 const RX_QID_DOTTED = /^\s*(\d+)\.(\d{2,})\s+(.*)$/; // 2.100, 1.02
 const RX_QID_PLAIN = /^\s*(\d{1,3})\s+(.*)$/; // 01, 02, 103
 
-const RX_OPT = /^\s*([a-hA-k]|\d{1,2})[)\.]\s+(.*)$/;
-const RX_INLINE_OPT = /^(.*)\s+([a-hA-H]|\d{1,2})[)\.]\s+(.*)$/;
+const RX_OPT = /^\s*([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
+const RX_INLINE_OPT = /^(.*)\s+([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
 
 function norm(s: string) {
   return (s || "")
@@ -30,18 +30,10 @@ function looksLikeQuestionStart(rest: string) {
   const r = (rest || "").trim();
   if (!r) return false;
 
-  // Common German question starters
-  if (
-    /^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(
-      r
-    )
-  )
+  if (/^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(r))
     return true;
 
-  // Has a question mark → strong signal
   if (r.includes("?")) return true;
-
-  // Starts with uppercase letter (including ÄÖÜ) → typical question title formatting
   if (/^[A-ZÄÖÜ]/.test(r)) return true;
 
   return false;
@@ -64,11 +56,7 @@ function isAnswerCorrect(q: Q, selectedLabels: string[] | string | undefined) {
     .map((o) => o.label)
     .sort();
 
-  const userLabels = (
-    Array.isArray(selectedLabels)
-      ? selectedLabels
-      : [selectedLabels].filter(Boolean)
-  )
+  const userLabels = (Array.isArray(selectedLabels) ? selectedLabels : [selectedLabels].filter(Boolean))
     .map(String)
     .sort();
 
@@ -82,8 +70,6 @@ function isAnswerCorrect(q: Q, selectedLabels: string[] | string | undefined) {
  * ✅ Paste-text parser: supports BOTH formats:
  *  - DOTTED: 2.100 Question...
  *  - PLAIN: 01 Question...  (converted to `${importPrefix}.01`)
- *
- * importPrefix can be alphanumeric, e.g. "K2A", "NEW2", "Kap2".
  */
 function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
   const lines = norm(pasted)
@@ -98,10 +84,7 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
   const push = () => {
     if (!cur) return;
     cur.text = norm(cur.text);
-    cur.options = (cur.options || []).map((o) => ({
-      ...o,
-      text: norm(o.text),
-    }));
+    cur.options = (cur.options || []).map((o) => ({ ...o, text: norm(o.text) }));
     out.push(cur);
     cur = null;
     inOptions = false;
@@ -124,56 +107,43 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       const im = cur.text.match(RX_INLINE_OPT);
       if (im) {
         cur.text = norm(im[1]);
-        cur.options.push({ label: im[2], text: norm(im[3]) });
+        cur.options.push({ label: String(im[2]).toLowerCase(), text: norm(im[3]) });
         inOptions = true;
       }
       continue;
     }
 
-    // 2) PLAIN IDs -> prefix using importPrefix (WITH STRONG GUARD)
+    // 2) PLAIN IDs (guarded)
     const mp = line.match(RX_QID_PLAIN);
     if (mp) {
       const plainNum = mp[1];
       const rest = mp[2];
 
-      // ✅ FIX #2 (TABLE/LIST ROWS):
-      // Only start a new question if the remainder looks like a real question title.
-      // Otherwise treat it as continuation of current question/option.
       if (!looksLikeQuestionStart(rest)) {
-        if (!cur) {
-          // if we don't have a current question yet, ignore stray numeric lines
-          continue;
-        }
+        if (!cur) continue;
 
         if (inOptions && cur.options.length > 0) {
-          // continuation of last option
           cur.options[cur.options.length - 1].text = norm(
             cur.options[cur.options.length - 1].text + " " + line
           );
         } else {
-          // continuation of question text (handles 73's table rows 1..10, 4 mm M20, 300 m, etc.)
           cur.text = norm(cur.text + " " + line);
         }
         continue;
       }
 
-      // Otherwise: real new question
       push();
 
-      const width = Math.max(2, plainNum.length); // keeps 3 digits if input is 100+
+      const width = Math.max(2, plainNum.length);
       const padded = plainNum.padStart(width, "0");
 
-      cur = {
-        rawId: `${importPrefix}.${padded}`,
-        text: norm(rest),
-        options: [],
-      };
+      cur = { rawId: `${importPrefix}.${padded}`, text: norm(rest), options: [] };
       inOptions = false;
 
       const im = cur.text.match(RX_INLINE_OPT);
       if (im) {
         cur.text = norm(im[1]);
-        cur.options.push({ label: im[2], text: norm(im[3]) });
+        cur.options.push({ label: String(im[2]).toLowerCase(), text: norm(im[3]) });
         inOptions = true;
       }
       continue;
@@ -185,7 +155,7 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
     const mo = line.match(RX_OPT);
     if (mo) {
       inOptions = true;
-      cur.options.push({ label: mo[1], text: norm(mo[2]) });
+      cur.options.push({ label: String(mo[1]).toLowerCase(), text: norm(mo[2]) });
       continue;
     }
 
@@ -221,13 +191,18 @@ function downloadJson(filename: string, obj: any) {
   URL.revokeObjectURL(url);
 }
 
+// ✅ GitHub Pages / Vite base path safe fetch
 async function fetchJson(path: string) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`${path} -> ${res.status}`);
+  const base = import.meta.env.BASE_URL || "/"; // "/sachkunde-trainer/" on GH pages
+  const clean = path.replace(/^\//, "");
+  const url = `${base}${clean}`;
+
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
   return res.json();
 }
 
-// ✅ Chapters (practice mode)
+// ✅ Chapters
 const CHAPTERS: { id: string; label: string; files: string[] }[] = [
   {
     id: "ALL",
@@ -243,46 +218,14 @@ const CHAPTERS: { id: string; label: string; files: string[] }[] = [
       "/Sachkunde_K4_NotundSeenotsignalmittel.json",
     ],
   },
-  {
-    id: "K1",
-    label: "Kapitel 1.1 – Begriffe",
-    files: ["/Sachkunde_K1_1_Begriffe_des_Waffenrechts_1.json"],
-  },
-  {
-    id: "K1.2",
-    label: "Kapitel 1.2 – Rechte/Pflichten",
-    files: ["/Sachkunde_K1_2_RechteundPflichten_2.json"],
-  },
-  {
-    id: "K1.3",
-    label: "Kapitel 1.3 – Kennzeichnung",
-    files: ["/Sachkunde_K1_3_KennzeichnungvonSchusswaffenundMunition_3.json"],
-  },
-  {
-    id: "K1.4",
-    label: "Kapitel 1.4 – Aufbewahrung",
-    files: ["/Sachkunde_K1_4_AufbewahrungvonSchusswaffenundMunition_4.json"],
-  },
-  {
-    id: "K1.5",
-    label: "Kapitel 1.5 – Notwehr/Notstand",
-    files: ["/Sachkunde_K1_5_NotwehrundNotstand.json"],
-  },
-  {
-    id: "K2",
-    label: "Kapitel 2 – Waffentechnik",
-    files: ["/Sachkunde_K2_Waffentechnik.json"],
-  },
-  {
-    id: "K3",
-    label: "Kapitel 3 – Handhabung von Schusswaffen un Munition",
-    files: ["/Sachkunde_K3_HandhabungvonSchusswaffenundMunition.json"],
-  },
-  {
-    id: "K4",
-    label: "Kapitel 4 – Not- und Seenotsignalmittel",
-    files: ["/Sachkunde_K4_NotundSeenotsignalmittel.json"],
-  },
+  { id: "K1", label: "Kapitel 1.1 – Begriffe", files: ["/Sachkunde_K1_1_Begriffe_des_Waffenrechts_1.json"] },
+  { id: "K1.2", label: "Kapitel 1.2 – Rechte/Pflichten", files: ["/Sachkunde_K1_2_RechteundPflichten_2.json"] },
+  { id: "K1.3", label: "Kapitel 1.3 – Kennzeichnung", files: ["/Sachkunde_K1_3_KennzeichnungvonSchusswaffenundMunition_3.json"] },
+  { id: "K1.4", label: "Kapitel 1.4 – Aufbewahrung", files: ["/Sachkunde_K1_4_AufbewahrungvonSchusswaffenundMunition_4.json"] },
+  { id: "K1.5", label: "Kapitel 1.5 – Notwehr/Notstand", files: ["/Sachkunde_K1_5_NotwehrundNotstand.json"] },
+  { id: "K2", label: "Kapitel 2 – Waffentechnik", files: ["/Sachkunde_K2_Waffentechnik.json"] },
+  { id: "K3", label: "Kapitel 3 – Handhabung von Schusswaffen und Munition", files: ["/Sachkunde_K3_HandhabungvonSchusswaffenundMunition.json"] },
+  { id: "K4", label: "Kapitel 4 – Not- und Seenotsignalmittel", files: ["/Sachkunde_K4_NotundSeenotsignalmittel.json"] },
 ];
 
 function lsQuestionsKey(chapterId: string) {
@@ -292,7 +235,6 @@ function lsAnswersKey(chapterId: string) {
   return `answers::${chapterId}`;
 }
 
-// ✅ Imported chapters: stored as questions::IMPORTED_<prefix>
 function importedChapterId(prefix: string) {
   return `IMPORTED_${prefix}`;
 }
@@ -344,6 +286,7 @@ export default function App() {
       setAnswers({});
     }
 
+    // Use cached questions first
     if (savedQ) {
       try {
         const parsedQ = JSON.parse(savedQ);
@@ -353,9 +296,12 @@ export default function App() {
           setKeyQid("");
           return;
         }
-      } catch {}
+      } catch {
+        // ignore and fall through to fetching
+      }
     }
 
+    // Imported chapters live in localStorage only
     if (chId.startsWith("IMPORTED_")) {
       setQuestions([]);
       setIndex(0);
@@ -378,11 +324,9 @@ export default function App() {
     setQuestions(all);
     setIndex(0);
     setKeyQid("");
+
     localStorage.setItem(qKey, JSON.stringify(all));
-    localStorage.setItem(
-      aKey,
-      JSON.stringify(savedA ? JSON.parse(savedA) : {})
-    );
+    localStorage.setItem(aKey, JSON.stringify(savedA ? JSON.parse(savedA) : {}));
   }
 
   useEffect(() => {
@@ -395,11 +339,9 @@ export default function App() {
   }, [answers, chapterId]);
 
   useEffect(() => {
-    if (questions.length)
-      localStorage.setItem(
-        lsQuestionsKey(chapterId),
-        JSON.stringify(questions)
-      );
+    if (questions.length) {
+      localStorage.setItem(lsQuestionsKey(chapterId), JSON.stringify(questions));
+    }
   }, [questions, chapterId]);
 
   const q = questions[index];
@@ -413,9 +355,7 @@ export default function App() {
       if (multi) {
         const arr = Array.isArray(curSel) ? [...curSel] : [];
         const exists = arr.includes(label);
-        const next = exists
-          ? arr.filter((x) => x !== label)
-          : arr.concat(label);
+        const next = exists ? arr.filter((x) => x !== label) : arr.concat(label);
         return { ...prev, [q.rawId]: next };
       }
       return { ...prev, [q.rawId]: label };
@@ -512,31 +452,12 @@ export default function App() {
   }
 
   return (
-    <div
-      style={{
-        padding: 16,
-        maxWidth: 860,
-        margin: "0 auto",
-        fontFamily: "Arial",
-      }}
-    >
-      <h2>Sachkunde Trainer (CodeSandbox)</h2>
+    <div style={{ padding: 16, maxWidth: 860, margin: "0 auto", fontFamily: "Arial" }}>
+      <h2>Sachkunde Trainer</h2>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 10,
-          alignItems: "center",
-          marginBottom: 12,
-          flexWrap: "wrap",
-        }}
-      >
+      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 12, flexWrap: "wrap" }}>
         <b>Mode:</b>
-        <select
-          value={chapterId}
-          onChange={(e) => setChapterId(e.target.value)}
-          style={{ padding: 6, minWidth: 360 }}
-        >
+        <select value={chapterId} onChange={(e) => setChapterId(e.target.value)} style={{ padding: 6, minWidth: 360 }}>
           <optgroup label="Built-in">
             {CHAPTERS.map((c) => (
               <option key={c.id} value={c.id}>
@@ -573,8 +494,7 @@ export default function App() {
         {chapterId.startsWith("IMPORTED_") && (
           <button
             onClick={() => {
-              if (confirm(`Delete ${chapterId}? This cannot be undone.`))
-                deleteImportedChapter(chapterId);
+              if (confirm(`Delete ${chapterId}? This cannot be undone.`)) deleteImportedChapter(chapterId);
             }}
             style={{ background: "#c62828", color: "white" }}
           >
@@ -595,20 +515,13 @@ export default function App() {
             <div>Loading questions…</div>
           ) : (
             <>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "baseline",
-                }}
-              >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                 <div>
                   <b>
                     Question {index + 1} / {questions.length}
                   </b>
                   <div style={{ color: "#666", fontSize: 12 }}>
-                    Scored (keyed only): {score.correct}/{score.total} (
-                    {score.pct}%)
+                    Scored (keyed only): {score.correct}/{score.total} ({score.pct}%)
                   </div>
                 </div>
               </div>
@@ -617,20 +530,15 @@ export default function App() {
                 <b>{q?.rawId}</b> — {q?.text}
               </div>
 
-              {(q?.multi ??
-                computeMulti(q || { rawId: "", text: "", options: [] })) && (
-                <div style={{ color: "gray", marginBottom: 8 }}>
-                  Multiple answers possible
-                </div>
+              {(q?.multi ?? computeMulti(q || { rawId: "", text: "", options: [] })) && (
+                <div style={{ color: "gray", marginBottom: 8 }}>Multiple answers possible</div>
               )}
 
               <div>
                 {q?.options?.map((opt) => {
                   const multi = q.multi ?? computeMulti(q);
                   const selected = multi
-                    ? (answers[q.rawId] as string[] | undefined)?.includes(
-                        opt.label
-                      )
+                    ? (answers[q.rawId] as string[] | undefined)?.includes(opt.label)
                     : answers[q.rawId] === opt.label;
 
                   return (
@@ -657,11 +565,7 @@ export default function App() {
                 <button onClick={prev} disabled={index === 0}>
                   ← Prev
                 </button>
-                <button
-                  onClick={next}
-                  disabled={index === questions.length - 1}
-                  style={{ marginLeft: 10 }}
-                >
+                <button onClick={next} disabled={index === questions.length - 1} style={{ marginLeft: 10 }}>
                   Next →
                 </button>
               </div>
@@ -675,27 +579,17 @@ export default function App() {
           <p style={{ color: "#555" }}>
             Paste PDF text → Parse → Preview → Download JSON.
             <br />
-            For plain numbering <b>01,02,03…</b>, use an{" "}
-            <b>alphanumeric prefix</b> like <b>K2A</b> so IDs become{" "}
+            For plain numbering <b>01,02,03…</b>, use an <b>alphanumeric prefix</b> like <b>K2A</b> so IDs become{" "}
             <b>K2A.01</b>, <b>K2A.02</b>, …
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 10,
-              alignItems: "center",
-              flexWrap: "wrap",
-            }}
-          >
+          <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
             <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
               Import prefix:
               <input
                 value={importPrefix}
                 onChange={(e) =>
-                  setImportPrefix(
-                    e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A"
-                  )
+                  setImportPrefix(e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A")
                 }
                 style={{ width: 110, padding: 6 }}
                 placeholder="K2A"
@@ -710,9 +604,7 @@ export default function App() {
                 max={200}
                 value={chunkSize}
                 onChange={(e) =>
-                  setChunkSize(
-                    Math.max(5, Math.min(200, Number(e.target.value) || 20))
-                  )
+                  setChunkSize(Math.max(5, Math.min(200, Number(e.target.value) || 20)))
                 }
                 style={{ width: 90, padding: 6 }}
               />
@@ -720,10 +612,7 @@ export default function App() {
 
             <button onClick={handleParse}>Parse</button>
 
-            <button
-              disabled={parsed.length === 0}
-              onClick={saveParsedAsImportedChapter}
-            >
+            <button disabled={parsed.length === 0} onClick={saveParsedAsImportedChapter}>
               Save parsed as chapter (permanent)
             </button>
 
@@ -747,70 +636,36 @@ export default function App() {
           />
 
           {parsed.length > 0 && (
-            <div
-              style={{
-                display: "flex",
-                gap: 10,
-                flexWrap: "wrap",
-                alignItems: "center",
-                marginTop: 10,
-              }}
-            >
-              <button
-                onClick={() => setChunkIndex((i) => Math.max(0, i - 1))}
-                disabled={chunkIndex === 0}
-              >
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 10 }}>
+              <button onClick={() => setChunkIndex((i) => Math.max(0, i - 1))} disabled={chunkIndex === 0}>
                 Prev chunk
               </button>
               <div>
                 Chunk <b>{chunkIndex + 1}</b> / <b>{totalChunks}</b>
               </div>
               <button
-                onClick={() =>
-                  setChunkIndex((i) => Math.min(totalChunks - 1, i + 1))
-                }
+                onClick={() => setChunkIndex((i) => Math.min(totalChunks - 1, i + 1))}
                 disabled={chunkIndex >= totalChunks - 1}
               >
                 Next chunk
               </button>
 
-              <button
-                onClick={downloadChunk}
-                style={{ background: "#0b5", color: "#fff" }}
-              >
+              <button onClick={downloadChunk} style={{ background: "#0b5", color: "#fff" }}>
                 Download this chunk JSON
               </button>
 
-              <button
-                onClick={() =>
-                  downloadJson("sachkunde_full.json", { bank: parsed })
-                }
-              >
+              <button onClick={() => downloadJson("sachkunde_full.json", { bank: parsed })}>
                 Download FULL JSON
               </button>
             </div>
           )}
 
           {parsed.length > 0 && (
-            <div
-              style={{
-                marginTop: 12,
-                border: "1px solid #eee",
-                borderRadius: 12,
-                padding: 12,
-              }}
-            >
+            <div style={{ marginTop: 12, border: "1px solid #eee", borderRadius: 12, padding: 12 }}>
               <b>Preview (current chunk)</b>
               <div style={{ marginTop: 8, display: "grid", gap: 10 }}>
                 {currentChunk.map((x) => (
-                  <div
-                    key={x.rawId}
-                    style={{
-                      padding: 10,
-                      border: "1px solid #f0f0f0",
-                      borderRadius: 10,
-                    }}
-                  >
+                  <div key={x.rawId} style={{ padding: 10, border: "1px solid #f0f0f0", borderRadius: 10 }}>
                     <div style={{ fontWeight: 800 }}>
                       {x.rawId} — {x.text}
                     </div>
@@ -824,9 +679,7 @@ export default function App() {
                         ))}
                       </ul>
                     ) : (
-                      <div style={{ color: "#777", marginTop: 6 }}>
-                        (No options / free-text)
-                      </div>
+                      <div style={{ color: "#777", marginTop: 6 }}>(No options / free-text)</div>
                     )}
                   </div>
                 ))}
@@ -844,14 +697,7 @@ export default function App() {
             <div>No questions loaded yet.</div>
           ) : (
             <>
-              <div
-                style={{
-                  display: "flex",
-                  gap: 10,
-                  flexWrap: "wrap",
-                  alignItems: "center",
-                }}
-              >
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
                 <select
                   value={keyQ?.rawId || ""}
                   onChange={(e) => setKeyQid(e.target.value)}
@@ -866,9 +712,7 @@ export default function App() {
 
                 <button
                   onClick={() =>
-                    downloadJson(`sachkunde_with_keys_${chapterId}.json`, {
-                      bank: questions,
-                    })
+                    downloadJson(`sachkunde_with_keys_${chapterId}.json`, { bank: questions })
                   }
                 >
                   Export bank (with keys)
@@ -876,14 +720,7 @@ export default function App() {
               </div>
 
               {keyQ && (
-                <div
-                  style={{
-                    marginTop: 12,
-                    border: "1px solid #eee",
-                    borderRadius: 12,
-                    padding: 12,
-                  }}
-                >
+                <div style={{ marginTop: 12, border: "1px solid #eee", borderRadius: 12, padding: 12 }}>
                   <div style={{ fontWeight: 800 }}>
                     {keyQ.rawId} — {keyQ.text}
                   </div>
@@ -891,19 +728,8 @@ export default function App() {
                   {keyQ.options?.length ? (
                     <div style={{ marginTop: 10, display: "grid", gap: 10 }}>
                       {keyQ.options.map((o) => (
-                        <label
-                          key={o.label}
-                          style={{
-                            display: "flex",
-                            gap: 10,
-                            alignItems: "flex-start",
-                          }}
-                        >
-                          <input
-                            type="checkbox"
-                            checked={!!o.correct}
-                            onChange={() => toggleCorrect(o.label)}
-                          />
+                        <label key={o.label} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                          <input type="checkbox" checked={!!o.correct} onChange={() => toggleCorrect(o.label)} />
                           <div>
                             <b>{o.label})</b> {o.text}
                           </div>
