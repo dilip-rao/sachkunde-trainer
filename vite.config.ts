@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/sachkunde-trainer',  // ✅ your repo name
+  base: "/sachkunde-trainer",  // ✅ your repo name
 })
 ``
