@@ -235,12 +235,12 @@ const CHAPTERS: { id: string; label: string; files: string[] }[] = [
     files: [
       "/Sachkunde_K1_1_Begriffe_des_Waffenrechts_1.json",
       "/Sachkunde_K1_2_RechteundPflichten_2.json",
-      "/Sachkunde_K1_3_KennzeichnungvonSchusswaffenundMunition_3.json",
-      "/Sachkunde_K1_4_AufbewahrungvonSchusswaffenundMunition_4.json",
-      "/Sachkunde_K1_5_NotwehrundNotstand.json",
-      "/Sachkunde_K2_Waffentechnik.json",
-      "/Sachkunde_K3_HandhabungvonSchusswaffenundMunition.json",
-      "/Sachkunde_K4_NotundSeenotsignalmittel.json",
+      //"/Sachkunde_K1_3_KennzeichnungvonSchusswaffenundMunition_3.json",
+      //"/Sachkunde_K1_4_AufbewahrungvonSchusswaffenundMunition_4.json",
+      //"/Sachkunde_K1_5_NotwehrundNotstand.json",
+      //"/Sachkunde_K2_Waffentechnik.json",
+      //"/Sachkunde_K3_HandhabungvonSchusswaffenundMunition.json",
+      //"/Sachkunde_K4_NotundSeenotsignalmittel.json",
     ],
   },
   {
