@@ -465,7 +465,7 @@ export default function App() {
         />
         <div>
           <h2 style={{ margin: 0 }}>Sachkunde Trainer</h2>
-          <div style={{ fontSize: 12, color: "#666" }}>Offline • GitHub Pages</div>
+          <div style={{ fontSize: 12, color: "#666" }}>Schützenverein „Waidmannsheil“ e.V. Erzhausen</div>
         </div>
       </div>
 
