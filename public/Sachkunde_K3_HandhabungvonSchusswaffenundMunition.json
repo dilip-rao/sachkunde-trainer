@@ -1,0 +1,914 @@
+{
+  "bank": [
+    {
+      "rawId": "K3.01",
+      "text": "Darf eine Schusswaffe, auch wenn sie ungeladen ist, auf Menschen gerichtet werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Niemals"
+        },
+        {
+          "label": "b",
+          "text": "Ja"
+        },
+        {
+          "label": "c",
+          "text": "Nein, außer bei Notwehr."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.02",
+      "text": "Wie soll eine Schusswaffe an eine andere Person übergeben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "geladen, gesichert"
+        },
+        {
+          "label": "b",
+          "text": "geladen, ungesichert"
+        },
+        {
+          "label": "c",
+          "text": "ungeladen"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.03",
+      "text": "Mit welchen Waffen darf man auf seinem befriedeten Grundstück schießen, wenn sichergestellt ist, dass die Geschosse das Grundstück nicht verlassen können und niemand durch Lärm behindert oder belästigt wird?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluftwaffen mit dem Zulassungszeichen „F im Fünfeck“ und Softairwaffen."
+        },
+        {
+          "label": "b",
+          "text": "Mit Waffen für Randfeuermunition bis Kaliber .22lr (= lfB)."
+        },
+        {
+          "label": "c",
+          "text": "Mit Waffen (z.B. im „Kleinstkaliber“ 4 mm M20), sofern diese das Zulassungszeichen „F im Fünfeck“ und das Zulassungszeichen „PTB im Viereck“ tragen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.04",
+      "text": "Wie sollte man Munition im Bedarfsfall ordnungsgemäß entsorgen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In den Hausmüll werfen."
+        },
+        {
+          "label": "b",
+          "text": "Beim Waffenhändler abgeben."
+        },
+        {
+          "label": "c",
+          "text": "In den Sondermüll geben."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.05",
+      "text": "Welche Munition dürfen Sie aus Ihrer Waffe verschießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alles, was ins Patronenlager passt."
+        },
+        {
+          "label": "b",
+          "text": "Munition, für die diese Waffe konstruiert und zugelassen ist."
+        },
+        {
+          "label": "c",
+          "text": "Nur Zentralfeuermunition"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.06",
+      "text": "Wie darf unbrauchbar gewordene Munition entsorgt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geschoss abziehen, Pulver in Wasser auflösen, Rest in Hausmüll geben."
+        },
+        {
+          "label": "b",
+          "text": "Als Sondermüll / Gefahrstoff bei der örtlichen Annahmestelle abgeben."
+        },
+        {
+          "label": "c",
+          "text": "An den Verkäufer / Hersteller oder einen Delaborierbetrieb geben."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.07",
+      "text": "Wie viel Munition darf mit einer Waffenbesitzkarte bei entsprechender Munitionserwerbsberechtigung erworben werden (ungeachtet von Transportbeschränkungen)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "bis zu 1000 Patronen je Kauf / Lieferung"
+        },
+        {
+          "label": "b",
+          "text": "bis zu 5 kg Nettoexplosivmasse je Kauf / Lieferung"
+        },
+        {
+          "label": "c",
+          "text": "unbegrenzt"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.08",
+      "text": "Nennen Sie mindestens fünf Grundregeln zum Umgang mit einer Schusswaffe, die Sie unbedingt beachten müssen! Hier sind allgemeine Sicherheitsregeln zu benennen wie z.B.:",
+      "options": [
+        {
+          "label": "a",
+          "text": "eine Schusswaffe ist immer als geladen zu betrachten, so lange man sich nicht persönlich vom Gegenteil überzeugt hat"
+        },
+        {
+          "label": "b",
+          "text": "es ist immer dafür Sorge zu tragen, dass kein Unbefugter die Waffe an sich nehmen kann"
+        },
+        {
+          "label": "c",
+          "text": "die Waffe darf nur in sicherer Richtung geund entladen werden"
+        },
+        {
+          "label": "d",
+          "text": "eine geladene Waffe darf nicht aus der Hand gelegt werden"
+        },
+        {
+          "label": "e",
+          "text": "eine Schusswaffe darf nicht spielerisch auf Personen gerichtet werden"
+        },
+        {
+          "label": "f",
+          "text": "auf Schießanlagen ist die Schießstandordnung zu beachten"
+        },
+        {
+          "label": "g",
+          "text": "den Anweisungen der Aufsicht ist folge zu leisten"
+        },
+        {
+          "label": "h",
+          "text": "fremde Waffen dürfen nicht ohne die ausdrückliche Genehmigung des Besitzers oder der Standaufsicht berührt werden"
+        },
+        {
+          "label": "i",
+          "text": "kein Hantieren mit Waffen unter dem Einfluss berauschender Mittel"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.09",
+      "text": "Wie soll eine halbautomatische Pistole auf der Schießstätte an eine andere Person übergeben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die geladene Waffe ist zu sichern, der Ladezustand ist mitzuteilen."
+        },
+        {
+          "label": "b",
+          "text": "Aus der geladenen Waffe ist das Magazin zu entnehmen, der Ladezustand ist mitzuteilen."
+        },
+        {
+          "label": "c",
+          "text": "Ungeladen, mit geöffnetem Verschluss."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.10",
+      "text": "Was sollte als erstes geschehen, wenn man eine Schusswaffe übergeben bekommt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe ist sofort auf ihren Ladezustand zu überprüfen."
+        },
+        {
+          "label": "b",
+          "text": "Es genügt die Sicherung der Waffe auf ihre Funktionssicherheit zu prüfen."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe ist sofort zu zerlegen und auf Beschädigungen zu prüfen. Außerdem sollten die Beschusszeichen in Augenschein genommen werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.11",
+      "text": "Was haben Sie zu tun, bevor Sie mit einer Schusswaffe schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffe auf sichtbare Beschädigungen prüfen."
+        },
+        {
+          "label": "b",
+          "text": "Überprüfen, ob das Patronenlager und der Lauf frei von Fremdkörpern sind."
+        },
+        {
+          "label": "c",
+          "text": "Prüfen, ob die bereitgestellte Munition aus dieser Waffe verschossen werden darf."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.12",
+      "text": "Wo darf ein Sportschütze seine Waffe laden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur auf dem Schützenstand."
+        },
+        {
+          "label": "b",
+          "text": "Auf dem gesamten Schießstand."
+        },
+        {
+          "label": "c",
+          "text": "Im Aufenthaltsraum."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.13",
+      "text": "Darf ausnahmsweise eine geladene Waffe einem anderen übergeben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, bei Waffenstörung der verantwortlichen Aufsichtsperson."
+        },
+        {
+          "label": "b",
+          "text": "Nur an den Nachbarschützen."
+        },
+        {
+          "label": "c",
+          "text": "Nein, auf keinen Fall."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.14",
+      "text": "Dürfen Sie mit einem Druckluftgewehr (E0 max. 7,5 J) in Ihrem Keller schießen, wenn sichergestellt ist, dass hierbei niemand gefährdet wird?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das ist waffenrechtlich erlaubt."
+        },
+        {
+          "label": "b",
+          "text": "Nein, das ist verboten."
+        },
+        {
+          "label": "c",
+          "text": "Nein, ich darf nur mit sogenannten Spielgeräten (Energie 0,08 J) außerhalb von Schießständen schießen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.15",
+      "text": "Darf mit jeder beliebigen Waffe auf Schießstätten geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn sie funktionssicher sind."
+        },
+        {
+          "label": "b",
+          "text": "Nein."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.16",
+      "text": "Den Anordnungen der verantwortlichen Aufsichtsperson auf dem Schießstand ist Folge zu leisten:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur im Wettkampf."
+        },
+        {
+          "label": "b",
+          "text": "Nur bei Gefahr im Verzug."
+        },
+        {
+          "label": "c",
+          "text": "Immer"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.17",
+      "text": "Darf eine verantwortliche Aufsichtsperson am Schützenstand dem Schützen im Rahmen der Ausbildung eine geladene Waffe übergeben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, da er umfangreiche Fachkenntnisse besitzt."
+        },
+        {
+          "label": "b",
+          "text": "Nein, geladene Waffen dürfen nicht übergeben werden."
+        },
+        {
+          "label": "c",
+          "text": "Ja, wenn er Anfänger unterweist."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.18",
+      "text": "Wie ist eine Kipplaufflinte auf einer Schießstätte zu tragen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Gesichert, mit einem Tragriemen auf der Schulter."
+        },
+        {
+          "label": "b",
+          "text": "Ungeladen, mit geöffnetem Verschluss."
+        },
+        {
+          "label": "c",
+          "text": "Geschlossen und gesichert."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.19",
+      "text": "Wie sind Kleinkalibergewehre auf dem Schießstand abzulegen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Entladen, mit geöffnetem Verschluss, Magazin entnommen."
+        },
+        {
+          "label": "b",
+          "text": "Unterladen, mit der Mündung nach oben."
+        },
+        {
+          "label": "c",
+          "text": "Gesichert, mit geschlossenem Verschluss."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.20",
+      "text": "Darf ich eine fremde Schusswaffe auf dem Schützenstand in die Hand nehmen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur mit Erlaubnis des Besitzers."
+        },
+        {
+          "label": "b",
+          "text": "Nur mit Erlaubnis des Schießleiters."
+        },
+        {
+          "label": "c",
+          "text": "Ja, wenn sie entladen ist, immer."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.21",
+      "text": "Dürfen Sie zur Scheibenbeobachtung eine geladene Schusswaffe ablegen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn die Schusswaffe gesichert ist."
+        },
+        {
+          "label": "b",
+          "text": "Nur mit Erlaubnis des Schießleiters."
+        },
+        {
+          "label": "c",
+          "text": "Nein, nur die entladene und geöffnete Waffe darf abgelegt werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.22",
+      "text": "Wann darf mit dem Schießen begonnen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn sich niemand mehr vor dem Ziel aufhält."
+        },
+        {
+          "label": "b",
+          "text": "Wenn die verantwortliche Aufsichtsperson das Schießen freigegeben hat."
+        },
+        {
+          "label": "c",
+          "text": "Wenn alle Schützenstände belegt sind."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.23",
+      "text": "Darf ohne waffenrechtliche Erlaubnis Munition auf einer Schießstätte zum Schießen überlassen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, nur einem Mitglied des Schützenvereins."
+        },
+        {
+          "label": "b",
+          "text": "Ja, aber nur zum sofortigen Verbrauch."
+        },
+        {
+          "label": "c",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.24",
+      "text": "Ist es zulässig im Aufenthaltsraum Anschlagübungen mit Schusswaffen zu machen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, dies ist nur nach Anleitung des Schießleiters zulässig."
+        },
+        {
+          "label": "b",
+          "text": "Ja, wenn eine entsprechende Ladeecke eingerichtet wurde."
+        },
+        {
+          "label": "c",
+          "text": "Nein, dies ist nur auf dem Schützenstand erlaubt."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.25",
+      "text": "Darf einem Gastschützen, der nicht im Besitz einer waffenrechtlichen Erlaubnis ist, eine erlaubnispflichtige Schusswaffe überlassen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, aber nur zur Mitnahme nach Hause."
+        },
+        {
+          "label": "b",
+          "text": "Ja, nur zum Schießen auf einer Schießstätte."
+        },
+        {
+          "label": "c",
+          "text": "Nein, unter keinen Umständen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.26",
+      "text": "Wie sind Schusswaffen auf dem Schießstand aus der Hand zu legen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geladen, entspannt und gesichert."
+        },
+        {
+          "label": "b",
+          "text": "Entladen, nur mit leerem Magazin, Verschluss geschlossen."
+        },
+        {
+          "label": "c",
+          "text": "Verschluss offen, Lauf Richtung Geschoßfang, leeres Patronenlager, leeres Magazin (entfernt von Waffe)."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.27",
+      "text": "Was ist beim Schießen mit einer halbautomatischen Pistole hinsichtlich der Schussbereitschaft zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe ist nach jedem Schuss wieder schussbereit, solange sich Patronen im Magazin befinden."
+        },
+        {
+          "label": "b",
+          "text": "Nichts besonderes, wenn die Waffe eine Sicherung hat."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe ist sofort nach Schussabgabe zu sichern."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.28",
+      "text": "Darf mit einem Gewehr im Kaliber .22lr im befriedeten Besitztum geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein."
+        },
+        {
+          "label": "b",
+          "text": "Ja, wenn die Geschosse das Grundstück nicht verlassen können."
+        },
+        {
+          "label": "c",
+          "text": "Ja, wenn Personen oder Sachen nicht gefährdet werden können."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.29",
+      "text": "Mit welchen Schusswaffen darf im befriedeten Besitztum außerhalb von Schießstätten ohne Schießerlaubnis geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur mit schallgedämpften Waffen (Immissionsschutz)."
+        },
+        {
+          "label": "b",
+          "text": "Mit allen, vorausgesetzt es ist ein ausreichender Kugelfang vorhanden, so dass die Geschosse das Besitztum nicht verlassen können."
+        },
+        {
+          "label": "c",
+          "text": "Mit bauartzugelassenen Schusswaffen, deren Geschossen eine Energie von max. 7,5 Joule erteilt wird und die Geschosse das Besitztum nicht verlassen können."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.30",
+      "text": "Was ist beim sportlichen Schießen auf Schießstätten zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Es darf nur unter Aufsicht geschossen werden (ausgenommen die zur Aufsichtsführung befähigte Person schießt alleine)."
+        },
+        {
+          "label": "b",
+          "text": "Es darf nur mit für den Stand zugelassenen Waffen und Munition geschossen werden."
+        },
+        {
+          "label": "c",
+          "text": "Sportliches Schießen liegt dann vor, wenn nach festen Regeln einer genehmigten Sportordnung geschossen wird."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.31",
+      "text": "Welche Voraussetzungen müssen erfüllt sein, bevor der Schießbetrieb aufgenommen werden darf?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine verantwortliche Aufsichtsperson muss anwesend sein."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffen müssen geladen werden."
+        },
+        {
+          "label": "c",
+          "text": "Waffen und Munition müssen der Standzulassung entsprechen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.32",
+      "text": "Darf unter Alkoholeinfluss geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Ja, weil Alkohol beim Zielen hilft."
+        },
+        {
+          "label": "c",
+          "text": "Ja, aber nur mit Langwaffen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.33",
+      "text": "Wie sind Schusswaffen und Munition während des Aufenthaltes auf Schießstätten außerhalb des Schießens aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Auf Schießstätten ist eine Aufbewahrung nicht zu beachten."
+        },
+        {
+          "label": "b",
+          "text": "Ungeladen und getrennt von der Munition."
+        },
+        {
+          "label": "c",
+          "text": "So, dass sie nicht in den Besitz Unberechtigter gelangen können."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.34",
+      "text": "Was besagt der Begriff Gefahrenbereich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In diesem Bereich darf auf dem Schießstand nicht geschossen werden."
+        },
+        {
+          "label": "b",
+          "text": "Schützen, die mit großkalibrigen Waffen schießen, haben einen Gefahrenbereich von 4 m. In diesem Bereich darf sich kein Zuschauer aufhalten."
+        },
+        {
+          "label": "c",
+          "text": "Es handelt sich hierbei um die Höchstreichweite von aus Schusswaffen abgefeuerten Geschossen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.35",
+      "text": "Was versteht man unter Gefahrenbereich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Höchstreichweite von aus Schusswaffen abgefeuerten Geschossen."
+        },
+        {
+          "label": "b",
+          "text": "Der Bereich, in dem Menschen oder Sachen gefährdet werden können."
+        },
+        {
+          "label": "c",
+          "text": "Der unmittelbare Bereich hinter dem Schützen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.36",
+      "text": "Darf mit einem Gewehr (im Kaliber .308Win) mit Einstecklauf (im Kaliber .22lr) auf einem 50 m KK-Stand geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, aber nur mit Zentralfeuerpatronen."
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        },
+        {
+          "label": "c",
+          "text": "Ja, wenn der Einstecklauf bauartzugelassen ist."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.37",
+      "text": "Eine halbautomatische Pistole entlade ich, indem ich ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "den Verschluss öffne und das Magazin entleere."
+        },
+        {
+          "label": "b",
+          "text": "den Verschluss öffne, das Patronenlager entferne, den Verschluss schließe und das Magazin entnehme."
+        },
+        {
+          "label": "c",
+          "text": "das Magazin entnehme, den Verschluss öffne und das Patronenlager entleere."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.38",
+      "text": "In welcher Reihenfolge werden halbautomatische Waffen entladen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Erst nachsehen, ob das Patronenlager frei ist, dann das Magazin entnehmen und durch Abdrücken das Schlagstück entspannen."
+        },
+        {
+          "label": "b",
+          "text": "Erst das Magazin entnehmen, Verschluss öffnen, dann das Patronenlager überprüfen; wenn leer, die Waffe, soweit möglich, mit offenem Verschluss ablegen."
+        },
+        {
+          "label": "c",
+          "text": "Erst entspannen, sichern, das Magazin entnehmen, ablegen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.39",
+      "text": "Wie ist ein Revolver im Kaliber .357 Mag. zu entladen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Trommel ausbauen"
+        },
+        {
+          "label": "b",
+          "text": "1.Trommel ausschwenken bzw. Ladeklappe öffnen"
+        },
+        {
+          "label": "2",
+          "text": "alle Kammern entleeren"
+        },
+        {
+          "label": "c",
+          "text": "Trommel ausschwenken und eine volle Patrone entnehmen"
+        }
+      ]
+    },
+    {
+      "rawId": "K3.40",
+      "text": "Was ist hinsichtlich der Schussbereitschaft mehrläufiger Waffen zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wegen der automatischen Sicherung nichts."
+        },
+        {
+          "label": "b",
+          "text": "Eine weitere Schussbereitschaft nach Abgabe eines Schusses ist möglich."
+        },
+        {
+          "label": "c",
+          "text": "Ein erneutes Entsichern ist erforderlich."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.41",
+      "text": "Dürfen aus Schusswaffen mit Beschusszeichen „SP“ oder „PN“ auch Nitro-Cellulose-Treibladungen verschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Ja"
+        },
+        {
+          "label": "c",
+          "text": "Nur, wenn die Waffe auch das Zeichen „J“ trägt."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.42",
+      "text": "Halbautomatische Pistolen mit Sicherung dürfen auf dem Schützenstand abgelegt werden...",
+      "options": [
+        {
+          "label": "a",
+          "text": "gesichert und gespannt."
+        },
+        {
+          "label": "b",
+          "text": "entladen und mit geöffnetem Verschluss."
+        },
+        {
+          "label": "c",
+          "text": "mit sichtbarer Sicherung."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.43",
+      "text": "Wie verhalten Sie sich beim Versagen einer Patrone Ihres Kleinkalibergewehres?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe mit der Mündung mindestens 10 Sekunden in Richtung Geschossfang halten, dann die Waffe entladen."
+        },
+        {
+          "label": "b",
+          "text": "Waffe öffnen und Patrone weit wegwerfen."
+        },
+        {
+          "label": "c",
+          "text": "Waffe nach oben halten und auf das Brechen des Schusses warten."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.44",
+      "text": "Wie wird eine Repetierbüchse beim Öffnen des Verschlusses auf dem Schützenstand gehalten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Mündung der Waffe ist in Richtung Scheibe / Geschossfang zu richten."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe ist senkrecht nach unten zu richten."
+        },
+        {
+          "label": "c",
+          "text": "Beliebig, um eine möglichst bequeme Handhabung zu ermöglichen."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.45",
+      "text": "Wie ist die Schusswaffe beim Laden zu halten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit der Mündung zum Geschossfang."
+        },
+        {
+          "label": "b",
+          "text": "So wie es die Schießaufsicht gerade möchte."
+        },
+        {
+          "label": "c",
+          "text": "Fest in der Hand, damit der Rückschlag nicht die Waffe aus der Hand schlägt."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.46",
+      "text": "Welche Sicherheitsregeln hat jeder Schütze immer zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keine Sicherung ist als absolut zuverlässig zu betrachten."
+        },
+        {
+          "label": "b",
+          "text": "Waffen sind stets entladen zu transportieren und aufzubewahren."
+        },
+        {
+          "label": "c",
+          "text": "Schusswaffen sind immer als geladen zu betrachten, solange man sich nicht persönlich vom Gegenteil überzeugt hat."
+        },
+        {
+          "label": "d",
+          "text": "Der Lauf von Schusswaffen darf nie auf einen Menschen gerichtet werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.47",
+      "text": "Woran erkennen Sie, dass die von Ihnen zu erwerbende Munition zu Ihrer Schusswaffe passt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kennzeichnung auf Schusswaffe und Munitionsverpackung / Patronenhülse identisch."
+        },
+        {
+          "label": "b",
+          "text": "An den Beschussund Prüfzeichen auf Waffe und Munitionsverpackung."
+        },
+        {
+          "label": "c",
+          "text": "An der Gebrauchsanleitung des Waffenhändlers."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.48",
+      "text": "Wann dürfen Schützen mit dem Schießen beginnen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sobald die Aufsichtsperson den Schießstand öffnet."
+        },
+        {
+          "label": "b",
+          "text": "Wenn die verantwortliche Aufsichtsperson das Schießen freigegeben hat."
+        },
+        {
+          "label": "c",
+          "text": "Sobald Munition und Scheiben vorhanden sind."
+        }
+      ]
+    },
+    {
+      "rawId": "K3.49",
+      "text": "Wer darf den freien Raum unmittelbar hinter dem Schützen betreten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zuschauer"
+        },
+        {
+          "label": "b",
+          "text": "Aufsicht"
+        },
+        {
+          "label": "c",
+          "text": "Schießleiter"
+        }
+      ]
+    }
+  ]
+}
