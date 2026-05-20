@@ -265,6 +265,9 @@ export default function App() {
 
   const [importedIds, setImportedIds] = useState<string[]>([]);
 
+  // ✅ GitHub Pages base URL for static assets like logo.png
+  const BASE = import.meta.env.BASE_URL || "/";
+
   useEffect(() => {
     setImportedIds(listImportedChapters());
   }, []);
@@ -453,11 +456,26 @@ export default function App() {
 
   return (
     <div style={{ padding: 16, maxWidth: 860, margin: "0 auto", fontFamily: "Arial" }}>
-      <h2>Sachkunde Trainer</h2>
+      {/* ✅ Logo + Header */}
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 10, flexWrap: "wrap" }}>
+        <img
+          src={`${BASE}logo.png`}
+          alt="Club logo"
+          style={{ height: 64, width: "auto", display: "block" }}
+        />
+        <div>
+          <h2 style={{ margin: 0 }}>Sachkunde Trainer</h2>
+          <div style={{ fontSize: 12, color: "#666" }}>Offline • GitHub Pages</div>
+        </div>
+      </div>
 
       <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 12, flexWrap: "wrap" }}>
         <b>Mode:</b>
-        <select value={chapterId} onChange={(e) => setChapterId(e.target.value)} style={{ padding: 6, minWidth: 360 }}>
+        <select
+          value={chapterId}
+          onChange={(e) => setChapterId(e.target.value)}
+          style={{ padding: 6, minWidth: 360 }}
+        >
           <optgroup label="Built-in">
             {CHAPTERS.map((c) => (
               <option key={c.id} value={c.id}>
@@ -698,11 +716,7 @@ export default function App() {
           ) : (
             <>
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-                <select
-                  value={keyQ?.rawId || ""}
-                  onChange={(e) => setKeyQid(e.target.value)}
-                  style={{ minWidth: 560 }}
-                >
+                <select value={keyQ?.rawId || ""} onChange={(e) => setKeyQid(e.target.value)} style={{ minWidth: 560 }}>
                   {keyCandidates.map((qq) => (
                     <option key={qq.rawId} value={qq.rawId}>
                       {qq.rawId} — {qq.text.slice(0, 80)}
@@ -710,11 +724,7 @@ export default function App() {
                   ))}
                 </select>
 
-                <button
-                  onClick={() =>
-                    downloadJson(`sachkunde_with_keys_${chapterId}.json`, { bank: questions })
-                  }
-                >
+                <button onClick={() => downloadJson(`sachkunde_with_keys_${chapterId}.json`, { bank: questions })}>
                   Export bank (with keys)
                 </button>
               </div>
@@ -737,9 +747,7 @@ export default function App() {
                       ))}
                     </div>
                   ) : (
-                    <div style={{ marginTop: 10, color: "#777" }}>
-                      Free-text question (no options). Nothing to set.
-                    </div>
+                    <div style={{ marginTop: 10, color: "#777" }}>Free-text question (no options). Nothing to set.</div>
                   )}
 
                   {keyQ.options?.length ? (
