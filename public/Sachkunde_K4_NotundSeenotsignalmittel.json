@@ -1,0 +1,1286 @@
+{
+  "bank": [
+    {
+      "rawId": "K4.01",
+      "text": "Was versteht man unter pyrotechnischen Seenotsignalen? Notsignale, die mit Hilfe explosionsgefährlicher Stoffe ausgelöst werden.",
+      "options": []
+    },
+    {
+      "rawId": "K4.02",
+      "text": "Was versteht man unter pyrotechnischer Munition? Munition, die explosionsgefährliche Stoffe oder Stoffgemische enthält und einen Licht-, Schall-, Rauchoder ähnlichen Effekt erzeugt und keine zweckbestimmte Durchschlagskraft im Ziel entfaltet.",
+      "options": []
+    },
+    {
+      "rawId": "K4.03",
+      "text": "Was sind explosionsgefährliche Stoffe? Feste oder flüssige Stoffe und Zubereitungen, die durch eine nicht außergewöhnliche Beanspruchung (thermisch, mechanisch oder andere) zur Explosion gebracht werden können.",
+      "options": []
+    },
+    {
+      "rawId": "K4.04",
+      "text": "Was darf zur pyrotechnischen Notsignalgebung verwendet werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Signalpistole Kaliber 4 (26,5 mm)"
+        },
+        {
+          "label": "b",
+          "text": "Signalwaffen mit Zulassung der Physikalisch-Technischen Bundesanstalt (PTB)"
+        },
+        {
+          "label": "c",
+          "text": "die von der Bundesanstalt für Materialforschung und -prüfung (BAM) zugelassenen sonstigen Notsignale."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.05",
+      "text": "Welche Arten von Zündern werden bei Not-Handfackeln gewöhnlich verwendet und wie funktionieren sie?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Reibkopf-Zündung – funktioniert wie ein Streichholz, zündet mit einer Verzögerung direkt den Leuchtsatz (nicht mehr im deutschen Handel)"
+        },
+        {
+          "label": "b",
+          "text": "Luntenzünder – durch das Entzünden einer Lunte wird nach gewisser Zeit der eigentlichen Signalsatz gezündet."
+        },
+        {
+          "label": "c",
+          "text": "Reißzünder – ein Draht im Inneren wird durch einen reibempfindlichen pyrotechnischen Anzündsatz gezogen, der dann den eigentlichen Signalsatz zündet."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.06",
+      "text": "Wann dürfen pyrotechnische Notsignale verwendet werden? Nur im Notfall, d.h. unter anderem, wenn angezeigt werden soll, dass Gefahr für Leib und Leben besteht und Hilfe erforderlich ist.",
+      "options": []
+    },
+    {
+      "rawId": "K4.07",
+      "text": "Was ist sicherheitstechnisch bei der Verwendung einer Seenot-Handfackel zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die brennende Fackel nach Lee waagerecht so halten, dass versprühter Abbrand keine Verletzungen (Hand, Augen) verursacht oder das Boot/Schiff beschädigt."
+        },
+        {
+          "label": "b",
+          "text": "Die brennende Fackel nach Luv waagerecht so halten, dass versprühter Abbrand keine Verletzungen (Hand, Augen) verursacht oder das Boot/Schiff beschädigt."
+        },
+        {
+          "label": "c",
+          "text": "Gebrauchsanweisung beachten."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.08",
+      "text": "Was ist bei der Verwendung von Seenot-Rauchsignalen zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Rauchsignale nur am Tage und bei geringen Windstärken verwenden."
+        },
+        {
+          "label": "b",
+          "text": "Die Anzündung erfolgt durch eine Reißschnur, die unter einer abschraubbaren Schutzkappe liegt."
+        },
+        {
+          "label": "c",
+          "text": "Nach der Zündung ist das Rauchsignal zur Leeseite außenbords zu werfen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.09",
+      "text": "Welche pyrotechnischen Seenot-Signalmittel werden an Bord verwendet?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Signalraketen und Fallschirmraketen"
+        },
+        {
+          "label": "b",
+          "text": "Rauchtöpfe und Bengalische Feuer"
+        },
+        {
+          "label": "c",
+          "text": "Handfackeln und Rauchsignale"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.10",
+      "text": "Zu welchem Zweck, außer der Signalgebung, kann die „Signalwaffe“ im Kaliber 4 (26,5 mm) noch verwendet werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "An Silvester zum Abschuss von Leuchtfeuerwerk."
+        },
+        {
+          "label": "b",
+          "text": "Als Abschussgerät für einen Trägerkörper zur Herstellung einer ersten Leinenverbindung."
+        },
+        {
+          "label": "c",
+          "text": "Die Verwendung als Startpistole ist im Rahmen von Regatten erlaubt, wenn eine Schießerlaubnis vorliegt"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.11",
+      "text": "Wann sind Rauchsignale zu verwenden? Nur am Tag und erst wenn Hilfe gesichtet worden ist.",
+      "options": []
+    },
+    {
+      "rawId": "K4.12",
+      "text": "Welche Farbe ist bei Signalraketen international als Notsignal zu verwenden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Rot"
+        },
+        {
+          "label": "b",
+          "text": "Weiß"
+        },
+        {
+          "label": "c",
+          "text": "Grün"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.13",
+      "text": "Wann dürfen Notsignale verwendet werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In Notfällen, wenn unter anderem Leib und Leben von Personen in Gefahr sind und dringend fremde Hilfe benötigt wird."
+        },
+        {
+          "label": "b",
+          "text": "In Notfällen, wenn bedeutende Sachwerte in Gefahr sind und dringend fremde Hilfe benötigt wird."
+        },
+        {
+          "label": "c",
+          "text": "Ausschließlich wenn alle anderen Kommunikationsmittel ausgefallen sind."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.14",
+      "text": "Wie lang ist die Verbrauchsdauer pyrotechnischer Notsignale bei sachgemäßer Lagerung?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Verbrauchsdauer ist unbegrenzt."
+        },
+        {
+          "label": "b",
+          "text": "Soweit auf dem einzelnen Gegenstand nichts anderes vermerkt ist, max. 3 Jahre."
+        },
+        {
+          "label": "c",
+          "text": "Maximal 10 Jahre"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.15",
+      "text": "Was verkürzt die durch den Hersteller vorgegebene Verbrauchsdauer pyrotechnischer Notsignale oder beeinträchtigt ihre sichere Verwendung?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Feuchtigkeit und Korrosion"
+        },
+        {
+          "label": "b",
+          "text": "hohe Lagertemperaturen"
+        },
+        {
+          "label": "c",
+          "text": "mechanische Beschädigung"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.16",
+      "text": "Was machen Sie mit überlagerten pyrotechnischen Notsignalen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Können über den Hausmüll entsorgt werden."
+        },
+        {
+          "label": "b",
+          "text": "Über den Munitionshandel zurückgeben oder Delaborierbetrieben übergeben."
+        },
+        {
+          "label": "c",
+          "text": "Können auch als Feuerwerkskörper verwenden werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.17",
+      "text": "Wie lange dürfen Sie Signalmunition verwenden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Drei Jahre ab Kauf im Fachhandel."
+        },
+        {
+          "label": "b",
+          "text": "Fünf Jahre ab Herstellung im Werk."
+        },
+        {
+          "label": "c",
+          "text": "Das Verfallsdatum ist auf der Munition und/oder der Verpackung angebracht."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.18",
+      "text": "Wie darf Signalmunition entsorgt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durch Rückgabe an den Fachhandel."
+        },
+        {
+          "label": "b",
+          "text": "Durch Abgabe bei einer Sondermüllund Gefahrstoffsammelstelle."
+        },
+        {
+          "label": "c",
+          "text": "Öffnen der Patrone, Durchfeuchten des Inhaltes mit Wasser, dann wie b)."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.19",
+      "text": "Wie ist pyrotechnische Munition während der Liegezeit im Hafen zu lagern?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keine bestimmte Lagerung erforderlich."
+        },
+        {
+          "label": "b",
+          "text": "Möglichst originalverpackt, kühl und trocken in einem Metallbehältnis mit Schwenkriegelschloss."
+        },
+        {
+          "label": "c",
+          "text": "Die Munition darf keinesfalls an Bord gelagert werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.20",
+      "text": "Wie ist an Bord eines seegehenden Schiffes im Hafen eine Signalpistole im Kaliber 4 (26,5 mm) aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem mit dem Schiffskörper sicher verankertem Behältnis aus Stahlblech. Die Tür muss mindestens 4mm dick und elektronisch oder mechanisch verriegelt sein (sog. Hamburger Kasten)."
+        },
+        {
+          "label": "b",
+          "text": "Die Signalpistole kann frei zugänglich an Bord gelagert werden."
+        },
+        {
+          "label": "c",
+          "text": "Die Signalpistole darf keinesfalls an Bord gelagert werden."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.21",
+      "text": "Wem kann zum Zweck der sicheren Aufbewahrung an Land die Signalpistole im Kaliber 4 (26,5 mm) übergeben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Einer Person mit bestandener Sachkundeprüfung."
+        },
+        {
+          "label": "b",
+          "text": "Nur einem Berechtigten, z.B. mit Waffenbesitzkarte."
+        },
+        {
+          "label": "c",
+          "text": "Einer zuverlässigen Person, die mindestens 18 Jahre alt ist."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.22",
+      "text": "Wie ist an Land eine Signalpistole im Kaliber 4 (26,5 mm) aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem Behältnis der Sicherheitsstufe A (VDMA 24992)."
+        },
+        {
+          "label": "b",
+          "text": "In einem Behältnis der Sicherheitsstufe DIN/EN 1143-1 Widerstandsgrad 0 oder I. Bei Fortführung einer Nutzung eines Behältnisses der Sicherheitsstufe B nach VDMA 24992, die vor dem 06.07.2017 begründet werden, kann dieses Behältnis weitergenutzt werden."
+        },
+        {
+          "label": "c",
+          "text": "In einem Stahlblechschrank mit Schwenkriegelschloss."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.23",
+      "text": "Wie ist eine Signalpistole im Kaliber 4 (26,5 mm) aufzubewahren, wenn sich die Yacht im Winterlager befindet?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine Aufbewahrung an Bord ist nur mit einer speziellen behördlichen Erlaubnis möglich."
+        },
+        {
+          "label": "b",
+          "text": "Eine Aufbewahrung an Land in einem Behältnis der Sicherheitsstufe DIN/EN 1143-1 Widerstandsgrad 0 oder I. Bei Fortführung einer Nutzung eines Behältnisses der Sicherheitsstufe B nach VDMA 24992, die vor dem 06.07.2017 begründet werden, kann dieses Behältnis weitergenutzt werden."
+        },
+        {
+          "label": "c",
+          "text": "In einem Stahlblechschrank mit Schwenkriegelschloss."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.24",
+      "text": "Wie ist an Land erlaubnispflichtige Munition aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Munition darf nicht an Land aufbewahrt werden."
+        },
+        {
+          "label": "b",
+          "text": "Es gibt keine Auflagen für die Aufbewahrung von pyrotechnischer Munition."
+        },
+        {
+          "label": "c",
+          "text": "Mindestens in einem Stahlblechbehältnis (klassifizierungsfrei), das mit einem Schwenkriegelschloss oder einem gleichwertigen Verschluss gesichert ist, oder in einem gleichwertigen Behältnis."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.25",
+      "text": "Warum sollte pyrotechnische Munition möglichst original verpackt gelagert werden? Diese Verpackungen sind in der Regel wasserdicht und schwimmfähig.",
+      "options": []
+    },
+    {
+      "rawId": "K4.26",
+      "text": "Wie ist die Signalmunition während der Fahrt zu lagern?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wie bei einem längeren Aufenthalt im Hafen."
+        },
+        {
+          "label": "b",
+          "text": "Zugriffsbereit in der Nähe der Signalwaffe."
+        },
+        {
+          "label": "c",
+          "text": "Nicht zugriffsbereit, in größerer Entfernung zur Signalwaffe."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.27",
+      "text": "Wozu berechtigt eine Waffenbesitzkarte (ausgestellt für das Bedürfnis als Inhaber eines seegehenden Schiffes)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit entsprechendem Voreintrag zum Erwerb, sowie zum Besitz einer Signalpistole."
+        },
+        {
+          "label": "b",
+          "text": "Zum Führen der Waffe an Land."
+        },
+        {
+          "label": "c",
+          "text": "Zum Erwerb der zur Signalpistole gehörigen Munition bei entsprechendem Eintrag."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.28",
+      "text": "Wo ist eine Waffenbesitzkarte für Inhaber von seegehenden Schiffen zu beantragen? Bei der zuständigen Behörde des Wohnortes (nicht des Liegeplatzes).",
+      "options": []
+    },
+    {
+      "rawId": "K4.29",
+      "text": "Welche Signalwaffen darf der Inhaber eines Kleinen Waffenscheins führen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle"
+        },
+        {
+          "label": "b",
+          "text": "Nur amtlich beschossene Signalwaffen im Kaliber unter 12 mm."
+        },
+        {
+          "label": "c",
+          "text": "Nur Signalwaffen mit dem Zulassungszeichen „PTB im Kreis“."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.30",
+      "text": "Was haben Sie nach dem Erwerb einer erlaubnispflichtigen Signalpistole zu tun?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Innerhalb von 2 Wochen nach dem Erwerb habe ich der zuständigen Behörde den Erwerb schriftlich oder in elektronischer Form anzuzeigen."
+        },
+        {
+          "label": "b",
+          "text": "Waffenbesitzkarte der zuständigen Behörde zur Eintragung des Erwerbs mit entsprechenden Erwerbsnachweisen (Kaufvertrag, Überlassungsvertrag etc.) vorlegen."
+        },
+        {
+          "label": "c",
+          "text": "Es ist keine weitere Handlung erforderlich."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.31",
+      "text": "Welche Signalwaffen können frei erworben und an Bord mitgeführt werden? Signalwaffen (SRS-Waffen) mit dem Bauartzulassungszeichen der Physikalisch-Technischen Bundesanstalt („PTB im Kreis“).",
+      "options": []
+    },
+    {
+      "rawId": "K4.32",
+      "text": "Welche Voraussetzungen müssen gegeben sein, um eine Waffenbesitzkarte für eine Signalpistole, Kaliber 4 (26,5 mm), erwerben zu können?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Antragsteller muss das 18. Lebensjahr vollendet haben."
+        },
+        {
+          "label": "b",
+          "text": "Der Antragsteller muss zuverlässig, sachkundig und persönlich geeignet sein, und ein amtsoder fachärztliches oder fachpsychologisches Zeugnis vorlegen, sofern das 25. Lebensjahr noch nicht vollendet ist."
+        },
+        {
+          "label": "c",
+          "text": "Es muss ein Bedürfnis vorliegen (Inhaber eines seegängigen Wasserfahrzeugs)."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.33",
+      "text": "Wie kann ein Wassersportler nachweisen, dass ein Bedürfnis für den Erwerb einer Signalpistole vorliegt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durch Vorlage von Unterlagen, aus denen der Besitz eines seegängigen Wasserfahrzeugs (Kaufvertrag, Chartervertrag, Versicherungspolice, Standerschein, Internationaler Bootsschein usw.)"
+        },
+        {
+          "label": "b",
+          "text": "Durch Vorlage eines Sportbootführerscheins."
+        },
+        {
+          "label": "c",
+          "text": "Durch Vorlage von Unterlagen, aus denen die Notwendigkeit für Lehrund Prüfungszwecke hervorgeht."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.34",
+      "text": "Welche amtlichen Dokumente berechtigen zum Erwerb von erlaubnispflichtiger pyrotechnischer Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffenbesitzkarte mit entsprechender Munitionserwerbsberechtigung."
+        },
+        {
+          "label": "b",
+          "text": "Ein entsprechender Munitionserwerbsschein."
+        },
+        {
+          "label": "c",
+          "text": "Ein Kleiner Waffenschein."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.35",
+      "text": "Welche pyrotechnischen Seenotsignale können erlaubnisfrei erworben, aufbewahrt und verwendet werden von Personen, die das 18. Lebensjahr vollendet haben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die der Unterklasse P1, d.h. „Handfackeln rot“ und bestimmte Rauchsignale, Abschussgeräte ohne Schusswaffeneigenschaft."
+        },
+        {
+          "label": "b",
+          "text": "Seenotsignalgeber mit einer Steighöhe von bis etwa 60 Metern (Signalgeber und ihre Munition, die nicht dem WaffG unterliegen)"
+        },
+        {
+          "label": "c",
+          "text": "Die der Unterklasse T2, d.h. „Signalraketen rot“, „Fallschirmsignalraketen rot“ und bestimmte Rauchsignale."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.36",
+      "text": "Welche erlaubnispflichtigen pyrotechnischen Seenotsignale dürfen Wassersportler mit einem im Führerschein eingedruckten Befreiungsvermerk bzw. Sachkundenachweis erwerben? Die der Unterklasse P2, d.h. „Signalraketen rot“, „Fallschirmsignalraketen rot“ und bestimmte Rauchsignale.",
+      "options": []
+    },
+    {
+      "rawId": "K4.37",
+      "text": "Bis zu welchem Alter ist vom Antragsteller auf erstmalige Erteilung einer waffenrechtlichen Genehmigung zum Erwerb einer Signalpistole Kaliber 4 (26,5 mm) stets ein ärztliches oder fachpsychologisches Zeugnis beizubringen? Bis zur Vollendung des 25. Lebensjahres.",
+      "options": []
+    },
+    {
+      "rawId": "K4.38",
+      "text": "Darf mit einem Bootsführerschein mit eingetragenem Befreiungsvermerk nach dem Waffenund Sprengstoffgesetz Seenotsignalmunition im Kaliber 4 erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, hierfür ist eine Waffenbesitzkarte mit eingetragener Munitionserwerbsberechtigung für das Kaliber 4 erforderlich."
+        },
+        {
+          "label": "b",
+          "text": "Nein, hierfür ist eine Waffenbesitzkarte mit einer eingetragenen Signalwaffe im Kaliber 4 erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Ja, die Waffenbesitzkarte wird nur für den Waffenerwerb benötigt und dient als Legitimation für den Waffenbesitz."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.39",
+      "text": "Welches ist das Zulassungszeichen für pyrotechnische Munition nach § 10 BeschG?",
+      "options": [
+        {
+          "label": "a",
+          "text": "PTB im Kreis (Physikalisch-Technischen Bundesanstalt)"
+        },
+        {
+          "label": "b",
+          "text": "BAM-Zeichen (Bundesanstalt für Materialforschung und –prüfung)"
+        },
+        {
+          "label": "c",
+          "text": "Bundesadler, B (Böllerbeschuss)"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.40",
+      "text": "Neben dem Zulassungszeichen (BAM) folgt zusätzlich eine Klasseneinteilung. Welche Klassen gibt es?",
+      "options": [
+        {
+          "label": "a",
+          "text": "P 1 (Bsp.: Handfackeln)"
+        },
+        {
+          "label": "b",
+          "text": "SM 1 (Signalmunition der Klasse 1)"
+        },
+        {
+          "label": "c",
+          "text": "P 2 (Bsp.: Signalraketen bzw. Fallschirmsignalraketen mit einer Steighöhe von bis zu 300 Metern"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.42",
+      "text": "Welche Farben haben pyrotechnische Notsignale?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Leuchtsignale rot"
+        },
+        {
+          "label": "b",
+          "text": "Rauchsignale orange"
+        },
+        {
+          "label": "c",
+          "text": "Leuchtsignal gelb"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.43",
+      "text": "Was ist bei allen steigenden Seenotsignalen unbedingt zu beachten?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Auf freies Schussfeld achten (z.B. Mast und Segel),"
+        },
+        {
+          "label": "2",
+          "text": "Signalgerät senkrecht (ggf. in den Wind geneigt) nach oben halten,"
+        },
+        {
+          "label": "3",
+          "text": "beim Handhaben und Abfeuern nicht auf Personen richten und selbst nicht mit Körperteilen oder Kleidung vor die Mündung kommen,"
+        },
+        {
+          "label": "4",
+          "text": "nicht an Versagern hantieren, sondern diese über Bord werfen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.44",
+      "text": "Was ist bei steigenden Notsignalen zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "freies Schussfeld"
+        },
+        {
+          "label": "b",
+          "text": "Windrichtung und Abschusswinkel"
+        },
+        {
+          "label": "c",
+          "text": "keine entflammbaren Gegenstände im Gefahrenbereich"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.45",
+      "text": "Welche Vorteile haben Signalraketen bzw. Signalpatronen, die mit Fallschirmen ausgerüstet sind, gegenüber Signalsternen? Auf Grund geringerer Sinkgeschwindigkeit (5 m/s) ist eine längere Sichtbarkeit/ Brenndauer möglich; dadurch haben sie einen höheren Aufmerksamkeitswert.",
+      "options": []
+    },
+    {
+      "rawId": "K4.46",
+      "text": "Woraufhin sind pyrotechnische Seenotsignale ständig zu überwachen, damit die Funktionsfähigkeit gewährleistet ist?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Verbrauchsdauer/Verfallsdatum beachten."
+        },
+        {
+          "label": "b",
+          "text": "Auf Korrosion oder Beschädigung prüfen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.47",
+      "text": "Mit welchen Zeichen ist Notsignalmunition im Kaliber 4 gekennzeichnet?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Bezeichnung der Munition und der Verbrauchsdauer."
+        },
+        {
+          "label": "2",
+          "text": "Bei „Notsignalen rot“ durchgehende Rändelung des Patronenbodenrandes und roter Lackverschlussdeckel."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.48",
+      "text": "Welche Steighöhe und Leuchtdauer haben Fallschirmsignalpatronen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Steighöhe mindestens 300 m, Leuchtdauer mindestens 30 Sekunden."
+        },
+        {
+          "label": "b",
+          "text": "Steighöhe mindestens 100 m, Leuchtdauer mindestens 10 Sekunden."
+        },
+        {
+          "label": "c",
+          "text": "Steighöhe mindestens 50 m, Leuchtdauer mindestens 50 Sekunden."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.49",
+      "text": "Woran erkennen Sie an einem pyrotechnischen Notsignal, um welche Unterklasse es sich handelt? Am Zulassungszeichen: BAM-PT1 oder BAM-PT2.",
+      "options": []
+    },
+    {
+      "rawId": "K4.50",
+      "text": "Wer darf pyrotechnische Notsignale der Klasse T verwenden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jeder, der damit anzeigen will, dass ein Seenotfall vorliegt, d. h. unter anderem, dass Gefahr für Leib oder Leben der Besatzung und daher die Notwendigkeit zur Hilfe besteht."
+        },
+        {
+          "label": "b",
+          "text": "An Silvester dürfen die Signale uneingeschränkt verwendet werden."
+        },
+        {
+          "label": "c",
+          "text": "Jeder, der damit anzeigen will, dass ein Seenotfall vorliegt, obwohl keine Notwendigkeit zur Hilfe mehr besteht."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.51",
+      "text": "Wie lang ist die Brenndauer einer Seenot-Handfackel?",
+      "options": [
+        {
+          "label": "a",
+          "text": "5-10 Sekunden"
+        },
+        {
+          "label": "b",
+          "text": "5 Minuten"
+        },
+        {
+          "label": "c",
+          "text": "30 bis 60 Sekunden"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.52",
+      "text": "Beschreiben Sie den allgemeinen Aufbau eines Seenot-Rauchsignals! In einem Behälter befindet sich ein Anzünder (meist Reißzünder) mit Verzögerung, der einen pyrotechnischen Satz anzündet, der dann bis zu 4 Minuten lang orange-farbenen Rauch abgibt.",
+      "options": []
+    },
+    {
+      "rawId": "K4.53",
+      "text": "Fallschirmsignalraketen und Handfackeln sind bei klarem Wetter unterschiedlich weit zu sehen. Welche Aussage/n ist/sind richtig.",
+      "options": [
+        {
+          "label": "a",
+          "text": "Fallschirmsignalraketen werden verwendet, um weit entfernte Helfer auf eine Notlage aufmerksam zu machen und grob in die Richtung einzuweisen."
+        },
+        {
+          "label": "b",
+          "text": "Handfackeln werden verwendet, um die genaue Position bei Annäherung kenntlich zu machen."
+        },
+        {
+          "label": "c",
+          "text": "Handfackeln sind ausschließlich Nachts zu verwenden."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.54",
+      "text": "Welche Angaben finden sich auf allen pyrotechnischen Signalpatronen im Kaliber 4 (26,5 mm)?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Hersteller bzw. Herstellerzeichen"
+        },
+        {
+          "label": "2",
+          "text": "Bezeichnung der Munition"
+        },
+        {
+          "label": "3",
+          "text": "Herstellungsjahr und Verbrauchsdauer"
+        },
+        {
+          "label": "4",
+          "text": "Art des pyrotechnischen Satzes"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.55",
+      "text": "Was bedeutet die Zahl „4“ bei der Kaliberangabe der Signalpistole?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe verschießt Patronen mit einer Hülsenlänge von 4“ (Zoll)."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe verschießt Munition mit einem Geschossdurchmesser von 4 cm."
+        },
+        {
+          "label": "c",
+          "text": "Die Zahl „4“ bezeichnet die Anzahl der Bleikugeln vom Laufdurchmesser, die zusammen ein englisches Pfund (453,6 Gramm) wiegen. Das entspricht einem Laufinnendurchmesser von ca. 26,5 mm."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.56",
+      "text": "Wann muss eine Signalpistole durch ein Beschussamt erneut geprüft werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle 3 Jahre"
+        },
+        {
+          "label": "b",
+          "text": "Alle 10 Jahre"
+        },
+        {
+          "label": "c",
+          "text": "Wenn wesentliche Waffenteile ausgetauscht oder instand gesetzt wurden"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.57",
+      "text": "Wie hoch steigen Seenotsignalraketen bei senkrechtem Abschuss-winkel?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bis zu 50 Metern"
+        },
+        {
+          "label": "b",
+          "text": "Bis zu 300 Metern"
+        },
+        {
+          "label": "c",
+          "text": "Bis zu 200 Metern"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.58",
+      "text": "Dürfen Sie den Lauf der Signalpistole mittels eines Stahlrohrs zur Leistungssteigerung verlängern?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Ja, ich muss die Signalwaffe dann aber durch ein Beschussamt neu beschießen lassen."
+        },
+        {
+          "label": "c",
+          "text": "Ja, sofern der Rohrinnendurchmesser um mindestens dreizehntel (3/10) Millimeter größer ist als das Munitionskaliber und zudem das Rohr eine Wandstärke von mindestens 2 Millimetern aufweist und gasdicht ist."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.59",
+      "text": "Brennen pyrotechnische Geschosse weiter, wenn Sie ins Wasser fallen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Nur, wenn es sich um militärische Munition handelt."
+        },
+        {
+          "label": "c",
+          "text": "Ja"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.60",
+      "text": "Dürfen Sie pyrotechnische Gegenstände selbst herstellen und bearbeiten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Personen mit bestandener Sachkundeprüfung dürfen pyrotechnische Gegenstände bearbeiten."
+        },
+        {
+          "label": "b",
+          "text": "Nein, nur als Inhaber einer entsprechenden Erlaubnis nach dem Sprengstoffgesetz."
+        },
+        {
+          "label": "c",
+          "text": "Jeder darf herstellen und bearbeiten."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.61",
+      "text": "Welche pyrotechnischen Notsignale unterliegen dem Waffengesetz?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Signalpistole (Kaliber 4) und die hierfür bestimmte Munition (nur mit WBK)."
+        },
+        {
+          "label": "b",
+          "text": "Seenotsignalgeber mit einer Steighöhe von bis etwa 60 Metern (frei erwerblich ab 18 Jahre)"
+        },
+        {
+          "label": "c",
+          "text": "Handfackeln (frei erwerblich ab 18 Jahre)"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.62",
+      "text": "Was kann die missbräuchliche Verwendung von Notsignalmitteln für Folgen haben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die missbräuchliche Verwendung stellt in Deutschland nur eine Ordnungswidrigkeit dar."
+        },
+        {
+          "label": "b",
+          "text": "Die missbräuchliche Verwendung stellt in Deutschland ein Vergehen dar (Missbrauch von Notzeichen gemäß § 145 StGB und/oder Verstoß gemäß Waffengesetz)."
+        },
+        {
+          "label": "c",
+          "text": "Der Missbrauch kann auch weltweit enorme Schadenersatzforderungen nach sich ziehen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.63",
+      "text": "Welche pyrotechnischen Seenotsignale unterliegen dem Sprengstoff-gesetz?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle pyrotechnischen Seenotsignale, die nicht aus einer Signalpistole abgefeuert werden, wie Signalraketen, Handsignalraketen mit Fallschirm, Handfackeln und Rauchsignale."
+        },
+        {
+          "label": "b",
+          "text": "Nur die Signale, in denen explosive Stoffe verwendet wurden."
+        },
+        {
+          "label": "c",
+          "text": "Signalmunition im Kaliber 4"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.64",
+      "text": "Welche pyrotechnische Gegenstände (Zulassungsklasse) unterliegen dem Waffengesetz?",
+      "options": [
+        {
+          "label": "a",
+          "text": "BAM P I"
+        },
+        {
+          "label": "b",
+          "text": "BAM PM I"
+        },
+        {
+          "label": "c",
+          "text": "BAM PM II"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.65",
+      "text": "Was regelt das Sprengstoffgesetz? Den Umgang und den Verkehr mit sowie die Einfuhr und die Durchfuhr von explosionsgefährlichen Stoffen und Sprengzubehör.",
+      "options": []
+    },
+    {
+      "rawId": "K4.66",
+      "text": "Welche Bestimmung regelt den Einsatz von Notsignalen auf See? Kollisionsverhütungsregeln (KVR; Regel 37).",
+      "options": []
+    },
+    {
+      "rawId": "K4.67",
+      "text": "Welche Vorschrift regelt die Pflicht zur Hilfeleistung in Seenotfällen? Verordnung über die Sicherung der Seefahrt.",
+      "options": []
+    },
+    {
+      "rawId": "K4.68",
+      "text": "Welche nautische Veröffentlichung (Broschüre) beschreibt die seemännische Sorgfaltspflicht für Wassersportler, auch für den Seenotfall? Wer gibt sie heraus? Die Broschüre „Sicherheit auf dem Wasser“, herausgegeben vom Bundesamt für Seeschifffahrt und Hydrographie (BSH).",
+      "options": []
+    },
+    {
+      "rawId": "K4.69",
+      "text": "Welche nautische Veröffentlichung (Handbuch) für die Sportund Kleinschifffahrt enthält Anleitungen zur Bewältigung von Notlagen auf See? Wer gibt sie heraus? Das Handbuch „Suche und Rettung“, herausgegeben vom Bundesamt für Seeschifffahrt und Hydrographie (BSH).",
+      "options": []
+    },
+    {
+      "rawId": "K4.70",
+      "text": "Welche pyrotechnischen Signalmittel unterliegen dem Waffengesetz?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle Leuchtraketen, die einen eigenen Treibsatz beinhalten."
+        },
+        {
+          "label": "b",
+          "text": "Alle Signalpistolen und Abschussvorrichtungen, sowie die für diese bestimmte Munition."
+        },
+        {
+          "label": "c",
+          "text": "Alle steigenden Signale, die einen Durchmesser von mehr als 12 mm aufweisen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.71",
+      "text": "Welche pyrotechnischen Signalmittel unterliegen dem Sprengstoffgesetz?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Handfackeln und Rauchkörper"
+        },
+        {
+          "label": "b",
+          "text": "Handsignalraketen mit Fallschirm"
+        },
+        {
+          "label": "c",
+          "text": "Blitz-Knall-Patronen im Kaliber 4"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.72",
+      "text": "Wie verhalten Sie sich bei einem Munitionsversager in der Signalpistole? Waffe in Schussrichtung belassen, über Kopf erneut spannen und nochmals abdrücken, bei erneutem Versagen die Waffe mit nach oben gerichtetem Lauf frühestens nach 1 Minute nach außenbords öffnen und den Versager herausgleiten lassen.",
+      "options": []
+    },
+    {
+      "rawId": "K4.73",
+      "text": "Was ist zu tun, wenn die Patrone in der Signalpistole nach Abzugsbetätigung nicht gezündet hat?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sofort eine neue Patrone laden und erneut versuchen zu schießen."
+        },
+        {
+          "label": "b",
+          "text": "Waffe einem anderen Besatzungsmitglied geben, damit eine Fehlbedienung ausgeschlossen werden kann. Waffe nach frühestens 5 Minuten entladen."
+        },
+        {
+          "label": "c",
+          "text": "Waffe in Schussrichtung belassen, über Kopf erneut spannen und nochmals abdrücken, bei erneutem Versagen die Waffe mit nach oben gerichtetem Lauf frühestens nach 1 Minute nach außenbords öffnen und den Versager herausgleiten lassen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.74",
+      "text": "Was machen Sie mit Munition, die beim versuchten Verschießen aus der Signalwaffe nicht gezündet hat (Versager)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wieder in die Originalverpackung zurücklegen."
+        },
+        {
+          "label": "b",
+          "text": "An einer freien Stelle über Deck lagern."
+        },
+        {
+          "label": "c",
+          "text": "Über Bord werfen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.75",
+      "text": "Dürfen Sie Seenotsignalmittel in öffentlichen Verkehrsmitteln befördern? Nein",
+      "options": []
+    },
+    {
+      "rawId": "K4.76",
+      "text": "Wie dürfen Sie Ihre Signalpistole von der Wohnung zur Yacht transportieren, wenn Sie keinen Waffenschein besitzen? Nicht schussund nicht zugriffsbereit.",
+      "options": []
+    },
+    {
+      "rawId": "K4.77",
+      "text": "Wie ist eine Signalpistole an Land zu transportieren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "entladen, entspannt, gesichert"
+        },
+        {
+          "label": "b",
+          "text": "entladen, entspannt, von der Munition getrennt"
+        },
+        {
+          "label": "c",
+          "text": "entladen, verpackt, von der Munition getrennt"
+        }
+      ]
+    },
+    {
+      "rawId": "K4.78",
+      "text": "Wem dürfen Seenotsignalmittel dauerhaft überlassen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur berechtigten Personen im Sinne des Waffenoder Sprengstoffrechts."
+        },
+        {
+          "label": "b",
+          "text": "Nur Waffenhändlern."
+        },
+        {
+          "label": "c",
+          "text": "Jeder natürlichen Person."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.79",
+      "text": "Wem dürfen Sie ohne Erlaubnis die Signalpistole im Kaliber 4 (26,5 mm) nebst Munition vorübergehend überlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Volljährigen Personen meines Vertrauens zur sicheren Aufbewahrung."
+        },
+        {
+          "label": "b",
+          "text": "Feuerwehrleute"
+        },
+        {
+          "label": "c",
+          "text": "Charterern von seegehenden Wasserfahrzeugen, sofern der Besitz über die Waffe nach den Weisungen des berechtigten Überlassers erfolgt."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.80",
+      "text": "Welche Dokumente sind bei Besitz einer Signalpistole im Kaliber 4 (26,5 mm) in deutschen und europäischen Gewässern, sowie in den Gewässern anderer Länder an Bord mitzuführen?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Personalausweis oder Pass,"
+        },
+        {
+          "label": "2",
+          "text": "Waffenbesitzkarte,"
+        },
+        {
+          "label": "3",
+          "text": "In EU-Mitgliedstaaten und nicht EU-Staaten, die zum Schengen Raum gehören: Europäischer Feuerwaffenpass, ggf. Einfuhrgenehmigung,"
+        },
+        {
+          "label": "4",
+          "text": "Drittstaaten: ggf. Einfuhrgenehmigung."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.81",
+      "text": "Darf an Silvester mit Signalmunition Kaliber 4 (26,5 mm) geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, aber nur durch den Erlaubnisinhaber selbst innerhalb der amtlich zugelassenen „Abbrennzeit“ (meist 18.00 –"
+        }
+      ]
+    },
+    {
+      "rawId": "02.00",
+      "text": "Uhr), wenn keine brennbaren Objekte in der Nähe sind.",
+      "options": [
+        {
+          "label": "b",
+          "text": "Ja, aber nur wie unter a) beschrieben. Zusätzlich muss der Schütze Inhaber des Kleinen Waffenscheins sein."
+        },
+        {
+          "label": "c",
+          "text": "Nein, dieses Schießen bedarf einer besonderen waffenrechtlichen Erlaubnis."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.82",
+      "text": "Wer darf während der Fahrt auf einem Gewässer oder See die Signalwaffe am Körper tragen (führen)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jedes Besatzungsmitglied."
+        },
+        {
+          "label": "b",
+          "text": "Alle Inhaber einer Waffensachkundeprüfung."
+        },
+        {
+          "label": "c",
+          "text": "Der verantwortliche Führer des Wasserfahrzeugs."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.83",
+      "text": "Wer darf in Seenotfällen mit einer Signalwaffe schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jeder"
+        },
+        {
+          "label": "b",
+          "text": "Nur Inhaber einer Waffensachkundeprüfung."
+        },
+        {
+          "label": "c",
+          "text": "Nur der verantwortliche Führer des betroffenen Wasserfahrzeuges."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.84",
+      "text": "Was müssen Sie tun, wenn Ihnen Signalmittel oder Waffen abhanden kommen? Der Verlust ist der zuständigen Behörde unverzüglich anzuzeigen.",
+      "options": []
+    },
+    {
+      "rawId": "K4.85",
+      "text": "Für den Erwerb und Besitz welcher Signalwaffe benötigen Sie eine Erlaubnis der zuständigen Behörde?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Signalpistole Kaliber 4 (26,5 mm)."
+        },
+        {
+          "label": "b",
+          "text": "Für Signalwaffen (SRS-Waffen), die kein Bauartzulassungszeichen „PTB im Kreis“ (Physikalisch-Technische Bundesanstalt) tragen."
+        },
+        {
+          "label": "c",
+          "text": "Signalwaffen (SRS-Waffen), die die Bauartzulassungszeichen „PTB im Kreis“ (Physikalisch-Technische Bundesanstalt) tragen."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.86",
+      "text": "Wodurch verliert ein Bootseigentümer das Bedürfnis zum Besitz einer Signalpistole im Kaliber 4 (26,5 mm)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn das Eigentum an einem seegehenden Boot/Schiff nicht mehr nachgewiesen werden kann."
+        },
+        {
+          "label": "b",
+          "text": "Wenn der Sportbootführerschein seine Gültigkeit verliert."
+        },
+        {
+          "label": "c",
+          "text": "Wenn er ins Ausland verzieht."
+        }
+      ]
+    },
+    {
+      "rawId": "K4.87",
+      "text": "Welche Ausnahme von den waffenrechtlichen Erlaubnispflichten für Waffen und Munition betrifft den Charterer einer seegehenden Yacht? Der Charterer darf ohne waffenrechtliche Erlaubnis die tatsächliche Gewalt über eine an Bord befindliche Signalpistole im Kaliber 4 (26,5 mm) und die dazugehörige Munition ausüben.",
+      "options": []
+    },
+    {
+      "rawId": "K4.88",
+      "text": "Welche pyrotechnischen Handsignale für den Seenotfall sind erlaubnispflichtig? Handsignale der Unterklasse P2 („Signalraketen rot“, „Fallschirmsignalraketen rot“ und „Rauchsignale orange“).",
+      "options": []
+    },
+    {
+      "rawId": "K4.89",
+      "text": "Welche Behörde prüft pyrotechnische Seenotsignale und lässt sie zu?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Physikalisch-Technische Bundesanstalt (PTB)"
+        },
+        {
+          "label": "b",
+          "text": "Die Bundesanstalt für Materialforschung und -prüfung (BAM)."
+        },
+        {
+          "label": "c",
+          "text": "Der Technische Überwachungsverein (TÜV)"
+        }
+      ]
+    }
+  ]
+}
