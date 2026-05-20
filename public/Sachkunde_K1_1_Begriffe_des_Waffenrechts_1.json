@@ -1,0 +1,1447 @@
+{
+  "bank": [
+    {
+      "rawId": "1.01",
+      "text": "Was regelt das Waffengesetz? Das Waffengesetz regelt den Umgang mit Waffen oder Munition unter Berücksichtigung der Belange der öffentlichen Sicherheit und Ordnung.",
+      "options": []
+    },
+    {
+      "rawId": "1.02",
+      "text": "Umgang mit einer Schusswaffe hat…",
+      "options": [
+        {
+          "label": "a",
+          "text": "wer damit schießt."
+        },
+        {
+          "label": "b",
+          "text": "wer die Waffe verbringt oder mitnimmt."
+        },
+        {
+          "label": "c",
+          "text": "wer die Waffe unbrauchbar macht."
+        }
+      ]
+    },
+    {
+      "rawId": "1.03",
+      "text": "Wie werden Schusswaffen im Sinne des Waffengesetzes definiert? Schusswaffen sind Gegenstände, die zum Angriff oder zur Verteidigung, zur Signalgebung, zur Jagd, zur Distanzinjektion, zur Markierung, zum Sport oder zum Spiel bestimmt sind und bei denen Geschosse durch einen Lauf getrieben werden (Anlage 1 Abschnitt 1 Unterabschnitt 1 Nr. 1.1 WaffG).",
+      "options": []
+    },
+    {
+      "rawId": "1.04",
+      "text": "Welche der hier genannten Gegenstände sind Schusswaffen im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Armbrust"
+        },
+        {
+          "label": "b",
+          "text": "Druckluftgewehr mit Zulassungszeichen „F im Fünfeck“"
+        },
+        {
+          "label": "c",
+          "text": "Doppelflinte"
+        }
+      ]
+    },
+    {
+      "rawId": "1.05",
+      "text": "Welche der hier genannten Gegenstände sind Schusswaffen, bzw. ihnen gleichgestellte Gegenstände im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Soft-Air-Waffen mit einer Geschossenergie über 0,5 Joule"
+        },
+        {
+          "label": "b",
+          "text": "Waffen mit einer Mündungsenergie von weniger als 7,5 Joule, bei denen die Geschosse durch Federdruck durch einen Lauf getrieben werden"
+        },
+        {
+          "label": "c",
+          "text": "Präzisionsschleudern"
+        }
+      ]
+    },
+    {
+      "rawId": "1.06",
+      "text": "Welche der aufgeführten Waffen ist eine halbautomatische Schusswaffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Single-Action-Revolver"
+        },
+        {
+          "label": "b",
+          "text": "Selbstladepistole"
+        },
+        {
+          "label": "c",
+          "text": "Doppelflinte"
+        },
+        {
+          "label": "d",
+          "text": "Double-Action Revolver"
+        }
+      ]
+    },
+    {
+      "rawId": "1.07",
+      "text": "Ein Double-Action-Revolver ist im Sinne des Waffenrechts...",
+      "options": [
+        {
+          "label": "a",
+          "text": "eine vollautomatische Waffe."
+        },
+        {
+          "label": "b",
+          "text": "keine halbautomatische Waffe."
+        },
+        {
+          "label": "c",
+          "text": "eine halbautomatische Waffe."
+        }
+      ]
+    },
+    {
+      "rawId": "1.08",
+      "text": "Wie ist ein Revolver im „Kleinstkaliber“ 4 mm M20 waffenrechtlich einzuordnen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "WBK-pflichtige Schusswaffe"
+        },
+        {
+          "label": "b",
+          "text": "Für Personen ab 18 Jahren frei erwerbbar"
+        },
+        {
+          "label": "c",
+          "text": "Kann mit einem kleinen Waffenschein erworben werden"
+        }
+      ]
+    },
+    {
+      "rawId": "1.09",
+      "text": "Welches sind die wesentlichen Teile einer halbautomatischen Pistole im waffenrechtlichen Sinne?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Lauf (Patronenlager)"
+        },
+        {
+          "label": "2",
+          "text": "Verschluss"
+        },
+        {
+          "label": "3",
+          "text": "Griffstück"
+        }
+      ]
+    },
+    {
+      "rawId": "1.10",
+      "text": "Was ist die Schließfeder der großkalibrigen Pistole waffenrechtlich gesehen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Zubehörteil der Schusswaffe ohne waffenrechtliche Bedeutung."
+        },
+        {
+          "label": "b",
+          "text": "Ein wesentlicher, erlaubnispflichtiger Teil der Schusswaffe."
+        },
+        {
+          "label": "c",
+          "text": "Ein wesentlicher, beschusspflichtiger Teil der Schusswaffe."
+        }
+      ]
+    },
+    {
+      "rawId": "1.11",
+      "text": "Erläutern Sie den Begriff „Waffe“ im Sinne des WaffG!",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schusswaffen oder ihnen gleichgestellte Gegenstände."
+        },
+        {
+          "label": "b",
+          "text": "Tragbare Gegenstände, die ihrem Wesen nach dazu bestimmt sind, die Angriffsoder Abwehrfähigkeit von Menschen zu beseitigen oder herabzusetzen, insbesondere Hiebund Stoßwaffen."
+        },
+        {
+          "label": "c",
+          "text": "Tragbare Gegenstände, die ohne dafür bestimmt zu sein, insbesondere wegen ihrer Beschaffenheit, Handhabung oder Wirkungsweise geeignet sind die Angriffsoder Abwehrfähigkeit von Menschen zu beseitigen oder herabzusetzen und die im Waffengesetz genannt sind."
+        }
+      ]
+    },
+    {
+      "rawId": "1.12",
+      "text": "Wie unterscheidet das Waffengesetz Langwaffen und Kurzwaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Langwaffen sind Schusswaffen, deren Lauf und Verschluss in geschlossener Stellung insgesamt länger als 30 cm sind und deren kürzeste bestimmungsgemäß verwendbare Gesamtlänge 60 cm überschreitet."
+        },
+        {
+          "label": "b",
+          "text": "Schusswaffen, die eine Gesamtmindestlänge von 60 cm unterschreiten oder bei denen die Lauflänge kleiner als 30 cm ist, werden als Kurzwaffe bezeichnet."
+        },
+        {
+          "label": "c",
+          "text": "Kurzwaffen haben maximal eine Länge von 20 cm."
+        }
+      ]
+    },
+    {
+      "rawId": "1.13",
+      "text": "Welcher der nebenstehend aufgeführten Gegenstände ist eine verbotene Waffe/ verbotener Gegenstand? (Hinweis: Vollständige Aufzählung s. Anlage 2 Abschnitt 1 Waffengesetz)",
+      "options": [
+        {
+          "label": "a",
+          "text": "Blasrohr, Harpune, Armbrust"
+        },
+        {
+          "label": "b",
+          "text": "halbautomatisches Gewehr / halbautomatische Pistole"
+        },
+        {
+          "label": "c",
+          "text": "Schlagring, Stockdegen, Würgeholz (Nun-Chaku)"
+        },
+        {
+          "label": "d",
+          "text": "Wurfsterne, bestimmte Hartkernmunition, bestimmte Leuchtspurmunition"
+        }
+      ]
+    },
+    {
+      "rawId": "1.14",
+      "text": "Welcher der nebenstehend aufgeführten Gegenstände ist eine verbotene Waffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Samuraischwert"
+        },
+        {
+          "label": "b",
+          "text": "feststehendes Messer mit einer Klinge von mehr als 8,5 cm"
+        },
+        {
+          "label": "c",
+          "text": "Vorderschaftrepetierflinte mit einer Lauflänge unter 45 cm"
+        }
+      ]
+    },
+    {
+      "rawId": "1.15",
+      "text": "Bei welchen der aufgeführten Beispiele handelt es sich um „verbotene Waffen“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schusswaffen mit Schalldämpfer"
+        },
+        {
+          "label": "b",
+          "text": "Schusswaffen, die Reihenfeuer (Dauerfeuer) schießen."
+        },
+        {
+          "label": "c",
+          "text": "Für Schusswaffen bestimmte Vorrichtungen, die das Ziel beleuchten."
+        },
+        {
+          "label": "d",
+          "text": "Vorderschaftrepetierflinten deren Gesamtlänge in der kürzesten Verwendungsform weniger als 95 cm beträg"
+        }
+      ]
+    },
+    {
+      "rawId": "1.16",
+      "text": "Welche der nachfolgend genannten Gegenstände sind gemäß Waffengesetz verboten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schalldämpfer"
+        },
+        {
+          "label": "b",
+          "text": "Distanz-Elektroimpulsgeräte"
+        },
+        {
+          "label": "c",
+          "text": "für Schusswaffen bestimmte Zielscheinwerfer"
+        },
+        {
+          "label": "d",
+          "text": "Kleinkaliberpatronen mit Leuchtspurgeschossen e) Teleskopschlagstöcke f) Büchsenpatronen mit Treibspiegelgeschossen"
+        },
+        {
+          "label": "e",
+          "text": "Teleskopschlagstöcke"
+        },
+        {
+          "label": "f",
+          "text": "Büchsenpatronen mit Treibspiegelgeschossen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.17",
+      "text": "Welche Gegenstände zählen zu den verbotenen Waffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Feuerwaffen mit Dauerfeuereinrichtung"
+        },
+        {
+          "label": "b",
+          "text": "Spielzeugwaffen"
+        },
+        {
+          "label": "c",
+          "text": "Schusswaffen mit Schalldämpfer"
+        }
+      ]
+    },
+    {
+      "rawId": "1.18",
+      "text": "Erlaubnispflichtig, jedoch keine verbotene Waffe ist...",
+      "options": [
+        {
+          "label": "a",
+          "text": "ein Fallmesser."
+        },
+        {
+          "label": "b",
+          "text": "eine vollautomatische Pistole."
+        },
+        {
+          "label": "c",
+          "text": "eine zivile halbautomatische Schusswaffe, die wie eine vollautomatische Kriegswaffe aussieht."
+        }
+      ]
+    },
+    {
+      "rawId": "1.19",
+      "text": "Welches sind wesentliche Teile von Schusswaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "der Lauf"
+        },
+        {
+          "label": "b",
+          "text": "das Magazin"
+        },
+        {
+          "label": "c",
+          "text": "der Verschluss"
+        },
+        {
+          "label": "d",
+          "text": "das Griffstück mit Auslösemechanismus bei Kurzwaffen e) die Trommel eines Revolvers f) das Gehäuse bei Langwaffen g) das Zielfernrohr"
+        }
+      ]
+    },
+    {
+      "rawId": "1.20",
+      "text": "Was ist ein Schalldämpfer waffenrechtlich gesehen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Schalldämpfer ist ein verbotener Gegenstand."
+        },
+        {
+          "label": "b",
+          "text": "Der Schalldämpfer ist immer erlaubnisfreies Zubehör."
+        },
+        {
+          "label": "c",
+          "text": "Der Schalldämpfer für eine erlaubnispflichtige Schusswaffe steht waffenrechtlich der Schusswaffe gleich für die sie bestimmt ist."
+        }
+      ]
+    },
+    {
+      "rawId": "1.21",
+      "text": "Mit welchen Gegenständen (in Verbindung mit einer Schusswaffe) ist der Umgang verboten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zielscheinwerfer"
+        },
+        {
+          "label": "b",
+          "text": "Leuchtpunktvisiere für Kurzwaffen"
+        },
+        {
+          "label": "c",
+          "text": "Nachtzielgeräte"
+        }
+      ]
+    },
+    {
+      "rawId": "1.22",
+      "text": "Mit welcher Munition der Bezeichnung „9 mm Luger“ ist der Umgang verboten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hohlspitzpatronen"
+        },
+        {
+          "label": "b",
+          "text": "Kleinschrotpatronen"
+        },
+        {
+          "label": "c",
+          "text": "Leuchtspurpatronen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.23",
+      "text": "Mit welcher Munition ist der Umgang verboten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kleinschrotmunition für Kartuschenlager bis 12,5 mm (sog. Grenaille-Patronen)"
+        },
+        {
+          "label": "b",
+          "text": "Patronenmunition mit Vollmantelgeschossen, bei denen die Geschossspitze entfernt wurde, so dass der Bleikern freiliegt"
+        },
+        {
+          "label": "c",
+          "text": "Patronenmunition mit Treibspiegelgeschossen für Waffen mit gezogenen Läufen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.24",
+      "text": "Ist eine Patrone mit Wadcutter-Geschoss verbotene Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, denn es handelt sich um ein Dum-Dum-Geschoss."
+        },
+        {
+          "label": "b",
+          "text": "Nein, es ist Scheibenmunition."
+        }
+      ]
+    },
+    {
+      "rawId": "1.25",
+      "text": "Welche der hier genannten Gegenstände sind keine „wesentlichen Teile“ von Schusswaffen im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wechseltrommel für Revolver"
+        },
+        {
+          "label": "b",
+          "text": "Klappschaft für Flinten"
+        },
+        {
+          "label": "c",
+          "text": "Ersatzmagazin für Büchsen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.26",
+      "text": "Welche der hier genannten Waffen ist ein Einzellader im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "halbautomatische Pistole"
+        },
+        {
+          "label": "b",
+          "text": "Doppelflinte"
+        },
+        {
+          "label": "c",
+          "text": "Schreckschussrevolver"
+        }
+      ]
+    },
+    {
+      "rawId": "1.27",
+      "text": "Welche der hier genannten Waffen sind Mehrlader im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Double-Action-Revolver"
+        },
+        {
+          "label": "b",
+          "text": "Repetierbüchse"
+        },
+        {
+          "label": "c",
+          "text": "Doppelflinte"
+        }
+      ]
+    },
+    {
+      "rawId": "1.28",
+      "text": "Zu welcher Waffenart im Sinne des Waffengesetzes zählt eine Unterhebel-Repetierbüchse (lever-action)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Einzelladerwaffen"
+        },
+        {
+          "label": "b",
+          "text": "Repetierwaffen"
+        },
+        {
+          "label": "c",
+          "text": "halbautomatische Waffen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.29",
+      "text": "Was zählt zu den Geschossen im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Platzpatronen"
+        },
+        {
+          "label": "b",
+          "text": "Bleirundkugeln für Vorderlader"
+        },
+        {
+          "label": "c",
+          "text": "CO2 - Kartuschen für Druckluftwaffen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.30",
+      "text": "Welche Arten von Munition unterscheidet das Waffengesetz? - Patronenmunition (Hülsen mit Treibladungen, die ein Geschoss enthalten und Geschosse mit Eigenantrieb) - Kartuschenmunition (Hülsen mit Ladungen, die kein Geschoss enthalten) - Pyrotechnische Munition (Munition, in der explosionsgefährliche Stoffe oder Stoffgemische enthalten sind, die einen Licht-, Schall-, Rauchoder ähnlichen Effekt erzeugen) - Hülsenlose Munition (Treibladungen mit und ohne Geschosse)",
+      "options": []
+    },
+    {
+      "rawId": "1.31",
+      "text": "Welche Munitionsarten sind vom Waffengesetz erfasst?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Patronenmunition"
+        },
+        {
+          "label": "b",
+          "text": "hülsenlose Munition"
+        },
+        {
+          "label": "c",
+          "text": "pyrotechnische Munition"
+        }
+      ]
+    },
+    {
+      "rawId": "1.32",
+      "text": "Zur Munition im Sinne des Waffengesetzes zählen:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Stahlkugeln für Präzisionsschleudern"
+        },
+        {
+          "label": "b",
+          "text": "Patronenmunition Kaliber .38 Special"
+        },
+        {
+          "label": "c",
+          "text": ".177 (4,5 mm) Rundkugeln"
+        }
+      ]
+    },
+    {
+      "rawId": "1.33",
+      "text": "Welche der hier genannten Gegenstände sind Munition im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hohlspitzgeschosse für Kurzwaffen"
+        },
+        {
+          "label": "b",
+          "text": "Armbrustbolzen"
+        },
+        {
+          "label": "c",
+          "text": "Schrotpatronen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.34",
+      "text": "Welcher der hier genannten Gegenstände ist keine Munition im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Geschosse für Druckluftgewehre (Diabolos)"
+        },
+        {
+          "label": "b",
+          "text": "Platzpatronen für Schreckschuss-waffen"
+        },
+        {
+          "label": "c",
+          "text": "Zündhütchen für Vorderladerwaffen mit Zündhütchenzündung (Perkussion)"
+        }
+      ]
+    },
+    {
+      "rawId": "1.35",
+      "text": "Welche der nachfolgend genannten Beispiele sind Kartuschenmunition im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Platzpatronen"
+        },
+        {
+          "label": "b",
+          "text": "Munition mit Betäubungsmittel für die Distanzinjektion"
+        },
+        {
+          "label": "c",
+          "text": "Zentralfeuerpatronen mit wiederladbaren Hülsen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.36",
+      "text": "Was bedeutet „erwerben“ im Sinne des Waffengesetzes? Das Erlangen der tatsächlichen Gewalt über die Schusswaffe.",
+      "options": []
+    },
+    {
+      "rawId": "1.37",
+      "text": "Was bedeutet „erwerben“ einer Schusswaffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Abschluss eines Kaufvertrages"
+        },
+        {
+          "label": "b",
+          "text": "Einsetzen als Erbe im Testament"
+        },
+        {
+          "label": "c",
+          "text": "Erlangen der tatsächlichen Gewalt über die Waffe"
+        }
+      ]
+    },
+    {
+      "rawId": "1.38",
+      "text": "Wer ist Erwerber einer Schusswaffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Dieb, der die Waffe stiehlt."
+        },
+        {
+          "label": "b",
+          "text": "Derjenige, der in einem Waffengeschäft lediglich den Kaufvertrag für eine Waffe unterschreibt."
+        },
+        {
+          "label": "c",
+          "text": "Der Finder, wenn er die Waffen an sich nimmt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.39",
+      "text": "Sie wollen ihren Revolver mit dem Ihres Schützenkameraden dauerhaft tauschen, was müssen sie dabei beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Beide haben eine Erlaubnis zum Erwerb (Voreintrag) der jeweiligen Waffe zu beantragen."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffen können getauscht werden. Dies ist aber der zuständigen Behörde innerhalb von 14 Tagen anzuzeigen."
+        },
+        {
+          "label": "c",
+          "text": "Es handelt sich um ein gegenseitiges Überlassen und Erwerben."
+        }
+      ]
+    },
+    {
+      "rawId": "1.40",
+      "text": "Wann wird eine Schusswaffe im Sinne des Gesetzes erworben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bei unrechtmäßiger Aneignung."
+        },
+        {
+          "label": "b",
+          "text": "Waffenrechtlicher Erwerb liegt erst bei behördlichem Eintrag der Waffe in die WBK vor."
+        },
+        {
+          "label": "c",
+          "text": "Wenn der Waffenhändler dem Schützen die Waffe im Geschäft übergibt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.41",
+      "text": "Wer erwirbt eine Waffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jeder, der die tatsächliche Gewalt über die Waffe erlangt."
+        },
+        {
+          "label": "b",
+          "text": "Jeder, der sich die Waffe für einen Zeitraum von weniger als 4 Wochen ausleiht."
+        },
+        {
+          "label": "c",
+          "text": "Jeder, der die tatsächliche Gewalt über die Waffe ausübt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.42",
+      "text": "Wann „erwirbt“ der Käufer eine Waffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bei dem Abschluss eines Kaufvertrages."
+        },
+        {
+          "label": "b",
+          "text": "Bei der Vorlage der Waffenbesitzkarte des Käufers zum Eintrag der Waffe bei seiner zuständigen Behörde."
+        },
+        {
+          "label": "c",
+          "text": "Bei der Aushändigung der Waffe durch den Verkäufer."
+        }
+      ]
+    },
+    {
+      "rawId": "1.43",
+      "text": "Was bedeutet „Überlassen“ einer Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Vererben einer Schusswaffe (nach dem Tod)."
+        },
+        {
+          "label": "b",
+          "text": "Wer einem anderen die tatsächliche Gewalt darüber einräumt."
+        },
+        {
+          "label": "c",
+          "text": "Verleihen einer Vereinswaffe (für wenige Tage) an einen anderen Verein."
+        }
+      ]
+    },
+    {
+      "rawId": "1.44",
+      "text": "Wer ist sachkundig im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Derjenige, der vor einem Prüfungsausschuss die Sachkundeprüfung erfolgreich abgelegt hat."
+        },
+        {
+          "label": "b",
+          "text": "Soldaten, die mehrere Jahre mit Wartung, Pflege und Lagerung von Handfeuerwaffen betraut waren."
+        },
+        {
+          "label": "c",
+          "text": "Derjenige, der erfolgreich seine Gesellenprüfung im Büchsenmacherhandwerk abgelegt hat."
+        }
+      ]
+    },
+    {
+      "rawId": "1.45",
+      "text": "Was bedeutet „Führen“ im Sinne des Waffengesetzes? Das Ausüben der tatsächlichen Gewalt außerhalb der eigenen Wohnung, Geschäftsräume, des eigenen befriedeten Besitztums oder einer Schießstätte.",
+      "options": []
+    },
+    {
+      "rawId": "1.46",
+      "text": "„Führen“ im Sinne des Waffengesetzes bedeutet Ausübung der tatsächlichen Gewalt...",
+      "options": [
+        {
+          "label": "a",
+          "text": "in der eigenen Wohnung."
+        },
+        {
+          "label": "b",
+          "text": "außerhalb des eigenen befriedeten Besitztums."
+        },
+        {
+          "label": "c",
+          "text": "durch den Waffenhändler im Geschäftsraum."
+        }
+      ]
+    },
+    {
+      "rawId": "1.47",
+      "text": "„Führen“ im Sinne des Waffengesetzes liegt vor, wenn die Waffe...",
+      "options": [
+        {
+          "label": "a",
+          "text": "in der eigenen Wohnung im Holster getragen wird."
+        },
+        {
+          "label": "b",
+          "text": "im Treppenhaus eines fremden Mehrfamilienhauses im Holster getragen wird."
+        },
+        {
+          "label": "c",
+          "text": "im eigenen PKW in der offenen Seitenablage transportiert wird."
+        }
+      ]
+    },
+    {
+      "rawId": "1.48",
+      "text": "Durch wen und wie wird die waffenrechtliche Zuverlässigkeit einer Person festgestellt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Zuverlässigkeit wird von der zuständigen Behörde geprüft."
+        },
+        {
+          "label": "b",
+          "text": "Es werden Auskünfte aus dem Bundeszentralregister, dem zentralen staatsanwaltschaftlichen Verfahrensregister, Stellungnahmen der örtlichen Polizeidienststelle, der Bundespolizei und des Zollkriminalamtseingeholt. Zudem werden Auskünfte bei den zuständigen Verfassungsschutzämtern eingeholt."
+        },
+        {
+          "label": "c",
+          "text": "Die Zuverlässigkeit wird durch die persönliche Vorstellung bei der örtlichen Behörde festgestellt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.49",
+      "text": "Wer ist im Sinne des Waffengesetzes in der Regel nicht mehr zuverlässig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jeder, der wegen einer vorsätzlich begangenen Straftat zu einer Geldstrafe von mindestens 60 Tagessätzen verurteilt wurde, wenn seit dem Eintritt der Rechtskraft der letzten Verurteilung fünf Jahre noch nicht verstrichen sind."
+        },
+        {
+          "label": "b",
+          "text": "Jeder, der wegen der Begehung von zwei verschiedenen vorsätzlichen Straftaten mindestens zwei Mal zu einer Geldstrafen verurteilt wurde, wenn seit dem Eintritt der Rechtskraft der letzten Verurteilung fünf Jahre noch nicht verstrichen sind."
+        },
+        {
+          "label": "c",
+          "text": "Jeder, der wegen einer vorsätzlichen Geschwindigkeitsüberschreitung seinen Führerschein für mehr als 60 Tage abgeben musste."
+        }
+      ]
+    },
+    {
+      "rawId": "1.50",
+      "text": "Wer ist im Sinne des Waffengesetzes nicht geeignet?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Jeder, bei dem Tatsachen die Annahme rechtfertigen, dass er abhängig von berauschenden Mitteln ist."
+        },
+        {
+          "label": "b",
+          "text": "Jeder, der aus einem anerkannten Schießsportverband ausgeschlossen wurde."
+        },
+        {
+          "label": "c",
+          "text": "Jeder, bei dem Tatsachen die Annahme rechtfertigen, dass er aufgrund in der Person liegender Umstände mit Waffen oder Munition unsachgemäß umgehen wird."
+        }
+      ]
+    },
+    {
+      "rawId": "1.51",
+      "text": "Durch wen und wie wird die persönliche Eignung einer Person festgestellt? Die persönliche Eignung wird von der zuständigen Behörde geprüft; ggf. ist ein amtsoder fachärztliches oder fachpsychologisches Zeugnis beizubringen.",
+      "options": []
+    },
+    {
+      "rawId": "1.52",
+      "text": "Wer verfügt im Sinne des Waffengesetzes nicht über die erforderliche persönliche Eignung zum Waffenbesitz.",
+      "options": [
+        {
+          "label": "a",
+          "text": "Grundsätzlich alle Personen unter 25 Jahren, wenn sie kein amtsoder fachärztliches oder fachpsychologisches Zeugnis über ihre geistige und körperliche Eignung vorlegen können."
+        },
+        {
+          "label": "b",
+          "text": "Personen, bei denen Tatsachen die Annahme rechtfertigen, dass sie psychisch krank oder debil sind."
+        },
+        {
+          "label": "c",
+          "text": "Personen, bei denen Tatsachen die Annahme rechtfertigen, dass sie alkoholabhängig sind."
+        }
+      ]
+    },
+    {
+      "rawId": "1.53",
+      "text": "Was versteht man unter dem „Verbringen“ im Sinne des WaffG?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffen oder Munition verbringt, wer diese über die Grenze zum dortigen Verbleib oder mit dem Ziel des Besitzwechsels in den, durch den oder aus dem Geltungsbereich des WaffG zu einer anderen Person oder zu sich selbst transportieren lässt oder selbst transportiert."
+        },
+        {
+          "label": "b",
+          "text": "Waffen werden dauerhaft in einen anderen Mitgliedstaat mit einem Europäischen Feuerwaffenpass verbracht."
+        },
+        {
+          "label": "c",
+          "text": "Waffen werden mit einem Europäischen Feuerwaffenpass zu einer Schießsportveranstaltung in einem anderen Mitgliedstaat mitgenommen."
+        }
+      ]
+    },
+    {
+      "rawId": "1.54",
+      "text": "Was versteht man unter dem Begriff „Europäischer Feuerwaffenpass“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Einen europaweit gültigen Waffenschein für gefährdete Personen, die gegenüber dem Bundesverwaltungsamt ein besonderes Schutzbedürfnis glaubhaft gemacht haben."
+        },
+        {
+          "label": "b",
+          "text": "Eine europaweit gültige Waffenbesitzkarte, die die Waffenmitnahme auf Reisen in Mitgliedstaaten der EU gestattet."
+        },
+        {
+          "label": "c",
+          "text": "Ein von der EU standardisiertes Waffenbesitzdokument (gegebenenfalls ist vor der Einreise in einen anderen Mitgliedstaat dessen Erlaubnis zur Mitnahme einzuholen)."
+        }
+      ]
+    },
+    {
+      "rawId": "1.55",
+      "text": "Eine Schusswaffe ist „zugriffsbereit“ im Sinne des Waffengesetzes, ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "wenn sie unmittelbar, also mit wenigen schnellen Handgriffen, in Anschlag gebracht werden kann."
+        },
+        {
+          "label": "b",
+          "text": "wenn sie im abgeschlossenen Koffer im Kfz untergebracht ist."
+        },
+        {
+          "label": "c",
+          "text": "wenn sie ungeladen in der verschlossenen Schublade liegt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.56",
+      "text": "Wann ist eine Waffe „schussbereit“? Wenn Sie geladen ist,",
+      "options": [
+        {
+          "label": "d",
+          "text": "h. dass Munition oder Geschosse in der Trommel, im in die Waffe eingefügten Magazin oder im Patronenoder Geschosslager sind, auch wenn sie nicht gespannt ist."
+        }
+      ]
+    },
+    {
+      "rawId": "1.57",
+      "text": "Wann ist eine Waffe „zugriffsbereit“ (im Sinne des WaffG)? Wenn sie unmittelbar, also mit wenigen schnellen Handgriffen in Anschlag gebracht werden kann.",
+      "options": []
+    },
+    {
+      "rawId": "1.58",
+      "text": "Wann ist eine Schusswaffe im Sinne des Waffengesetzes „schussbereit“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn sie griffbereit, aber ungeladen im Holster getragen wird."
+        },
+        {
+          "label": "b",
+          "text": "Wenn das Schlagstück / der Schlagbolzen bei entladener Waffe gespannt und entsichert ist."
+        },
+        {
+          "label": "c",
+          "text": "Wenn sie geladen ist."
+        }
+      ]
+    },
+    {
+      "rawId": "1.59",
+      "text": "Wann ist eine Waffe „schussbereit“ im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn die Waffe geladen und gespannt ist."
+        },
+        {
+          "label": "b",
+          "text": "Wenn die Waffe geladen, aber entspannt und gesichert ist."
+        },
+        {
+          "label": "c",
+          "text": "Wenn ein gefülltes Magazin eingeführt ist."
+        },
+        {
+          "label": "d",
+          "text": "Wenn das gefüllte Magazin griffbereit liegt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.60",
+      "text": "Wann ist eine Waffe „schussbereit“ im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn sie ungeladen im Holster getragen wird."
+        },
+        {
+          "label": "b",
+          "text": "Wenn sie in einem verschlossenen Koffer liegt und sich eine Patrone im Patronenlager befindet."
+        },
+        {
+          "label": "c",
+          "text": "Wenn das Magazin in der Waffe mit Patronen gefüllt ist und die Waffe im unverschlossenen Handschuhfach eines PKW liegt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.61",
+      "text": "Was bedeutet „schießen“ im Sinne des Waffengesetzes? Im Sinne des WaffG schießt jemand, der mit einer Schusswaffe ein Geschoss durch einen Lauf verschießt, Kartuschenmunition abschießt, mit Patronenoder Kartuschenmunition Reizoder andere Wirkstoffe verschießt oder pyrotechnische Munition verschießt.",
+      "options": []
+    },
+    {
+      "rawId": "1.62",
+      "text": "Welche Erlaubnis berechtigt zum Schießen mit Schreckschuss-, Reizstoffund Signalwaffen (mit Zulassungszeichen PTB im Kreis) außerhalb des eigenen befriedeten Besitztums?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kleiner Waffenschein"
+        },
+        {
+          "label": "b",
+          "text": "behördliche Schießerlaubnis"
+        },
+        {
+          "label": "c",
+          "text": "Waffenbesitzkarte"
+        }
+      ]
+    },
+    {
+      "rawId": "1.63",
+      "text": "Was bedeutet für einen Sportschützen der Rechtsbegriff „Zu einem vom Bedürfnis umfassten Zweck oder im Zusammenhang damit“ in Bezug auf den Transport einer Schusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Schütze darf die Waffe in der fremden Wohnung mit Einwilligung des Hausrechtsinhabers zu Schutzzwecken führen."
+        },
+        {
+          "label": "b",
+          "text": "Der Schütze transportiert seine defekte Schusswaffe zur Reparatur zum Büchsenmacher."
+        },
+        {
+          "label": "c",
+          "text": "Die Schusswaffe wird am Wohnort des Schützen von ihm über mehrere Tage in einem Autotresor im Kofferraum des PKWs transportiert."
+        }
+      ]
+    },
+    {
+      "rawId": "1.64",
+      "text": "Welche Voraussetzungen müssen gegeben sein, damit der Rechtsbegriff „sportliches Schießen“ erfüllt wird?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sportliches Schießen liegt dann vor, wenn nach festen Regeln einer genehmigten Sportordnung geschossen wird."
+        },
+        {
+          "label": "b",
+          "text": "Sportliches Schießen liegt dann vor, wenn nach einer nicht genehmigten Sportordnung geschossen wird."
+        },
+        {
+          "label": "c",
+          "text": "Sportliches Schießen liegt dann vor, wenn man in einer Gruppe Paintball spielt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.65",
+      "text": "In welchem zeitlichen Mindestabstand werden die Inhaber waffenrechtlicher Erlaubnisse erneut auf ihre Zuverlässigkeit und ihre persönliche Eignung geprüft? Mindestens alle drei Jahre.",
+      "options": []
+    },
+    {
+      "rawId": "1.66",
+      "text": "Welche Voraussetzungen müssen Sie als Antragsteller für die Erteilung einer Waffenbesitzkarte erfüllen?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Ich muss ein Bedürfnis nachweisen."
+        },
+        {
+          "label": "2",
+          "text": "Ich muss die persönliche Eignung besitzen."
+        },
+        {
+          "label": "3",
+          "text": "Ich muss die erforderliche Zuverlässigkeit besitzen."
+        },
+        {
+          "label": "4",
+          "text": "Ich muss die erforderliche Sachkunde nachweisen."
+        },
+        {
+          "label": "5",
+          "text": "Ich muss das 18. Lebensjahr vollendet haben.(Beachte: Altersbeschränkungen bei Sportschützen)"
+        },
+        {
+          "label": "6",
+          "text": "Nachweise der sicheren Aufbewahrung für Schusswaffen."
+        }
+      ]
+    },
+    {
+      "rawId": "1.67",
+      "text": "Welche Angaben zu einer Waffe werden in einer Waffenbesitzkarte eintragen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenart, Bezeichnung der Munition oder des Kalibers, Hersteller- / Warenzeichen oder Marke, Modellbezeichnung, Herstellungsnummer und Tag des Überlassens, sowie der Name und die Anschrift des Überlassers."
+        },
+        {
+          "label": "b",
+          "text": "Waffenart, Kaliber, Herstelleroder Warenzeichen, Beschusszeichen, Seriennummer und Tag des Überlassens, sowie der Name und die Personalausweisnummer des Überlassers."
+        },
+        {
+          "label": "c",
+          "text": "Waffenart, Kaliber, Herstelleroder Warenzeichen, Nummer der Waffenherstellungserlaubnis und Tag des Überlassens, sowie der Name und die Waffenbesitzkartennummer des Überlassers."
+        }
+      ]
+    },
+    {
+      "rawId": "1.68",
+      "text": "Für die Anerkennung eines Bedürfnisses zum Erwerb und Besitz von Schusswaffen (grüne Waffenbesitzkarte) ist bei Sportschützen die Vorlage einer Bescheinigung des anerkannten Schießsportverbandes erforderlich, dem der Antragsteller durch seine Vereinsmitgliedschaft angehört. Die Bescheinigung muss ausweisen, dass ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "er seit mindestens 12 Monaten den Schießsport in einem Verein regelmäßig als Sportschütze betreibt."
+        },
+        {
+          "label": "b",
+          "text": "er seine Sammlung vervollständigen möchte."
+        },
+        {
+          "label": "c",
+          "text": "die Waffe für eine Disziplin nach der Sportordnung des Schießsportverbandes zugelassen und erforderlich ist."
+        }
+      ]
+    },
+    {
+      "rawId": "1.69",
+      "text": "Wann wird in der Regel eine waffenrechtliche Erlaubnis von der Erlaubnisbehörde widerrufen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn der Inhaber nicht mehr zuverlässig im Sinne des Waffengesetzes ist."
+        },
+        {
+          "label": "b",
+          "text": "Wenn der Inhaber kein Bedürfnis mehr nachweisen kann."
+        },
+        {
+          "label": "c",
+          "text": "Wenn der Inhaber seinen Wohnort in ein anderes Bundesland verlegt."
+        }
+      ]
+    },
+    {
+      "rawId": "1.70",
+      "text": "Welche Eintragungen sieht die grüne Waffenbesitzkarte zum Erwerb einer Schusswaffe vor? Laufende Nummer, Art, Bezeichnung der Munition oder des Kalibers, Dauer der Erwerbsberechtigung und Dienstsiegel.",
+      "options": []
+    },
+    {
+      "rawId": "1.71",
+      "text": "Wie lange gilt grundsätzlich eine Waffenbesitzkarte? Unbefristet.",
+      "options": []
+    },
+    {
+      "rawId": "1.72",
+      "text": "Kann eine Waffenbesitzkarte auch nachträglich mit Auflagen versehen werden? Ja.",
+      "options": []
+    },
+    {
+      "rawId": "1.73",
+      "text": "Kann eine Waffenbesitzkarte auch einem Schützenverein erteilt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn es sich um einen eingetragenen Verein handelt."
+        },
+        {
+          "label": "b",
+          "text": "Nein."
+        },
+        {
+          "label": "c",
+          "text": "Ja, jedem Verein."
+        }
+      ]
+    },
+    {
+      "rawId": "1.74",
+      "text": "Wie lange gilt üblicherweise ein Voreintrag zum Erwerb einer Schusswaffe in einer grünen Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "6 Monate"
+        },
+        {
+          "label": "b",
+          "text": "1 Jahr"
+        },
+        {
+          "label": "c",
+          "text": "unbefristet"
+        }
+      ]
+    },
+    {
+      "rawId": "1.75",
+      "text": "Wie lange gilt der Kleine Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "1 Jahr"
+        },
+        {
+          "label": "b",
+          "text": "3 Jahre"
+        },
+        {
+          "label": "c",
+          "text": "unbefristet"
+        }
+      ]
+    },
+    {
+      "rawId": "1.76",
+      "text": "Für wie lange wird ein Waffenschein höchstens erteilt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "1 Jahr"
+        },
+        {
+          "label": "b",
+          "text": "3 Jahre"
+        },
+        {
+          "label": "c",
+          "text": "5 Jahre"
+        }
+      ]
+    },
+    {
+      "rawId": "1.77",
+      "text": "Was ist Voraussetzung für den Erwerb von Schreckschuss-, Reizstoffund Signalwaffen, deren Erwerb und Besitz erlaubnisfrei ist? Vollendung des 18. Lebensjahres.",
+      "options": []
+    },
+    {
+      "rawId": "1.78",
+      "text": "Wie lange müssen Sie mindestens als Mitglied eines schießsportlichen Vereins geschossen haben, um als Sportschütze der Behörde ein Bedürfnis zum Erwerb einer Schusswaffe nachweisen zu können?",
+      "options": [
+        {
+          "label": "a",
+          "text": "mindestens 6 Monate"
+        },
+        {
+          "label": "b",
+          "text": "mindestens 12 Monate"
+        },
+        {
+          "label": "c",
+          "text": "mindestens 18 Monate"
+        }
+      ]
+    },
+    {
+      "rawId": "1.79",
+      "text": "Wie alt müssen Sie als Sportschütze mindestens sein, um eine Büchse (.308Win) ohne amtsoder fachärztliches oder fachpsychologisches Zeugnis dauerhaft erwerben zu können?",
+      "options": [
+        {
+          "label": "a",
+          "text": "21 Jahre"
+        },
+        {
+          "label": "b",
+          "text": "25 Jahre"
+        },
+        {
+          "label": "c",
+          "text": "27 Jahre"
+        }
+      ]
+    },
+    {
+      "rawId": "1.80",
+      "text": "Welches Lebensjahr müssen Sie vollendet haben, um EinzelladerLangwaffen mit glatten Läufen im Kaliber 12 oder kleiner als Sportschütze dauerhaft erwerben zu dürfen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "18 Jahre"
+        },
+        {
+          "label": "b",
+          "text": "21 Jahre"
+        },
+        {
+          "label": "c",
+          "text": "25 Jahre"
+        }
+      ]
+    },
+    {
+      "rawId": "1.81",
+      "text": "Welche Voraussetzungen müssen zur Erteilung einer waffenrechtlichen Erlaubnis für einen Revolver .44MAGNUM bei Sportschützen gegeben sein?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Vollendung des 21. Lebensjahres"
+        },
+        {
+          "label": "2",
+          "text": "Nachweis der Sachkunde"
+        },
+        {
+          "label": "3",
+          "text": "Zuverlässigkeit"
+        },
+        {
+          "label": "4",
+          "text": "Persönliche Eignung, bei Personen vor Vollendung des 25. Lebensjahres nachgewiesen durch ein amtsoder fachärztlichen oder fachpsychologischen Zeugnis"
+        },
+        {
+          "label": "5",
+          "text": "Nachweis eines Bedürfnisses"
+        },
+        {
+          "label": "6",
+          "text": "Nachweis der sicheren Aufbewahrung von Schusswaffen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.82",
+      "text": "Das Fortbestehen des Bedürfnisses wird nach erstmaliger Erteilung einer waffenrechtlichen Erlaubnis von der Behörde geprüft. Welche Frist hat der Gesetzgeber hier vorgesehen? Mindestens alle fünf Jahre",
+      "options": []
+    },
+    {
+      "rawId": "1.83",
+      "text": "Das Fortbestehen des Bedürfnisses wird drei Jahre nach der erstmaligen Erteilung einer waffenrechtlichen Erlaubnis von der Behörde geprüft. Ist dies die einzige Prüfung des Fortbestehens des Bedürfnisses? Nein, das Fortbestehen des Bedürfnisses kann von der zuständigen Behörde auch nach diesem Zeitraum geprüft werden.",
+      "options": []
+    },
+    {
+      "rawId": "1.84",
+      "text": "Welche weiteren Voraussetzungen müssen Jugendliche, die das 16. Lebensjahr vollendet haben und unter 18 Jahren sind, erfüllen, damit sie mit WBK-pflichtigen Waffen für Randfeuerpatronen bis zu einem Kaliber von 5,6 mm lfB (.22l.r.) und einer maximalen Mündungsenergie von 200 Joule schießen dürfen? Schriftliches oder elektronisches Einverständnis des Sorgeberechtigten oder dessen/deren Anwesenheit.",
+      "options": []
+    },
+    {
+      "rawId": "1.85",
+      "text": "Welche weiteren Voraussetzungen müssen erfüllt sein, damit Jugendliche unter 16 Jahren mit WBK-pflichtigen Einzellader-Flinten bis zu dem Kaliber 12 schießen dürfen? Schriftliches oder elektronisches Einverständnis des Sorgeberechtigten und dessen Anwesenheit oder die Anwesenheit einer verantwortlichen und zur Kinderund Jugendarbeit für das Schießen geeigneten Aufsichtsperson.",
+      "options": []
+    },
+    {
+      "rawId": "1.86",
+      "text": "Was sind „Anscheinswaffen“ im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schusswaffen, die ihrer äußeren Form nach im Gesamterscheinungsbild den Anschein von Feuerwaffen (Anlage 1 Abschnitt 1 Unterabschnitt 1 Nr. 2.1 WaffG) hervorrufen und bei denen zum Antrieb der Geschosse keine heißen Gase verwendet werden."
+        },
+        {
+          "label": "b",
+          "text": "Nachbildungen von Schusswaffen mit dem Aussehen der o.g. Schusswaffen"
+        },
+        {
+          "label": "c",
+          "text": "unbrauchbar gemachte Schusswaffen mit dem Aussehen der o.g. Schusswaffen"
+        }
+      ]
+    },
+    {
+      "rawId": "1.87",
+      "text": "Welcher der genannten Gegenstände ist eine Anscheinswaffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sportgewehr .223 Remington, das wie ein Sturmgewehr aussieht ohne Zulassungszeichen"
+        },
+        {
+          "label": "b",
+          "text": "Schreckschuss-, Reizstoffund Signalpistole mit Zulassungszeichen „PTB im Kreis“"
+        },
+        {
+          "label": "c",
+          "text": "Spielzeugpistole, die äußerlich einer echten Pistole im Kaliber 9mm Luger zum Verwechseln ähnlich sieht"
+        }
+      ]
+    },
+    {
+      "rawId": "1.88",
+      "text": "Welcher der genannten Gegenstände ist eine Anscheinswaffe im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Messer mit einer 14 cm langen, aber nur einseitig geschliffenen Klinge."
+        },
+        {
+          "label": "b",
+          "text": "Nach waffenrechtlichen Vorschriften unbrauchbar gemachtes altes Armeegewehr mit Zulassungszeichen „Ortszeichen in der Raute“."
+        },
+        {
+          "label": "c",
+          "text": "Stockflinte (als Spazierstock getarnte Flinte, früher angeblich oft von Wilderern benutzt)"
+        }
+      ]
+    },
+    {
+      "rawId": "1.89",
+      "text": "Welche Ausnahmen vom Verbot des Führens von Anscheinswaffen gibt es?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Anscheinswaffen dürfen an Silvester geführt werden."
+        },
+        {
+          "label": "b",
+          "text": "Anscheinswaffen dürfen geführt werden, bei der Verwendung bei Foto-, Film oder Fernsehaufnahmen oder bei Theateraufführungen."
+        },
+        {
+          "label": "c",
+          "text": "Anscheinswaffen dürfen immer verdeckt geführt werden."
+        }
+      ]
+    },
+    {
+      "rawId": "1.90",
+      "text": "Wann wird eine Schusswaffe im Sinne des Waffengesetzes „bearbeitet“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Schaft eines Gewehres wird auf ein für den Schützen passendes Maß abgefräst."
+        },
+        {
+          "label": "b",
+          "text": "Die gebrochene Schließfeder einer Pistole wird ausgetauscht."
+        },
+        {
+          "label": "c",
+          "text": "Der Lauf eines Revolvers wird von einem befreundeten Schlosser auf 4 Zoll verkürzt."
+        }
+      ]
+    }
+  ]
+}
