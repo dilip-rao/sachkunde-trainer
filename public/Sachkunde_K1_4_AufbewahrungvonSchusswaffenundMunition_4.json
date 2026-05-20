@@ -1,0 +1,397 @@
+{
+  "bank": [
+    {
+      "rawId": "4.01",
+      "text": "Wo darf eine erlaubnispflichtige Kurzwaffe gelagert werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem Waffenschrank der Sicherheitsstufe A nach VDMA 24992, sofern sich keine dazu passende Munition im Schrank befindet."
+        },
+        {
+          "label": "b",
+          "text": "In einem Waffenschrank der Sicherheitsstufe B nach VDMA 24992, sofern sich keine dazu passende Munition im Schrank befindet wenn der Schrank bereits vor dem 06.07.2017 rechtmäßig vom Betroffenen zur Waffenaufbewahrung genutzt wurde."
+        },
+        {
+          "label": "c",
+          "text": "In einem Waffenschrank der Norm DIN/EN 11431 mit dem Widerstandsgrad 0."
+        }
+      ]
+    },
+    {
+      "rawId": "4.02",
+      "text": "Welchem Sicherheitsstandard muss ein Waffenschrank mindestens entsprechen, damit Waffen und dazu passende Munition zusammen darin aufbewahrt werden dürfen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sicherheitsstufe B nach VDMA 24992, Schrankgewicht über 200kg"
+        },
+        {
+          "label": "b",
+          "text": "DIN/EN 11431 Widerstandsgrad 0"
+        },
+        {
+          "label": "c",
+          "text": "DIN/EN 11431 Widerstandsgrad I"
+        }
+      ]
+    },
+    {
+      "rawId": "4.03",
+      "text": "In welchem Behältnis darf erlaubnispflichtige Munition gelagert werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wohnzimmerschrank mit Sicherheitsschloss"
+        },
+        {
+          "label": "b",
+          "text": "Blechschrank mit Vorhängeschloss"
+        },
+        {
+          "label": "c",
+          "text": "Stahlblechbehältnis mit Schwenkriegelschloss"
+        }
+      ]
+    },
+    {
+      "rawId": "4.04",
+      "text": "Darf die Erlaubnisbehörde gegen den Willen des Erlaubnisinhabers dessen Wohnräume betreten, um die ordnungsgemäße Waffenaufbewahrung zu überprüfen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, dies ist stets zulässig."
+        },
+        {
+          "label": "b",
+          "text": "Ja, sofern eine dringende Gefahr für die öffentliche Sicherheit besteht."
+        },
+        {
+          "label": "c",
+          "text": "Ja, aber nur mit einem richterlichen Durchsuchungsbefehl."
+        }
+      ]
+    },
+    {
+      "rawId": "4.05",
+      "text": "Schusswaffen sind aufzubewahren...",
+      "options": [
+        {
+          "label": "a",
+          "text": "an einem versteckten Ort."
+        },
+        {
+          "label": "b",
+          "text": "nur bei der Erlaubnisbehörde."
+        },
+        {
+          "label": "c",
+          "text": "in einem Behältnis der entsprechenden Sicherheitsstufe."
+        }
+      ]
+    },
+    {
+      "rawId": "4.06",
+      "text": "Wo müssen erlaubnispflichtige Schusswaffen und Munition aufbewahrt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Im Kleiderschrank"
+        },
+        {
+          "label": "b",
+          "text": "In einer verschlossenen und alarmgesicherten Familienwohnung."
+        },
+        {
+          "label": "c",
+          "text": "In einem Behältnis der entsprechenden Sicherheitsstufe."
+        }
+      ]
+    },
+    {
+      "rawId": "4.07",
+      "text": "Gegen unbefugten Zugriff ist eine erlaubnispflichtige Pistole zu Hause gesichert, wenn sie…",
+      "options": [
+        {
+          "label": "a",
+          "text": "versteckt im Bücherregal liegt."
+        },
+        {
+          "label": "b",
+          "text": "im abgeschlossenen Waffenkoffer im Schrank aufbewahrt wird."
+        },
+        {
+          "label": "c",
+          "text": "in einem Behältnis der Norm DIN/EN 1143-1 Widerstandsgrad 0 oder I aufbewahrt wird."
+        }
+      ]
+    },
+    {
+      "rawId": "4.08",
+      "text": "Gegen unbefugten Zugriff ist eine erlaubnispflichtige Langwaffe gesichert, wenn sie...",
+      "options": [
+        {
+          "label": "a",
+          "text": "sich in einem abgeschlossenen Waffenschrank der Norm DIN/EN 1143-1 Widerstandsgrad 0 oder I befindet."
+        },
+        {
+          "label": "b",
+          "text": "im Gewehrständer steht."
+        },
+        {
+          "label": "c",
+          "text": "an der Wand hängt und mit einem Schloss gesichert ist."
+        }
+      ]
+    },
+    {
+      "rawId": "4.09",
+      "text": "Sind Sie in Bezug auf die sichere Verwahrung ihrer Waffe(n) oder Munition zur Auskunft gegenüber der Behörde verpflichtet?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Es besteht keine Pflicht zum Nachweis über die sichere Verwahrung."
+        },
+        {
+          "label": "b",
+          "text": "Ja, wer Waffen oder Munition besitzt, hat der zuständigen Behörde die zur sicheren Verwahrung getroffenen Maßnahmen nachzuweisen."
+        },
+        {
+          "label": "c",
+          "text": "Nein, nur wenn mehr als 10 Schusswaffen im Besitz sind."
+        }
+      ]
+    },
+    {
+      "rawId": "4.10",
+      "text": "Wozu kann die nicht ordnungsgemäße Aufbewahrung von Waffen oder Munition u.a. führen? Zum Verlust der waffenrechtlichen Zuverlässigkeit.",
+      "options": []
+    },
+    {
+      "rawId": "4.11",
+      "text": "Ist die gemeinschaftliche Aufbewahrung von Waffen oder Munition durch berechtigte Personen, die in einer häuslichen Gemeinschaft leben, zulässig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja"
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "4.12",
+      "text": "Wozu kann die nicht ordnungsgemäße Aufbewahrung von Waffen oder Munition u.a. führen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Eine nicht ordnungsgemäße Aufbewahrung von Waffen stellt einen Straftatbestand im Sinne des Waffengesetzes dar."
+        },
+        {
+          "label": "b",
+          "text": "Verlust der persönlichen Eignung"
+        },
+        {
+          "label": "c",
+          "text": "Die nicht ordnungsgemäße Aufbewahrung von Waffen stellt lediglich einen Ordnungswidrigkeitentatbestand dar."
+        }
+      ]
+    },
+    {
+      "rawId": "4.13",
+      "text": "Wie können Waffen und Munition außerhalb der Wohnung, z.B. bei Hotelübernachtung anlässlich eines Wettkampfes, sicher aufbewahrt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Schusswaffe/n ist/sind immer am Körper zu tragen."
+        },
+        {
+          "label": "b",
+          "text": "Ein wesentlicher Teil der Schusswaffe/n ist zu entnehmen und mit sich zu führen. Der Rest der Schusswaffe ist gegen unbefugten Zugriff zu sichern."
+        },
+        {
+          "label": "c",
+          "text": "Aufbewahrung in einem Transportbehältnis oder in einem verschlossenen Schrank oder einem sonstigen verschlossenen Behältnis."
+        }
+      ]
+    },
+    {
+      "rawId": "4.14",
+      "text": "Wie sind bei einem Transport von Waffen und Munition in einem Fahrzeug diese bei kurzfristigem Verlassen des Fahrzeuges (Einnahme des Mittagessens, Tanken, Schüsseltreiben, Einkäufe etc.) aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffen und Munition sind in dem verschlossenen Fahrzeug so aufzubewahren, dass keine unmittelbaren Rückschlüsse auf die Art des Inhaltes erkennbar sind."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe/n darf/dürfen hierbei nicht im Fahrzeug verbleiben."
+        }
+      ]
+    },
+    {
+      "rawId": "4.15",
+      "text": "Wie sind erlaubnispflichtige Kurzwaffen aufzubewahren (bei dem Bestehen einer waffenrechtlichen Erlaubnis vor dem 06.07.2017 und Fortführung der Nutzung eines vorhandenen Behältnisses)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einer Stahlkassette der Sicherheitsstufe A nach VDMA 24992."
+        },
+        {
+          "label": "b",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe B der Norm VDMA 24992 oder einem Behältnis der Sicherheitsstufe DIN/EN 11431 Widerstandsgrad 0 oder I."
+        },
+        {
+          "label": "c",
+          "text": "In einer Truhe mit Schwenkriegelschloss im verschlossenen Keller"
+        }
+      ]
+    },
+    {
+      "rawId": "4.16",
+      "text": "Wie sind erlaubnispflichtige Kurzwaffen aufzubewahren (Erteilung einer waffenrechtlichen Erlaubnis und dem damit verbunden Erwerb einer Schusswaffe nach dem 06.07.2017)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe B der Norm VDMA 24992."
+        },
+        {
+          "label": "b",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe DIN/EN 1143-1 Widerstandsgrad 0 oder I."
+        },
+        {
+          "label": "c",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe A der Norm VDMA 24992."
+        }
+      ]
+    },
+    {
+      "rawId": "4.17",
+      "text": "Welche Mindestanforderungen gelten für die dauerhafte Aufbewahrung von Waffen und Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Munition ist im Stahlbehältnis mit Schwenkriegelschloss oder gleichwertigem Behältnis aufzubewahren."
+        },
+        {
+          "label": "b",
+          "text": "Maximal 5 Kurzwaffen in einem Tresor mit Widerstandsgrad 0 (DIN/EN 11431) bis 200 kg. Über 200 kg je 10 Kurzwaffen. Über 10 Kurzwaffen Widerstandsgrad I."
+        },
+        {
+          "label": "c",
+          "text": "Bis zu 10 Langwaffen je A-Schrank. Über 10 Langwaffen im B-Schrank."
+        }
+      ]
+    },
+    {
+      "rawId": "4.18",
+      "text": "Wie dürfen acht erlaubnispflichtige Kurzwaffen untern anderem sicher vor unbefugtem Zugriff dauerhaft aufbewahrt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem Tresor der Sicherheitsstufe B mit mehr als 200 Kilogramm Gewicht (VDMA 24992) (wenn der Tresor bereits vor dem 06.07.2017 rechtmäßig vom Betroffenen zur Waffenaufbewahrung genutzt wurde)."
+        },
+        {
+          "label": "b",
+          "text": "In einem Tresor mit Widerstandsgrad 0 (DIN/EN 1143-1), dessen Gewicht mindesten 200 kg beträgt."
+        },
+        {
+          "label": "c",
+          "text": "In einem Tresor der Sicherheitsstufe A (VDMA 24992)."
+        }
+      ]
+    },
+    {
+      "rawId": "4.19",
+      "text": "Welche und wie viele erlaubnispflichtigen Schusswaffen dürfen Sie in einem Schrank der Sicherheitsstufe A nach VDMA 24992 (bei dem Bestehen einer waffenrechtlichen Erlaubnis vor dem 06.07.2017 und Fortführung der Nutzung eines vorhandenen Behältnisses) dauerhaft aufbewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "5 Kurzwaffen"
+        },
+        {
+          "label": "b",
+          "text": "5 Langwaffen und 5 Kurzwaffen"
+        },
+        {
+          "label": "c",
+          "text": "10 Langwaffen"
+        }
+      ]
+    },
+    {
+      "rawId": "4.20",
+      "text": "Dürfen Sie während des Urlaubes einem Vereinskameraden Ihre WBKpflichtige Schusswaffe zur sicheren Aufbewahrung überlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn er selbst auch eine WBK besitzt und über ein entsprechendes Behältnis verfügt."
+        },
+        {
+          "label": "b",
+          "text": "Nein, das ist nicht gestattet."
+        },
+        {
+          "label": "c",
+          "text": "Dies ist unter Vereinsmitgliedern gestattet."
+        },
+        {
+          "label": "d",
+          "text": "Ja, es ist ausreichend, dass er ein entsprechendes Behältnis besitzt."
+        }
+      ]
+    },
+    {
+      "rawId": "4.21",
+      "text": "Wem dürfen Sie während Ihres Urlaubs eine erlaubnispflichtige Waffe vorübergehend zur sicheren Aufbewahrung überlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenhändler"
+        },
+        {
+          "label": "b",
+          "text": "Dem Nachbarn, der die Waffe in seiner Werkbank im Hobbyraum lagert."
+        },
+        {
+          "label": "c",
+          "text": "Einem Inhaber einer Waffenbesitzkarte"
+        }
+      ]
+    },
+    {
+      "rawId": "4.22",
+      "text": "Wie sind erlaubnispflichtige Langwaffen aufzubewahren?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe B der Norm VDMA 24992."
+        },
+        {
+          "label": "b",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe DIN/EN 1143-1 Widerstandsgrad 0 oder I."
+        },
+        {
+          "label": "c",
+          "text": "In einem Sicherheitsbehältnis der Sicherheitsstufe A der Norm VDMA 24992."
+        }
+      ]
+    },
+    {
+      "rawId": "4.23",
+      "text": "Gelten die Aufbewahrungsvorschriften des Waffengesetzes auch für sogenannte Salutwaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, vollumfänglich"
+        },
+        {
+          "label": "b",
+          "text": "Nein, aber der Besitzer hat die erforderlichen Vorkehrungen zu treffen, um zu verhindern, dass diese abhanden kommen oder Dritte sie unbefugt an sich nehmen."
+        }
+      ]
+    }
+  ]
+}
