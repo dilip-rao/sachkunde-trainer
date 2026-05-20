@@ -1,0 +1,2600 @@
+{
+  "meta": {
+    "sourceFiles": [
+      "sachkunde_part_002.json",
+      "sachkunde_part_003.json",
+      "sachkunde_part_004.json",
+      "sachkunde_part_005.json",
+      "Sachkunde_RechteundPflichten_2.json"
+    ],
+    "inputQuestions": 154,
+    "totalQuestions": 154
+  },
+  "bank": [
+    {
+      "rawId": "2.01",
+      "text": "Was muss der Erwerbsberechtigte nach dem Kauf einer Schusswaffe von einer Privatperson/Händler veranlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Er muss einen lizenzierten Waffenhändler einschalten."
+        },
+        {
+          "label": "b",
+          "text": "Er muss den Kauf der zuständigen Behörde unter Vorlage des Kaufvertrages mitteilen."
+        },
+        {
+          "label": "c",
+          "text": "Er muss innerhalb von zwei Wochen bei der zuständigen Behörde den Erwerb schriftlich oder elektronisch anzeigen und seine Waffenbesitzkarte zur Eintragung vorlegen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.02",
+      "text": "Was muss ein Sportschütze nach dem dauerhaften Erwerb einer Waffe von einem anderen Sportschützen veranlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nichts"
+        },
+        {
+          "label": "b",
+          "text": "Er muss den Erwerb innerhalb von zwei Wochen schriftlich oder elektronisch anzeigen und seine Waffenbesitzkarte bei der zuständigen Behörde vorlegen."
+        },
+        {
+          "label": "c",
+          "text": "Beide Waffenbesitzkarten sofort der zuständigen Behörde vorlegen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.03",
+      "text": "Innerhalb welcher Zeit haben Sie den Erwerb, bzw. den Verkauf einer erlaubnispflichtigen Waffe anzuzeigen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "binnen einer Woche"
+        },
+        {
+          "label": "b",
+          "text": "binnen zwei Wochen"
+        },
+        {
+          "label": "c",
+          "text": "binnen eines Monats"
+        }
+      ]
+    },
+    {
+      "rawId": "2.04",
+      "text": "Welcher Sportschütze muss für die erstmalige Erteilung einer Erlaubnis zum Erwerb und Besitz von Schusswaffen ein amtsoder fachärztliches oder fachpsychologisches Zeugnis über seine geistige Eignung vorlegen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein 18-jähriger, der ein Kleinkalibergewehr erwerben möchte."
+        },
+        {
+          "label": "b",
+          "text": "Ein 19-jähriger, der eine Doppelflinte im Kaliber 12/70 erwerben möchte."
+        },
+        {
+          "label": "c",
+          "text": "Ein 22-jähriger, der einen großkalibrigen Revolver erwerben möchte."
+        }
+      ]
+    },
+    {
+      "rawId": "2.05",
+      "text": "Welche Erlaubnispapiere berechtigen auch zum Erwerb von EinzelladerLangwaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenschein"
+        },
+        {
+          "label": "b",
+          "text": "Jagdschein"
+        },
+        {
+          "label": "c",
+          "text": "Europäischer Feuerwaffenpass"
+        }
+      ]
+    },
+    {
+      "rawId": "2.06",
+      "text": "Welche Erlaubnispapiere berechtigen auch zum Erwerb von EinzelladerLangwaffen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sportschützen-WBK (gelbe WBK) (ohne Voreintrag)"
+        },
+        {
+          "label": "b",
+          "text": "allgemeine WBK -grün- (ohne Voreintrag)"
+        },
+        {
+          "label": "c",
+          "text": "Waffenhandelserlaubnis (uneingeschränkt)"
+        }
+      ]
+    },
+    {
+      "rawId": "2.07",
+      "text": "Was ist eine Erwerbsberechtigung für eine einläufige Einzellader-Kurzwaffe (Kleinkaliber-Sportpistole)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenschein"
+        },
+        {
+          "label": "b",
+          "text": "Waffenbesitzkarte für Sportschützen (gelbe WBK)"
+        },
+        {
+          "label": "c",
+          "text": "Waffenerwerbsschein"
+        }
+      ]
+    },
+    {
+      "rawId": "2.08",
+      "text": "Welche Erlaubnis ist zum Erwerb einer halbautomatischen Pistole .32 S&W erforderlich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenschein"
+        },
+        {
+          "label": "b",
+          "text": "Sportschützen-WBK (gelbe WBK) (ohne Voreintrag)"
+        },
+        {
+          "label": "c",
+          "text": "Waffenbesitzkarte mit Erwerbsberechtigung (Voreintrag)"
+        }
+      ]
+    },
+    {
+      "rawId": "2.09",
+      "text": "Beim Erwerb einer erlaubnispflichtigen Schusswaffe von einer Privatperson durch den Erwerbsberechtigten ist ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "der Erwerb der Waffe innerhalb eines Jahres der zuständigen Behörde anzuzeigen und die WBK zur Eintragung vorzulegen."
+        },
+        {
+          "label": "b",
+          "text": "der Erwerb der Waffe innerhalb von vier Wochen der zuständigen Behörde anzuzeigen und die WBK zur Eintragung vorzulegen."
+        },
+        {
+          "label": "c",
+          "text": "der Erwerb der Waffe innerhalb von zwei Wochen der zuständigen Behörde anzuzeigen und die WBK zur Eintragung vorzulegen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.10",
+      "text": "Bei Abhandenkommen der Waffenbesitzkarte ist zu benachrichtigen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Erlaubnisbehörde"
+        },
+        {
+          "label": "b",
+          "text": "Deutscher Schützenbund"
+        },
+        {
+          "label": "c",
+          "text": "Bundeszentralregister"
+        }
+      ]
+    },
+    {
+      "rawId": "2.11",
+      "text": "Was ist zu tun, wenn erlaubnispflichtige Waffen oder Munition abhandenkommen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Unverzüglich den Verlust der zuständigen Waffenbehörde melden."
+        },
+        {
+          "label": "b",
+          "text": "Innerhalb eines Monats den Verlust der zuständigen Behörde melden."
+        },
+        {
+          "label": "c",
+          "text": "Eine Verlustanzeige bei der zuständigen Polizeidienststelle aufgeben."
+        }
+      ]
+    },
+    {
+      "rawId": "2.12",
+      "text": "Was ist zu tun, wenn Erlaubnisurkunden abhandenkommen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Abhandenkommen ist unverzüglich der zuständigen Behörde anzuzeigen."
+        },
+        {
+          "label": "b",
+          "text": "Eine Ersatzausfertigung ist zu beantragen."
+        },
+        {
+          "label": "c",
+          "text": "Solange das Dokument nicht genutzt wird ist nichts weiter zu veranlassen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.13",
+      "text": "Was ist nach Verlust einer erlaubnispflichtigen Schusswaffe oder einer Waffenbesitzkarte zu veranlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Verlust ist unverzüglich der zuständigen Behörde mitzuteilen."
+        },
+        {
+          "label": "b",
+          "text": "Die Versicherung ist umgehend in Kenntnis zu setzen, damit diese die Polizei verständigen und alle weiteren Maßnahmen einleiten kann."
+        },
+        {
+          "label": "c",
+          "text": "Sämtliche denkbaren Maßnahmen zur Wiedererlangung der Schusswaffe und der WBK sind einzuleiten."
+        }
+      ]
+    },
+    {
+      "rawId": "2.14",
+      "text": "Sind Sie bezüglich Ihrer Schusswaffen der zuständigen Behörde gegenüber in begründeten Fällen auskunftspflichtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, nur wenn gegen mich ein Verfahren eingeleitet wurde."
+        },
+        {
+          "label": "b",
+          "text": "Ja"
+        },
+        {
+          "label": "c",
+          "text": "Nein, nur bei Fragen zur Aufbewahrung."
+        }
+      ]
+    },
+    {
+      "rawId": "2.15",
+      "text": "Kann die zuständige Behörde die Vorlage von erlaubnispflichtigen Schusswaffen, Munition und Erlaubnisscheinen zur Prüfung verlangen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, solange Waffenbesitzkarte und Munitionserwerbschein gültig sind."
+        },
+        {
+          "label": "b",
+          "text": "Ja, nur im Rahmen eines Strafverfahrens."
+        },
+        {
+          "label": "c",
+          "text": "Ja, aus begründetem Anlass."
+        }
+      ]
+    },
+    {
+      "rawId": "2.16",
+      "text": "Für welche Inhaber waffenrechtlicher Erlaubnisse ist das Bundesverwaltungsamt sachlich unter anderem zuständig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Für Deutsche im Sinne des Artikels 116 des Grundgesetzes, die ihren gewöhnlichen Aufenthalt im Ausland haben (Auslandsdeutsche)."
+        },
+        {
+          "label": "b",
+          "text": "Für ausländische Staatsangehörige innerhalb der Bunderepublik Deutschland."
+        },
+        {
+          "label": "c",
+          "text": "Im Rahmen der Sportförderung für Profisportler (Sportschützen)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.17",
+      "text": "Welche Teile einer erlaubnispflichtigen Schusswaffe darf jeder erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "einen Austauschlauf"
+        },
+        {
+          "label": "b",
+          "text": "ein Wechselsystem"
+        },
+        {
+          "label": "c",
+          "text": "ein Abzugssystem"
+        }
+      ]
+    },
+    {
+      "rawId": "2.18",
+      "text": "Ist Sportschützen der Erwerb und die anschließende Nutzung von Kurzwaffenmagazinen mit einer Kapazität von mehr als 20 Patronen und Langwaffenmagazinen mit einer Kapazität von mehr als 10 Patronen gestattet (wechselbares Magazin)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn damit nachweislich dynamische Disziplinen (IPSC) absolviert werden."
+        },
+        {
+          "label": "b",
+          "text": "Ja, allerdings nur zu Trainingszwecken und nicht im Rahmen von Wettkämpfen."
+        },
+        {
+          "label": "c",
+          "text": "Nein, da solche Magazine für Privatpersonen verboten sind."
+        }
+      ]
+    },
+    {
+      "rawId": "2.19",
+      "text": "Welche Waffe kann nur mit einer grünen Waffenbesitzkarte (mit Voreintrag) erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluftwaffe mit dem Zeichen „F im Fünfeck“"
+        },
+        {
+          "label": "b",
+          "text": "Armbrust"
+        },
+        {
+          "label": "c",
+          "text": "Kurzwaffe mit Kaliber .357 SIG"
+        }
+      ]
+    },
+    {
+      "rawId": "2.20",
+      "text": "Welcher Nachweis ist als Erwerbsberechtigung von halbautomatischen Kurzwaffen für Sportschützen erforderlich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenbesitzkarte mit Voreintrag"
+        },
+        {
+          "label": "b",
+          "text": "Schießbuch"
+        },
+        {
+          "label": "c",
+          "text": "Sportschützenausweis"
+        }
+      ]
+    },
+    {
+      "rawId": "2.21",
+      "text": "Welche Teile erlaubnispflichtiger Schusswaffen dürfen einzeln nur mit gültiger Erwerbserlaubnis erworben werden? - Lauf - Verschluss - Patronenoder Kartuschenlager - Griffstück bei Kurzwaffen",
+      "options": []
+    },
+    {
+      "rawId": "2.22",
+      "text": "Für Erwerb und Besitz welcher Waffen bedarf es keiner Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluftwaffen, die das Zulassungszeichen „F im Fünfeck“ tragen."
+        },
+        {
+          "label": "b",
+          "text": "Schreckschuss-, Reizstoffund Signalwaffen, die das Zulassungszeichen „PTB im Kreis“ tragen."
+        },
+        {
+          "label": "c",
+          "text": "Spielzeugwaffen mit einer Mündungsenergie von mehr als 0,5 Joule (ohne „F im Fünfeck“)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.23",
+      "text": "Wie können Sie als 19-jähriger Sportschütze Ihre persönliche Eignung für den dauerhaften Erwerb einer halbautomatischen Pistole im Kaliber „.45 Auto“ gegenüber der Behörde nachweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Durch ein fachärztliches Gutachten."
+        },
+        {
+          "label": "b",
+          "text": "Durch eine Bescheinigung eines anerkannten Schießsportverbandes."
+        },
+        {
+          "label": "c",
+          "text": "Es besteht keine Möglichkeit des Erwerbs in diesem Alter."
+        }
+      ]
+    },
+    {
+      "rawId": "2.24",
+      "text": "Wer benötigt als Sportschütze ein amtsoder fachärztliches oder fachpsychologisches Gutachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sportschützen, die das 25. Lebensjahr noch nicht vollendet haben und erstmalig eine erlaubnisund bedürfnispflichtige Großkaliberwaffe erwerben wollen."
+        },
+        {
+          "label": "b",
+          "text": "Sportschützen, die das 25. Lebensjahr noch nicht vollendet haben und erstmalig eine Einzellader-Flinten bis Kaliber 12 erwerben wollen."
+        },
+        {
+          "label": "c",
+          "text": "Sportschützen, die das 25. Lebensjahr noch nicht vollendet haben und erstmalig eine Schusswaffe bis Kaliber .22lr (mit Randzündung) erwerben wollen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.25",
+      "text": "Welche Schusswaffen dürfen Sie als 20-jähriger Sportschütze ohne vorheriges Gutachten über Ihre persönliche Eignung dauerhaft erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "halbautomatische Pistole im Kaliber 9 mm Luger"
+        },
+        {
+          "label": "b",
+          "text": "Double-Action-Revolver im Kaliber .357 Magnum"
+        },
+        {
+          "label": "c",
+          "text": "Bockflinte im Kaliber 12/70"
+        }
+      ]
+    },
+    {
+      "rawId": "2.26",
+      "text": "Sie wollen ein Kleinkaliber-Repetiergewehr verkaufen. Es interessieren sich",
+      "options": [
+        {
+          "label": "1",
+          "text": "ein Jäger,"
+        },
+        {
+          "label": "2",
+          "text": "ein Sportschütze. In welcher Form ist der Nachweis der Erwerbsberechtigung in den genannten Fällen zu erbringen? Zu 1: gültiger Jagdschein Zu 2: Waffenbesitzkarte für Sportschützen oder grüne Waffenbesitzkarte mit Voreintrag"
+        }
+      ]
+    },
+    {
+      "rawId": "2.27",
+      "text": "Welche der nebenstehend aufgeführten Schusswaffen kann mit der Waffenbesitzkarte für Sportschützen (gelbe WBK) erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "halbautomatische Langwaffe"
+        },
+        {
+          "label": "b",
+          "text": "einläufige Einzellader-Kurzwaffe"
+        },
+        {
+          "label": "c",
+          "text": "halbautomatische Kurzwaffe"
+        }
+      ]
+    },
+    {
+      "rawId": "2.28",
+      "text": "Darf ein Sportschütze seine Repetierbüchse im Kaliber .22lr mit einem Schalldämpfer ausstatten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, Schalldämpfer sind im Bereich des sportlichen Schießens nur für Waffen bei denen Zentralfeuermunition genutzt wird gestattet."
+        },
+        {
+          "label": "b",
+          "text": "Ja, Waffen die Munition mit Randfeuerzündung verschießen dürfen immer mit einem Schalldämpfer ausgestattet werden."
+        },
+        {
+          "label": "c",
+          "text": "Nein, ein Sportschütze darf für keine seiner Waffen einen Schalldämpfer nutzen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.29",
+      "text": "Wie viele halbautomatische Büchsen darf ein Sportschütze maximal mit seiner gelben Waffenbesitzkarte er-werben bzw. diese darin eintragen lassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keine"
+        },
+        {
+          "label": "b",
+          "text": "Bis zu zehn"
+        },
+        {
+          "label": "c",
+          "text": "Hier gibt es keine Einschränkungen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.30",
+      "text": "Wie viele Waffen darf ein Sportschütze maximal mit seiner gelben Waffenbesitzkarte erwerben bzw. diese darin eintragen lassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bis zu zehn Waffen, die gemäß den gesetzlichen Vorgaben mit der gelben Waffenbesitzkarte erworben werden dürfen."
+        },
+        {
+          "label": "b",
+          "text": "Unbegrenzte Anzahl, jedoch nur wenn jeweils eine Bedürfnisbescheinigung des Verbandes vorliegt."
+        },
+        {
+          "label": "c",
+          "text": "Unbegrenzte Anzahl, jedoch dürfen keine halbautomatischen Pistolen damit erworben bzw. darin eingetragen werden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.31",
+      "text": "Wie viele Schusswaffen dürfen Sie als Sportschütze maximal innerhalb von sechs Monaten bei entsprechendem Bedürfnis erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zwei"
+        },
+        {
+          "label": "b",
+          "text": "Eine"
+        },
+        {
+          "label": "c",
+          "text": "Drei"
+        }
+      ]
+    },
+    {
+      "rawId": "2.32",
+      "text": "Dürfen Schalldämpfer für erlaubnispflichtige Schusswaffen erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, für alle in der grünen WBK eingetragenen Waffen."
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        },
+        {
+          "label": "c",
+          "text": "Ja, jedoch unterliegen Schalldämpfer für erlaubnispflichtige Schusswaffen ebenfalls der Erlaubnispflicht."
+        }
+      ]
+    },
+    {
+      "rawId": "2.33",
+      "text": "Welche Druckluftwaffen dürfen erlaubnisfrei erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle Druckluftwaffen, deren Geschossen eine Bewegungsenergie von weniger als 7,5 Joule erteilt wird."
+        },
+        {
+          "label": "b",
+          "text": "Alle Druckluftwaffen, die vor dem 01.01.1970 hergestellt und in den Handel gebracht wurden."
+        },
+        {
+          "label": "c",
+          "text": "Alle Druckluftwaffen mit dem Zulassungszeichen „F im Fünfeck“."
+        }
+      ]
+    },
+    {
+      "rawId": "2.34",
+      "text": "Welche der folgendermaßen gekennzeichneten Waffen dürfen Sie grundsätzlich als volljährige Person erlaubnisfrei erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Der Aufdruck „Frei ab 18 Jahren“ ist auf allen wesentlichen Teilen der Waffe eingeprägt."
+        },
+        {
+          "label": "b",
+          "text": "Auf der Waffe befindet sich das Zulassungszeichen (PTB im Kreis) oder das Zulassungszeichen (F im Fünfeck)."
+        },
+        {
+          "label": "c",
+          "text": "Auf der Waffe befinden sich die Zulassungszeichen „PTB im Viereck“ und das Zulassungszeichen (F im Fünfeck)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.35",
+      "text": "Braucht ein Volljähriger für den Erwerb von Druckluft-, Federdruckoder CO2-Waffen eine Erwerbsberechtigung?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, in jedem Fall."
+        },
+        {
+          "label": "b",
+          "text": "Ja, wenn die Waffe mit „F im Fünfeck“ gekennzeichnet ist."
+        },
+        {
+          "label": "c",
+          "text": "Nein, wenn die Waffe mit „F im Fünfeck“ gekennzeichnet ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.36",
+      "text": "Sie haben in ihrer WBK einen Voreintrag für einen Revolver im Kaliber .38 Spezial. Ihr Waffenhändler bietet Ihnen zu einem sehr günstigen Preis ein Sondermodell im Kaliber .357 Mag. an. Dürfen Sie diesen erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, der Durchmesser (das Kaliber) ist ja gleich."
+        },
+        {
+          "label": "b",
+          "text": "Nein, die Magnum-Patrone ist länger."
+        },
+        {
+          "label": "c",
+          "text": "Nein, weil Sie keinen entsprechenden Voreintrag haben."
+        }
+      ]
+    },
+    {
+      "rawId": "2.37",
+      "text": "An wen dürfen erlaubnispflichtige Pistolen verkauft werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Reservisten der Bundeswehr"
+        },
+        {
+          "label": "b",
+          "text": "Polizeibeamte"
+        },
+        {
+          "label": "c",
+          "text": "Personen mit Erwerbsberechtigung"
+        }
+      ]
+    },
+    {
+      "rawId": "2.38",
+      "text": "Wer benötigt keine Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Derjenige, der eine Druckluftwaffe, deren Geschosse eine Bewegungsenergie von nicht mehr als 7,5 Joule erteilt wurde und die mit dem Zulassungszeichen „F im Fünfeck“ gekennzeichnet ist, erwirbt."
+        },
+        {
+          "label": "b",
+          "text": "Derjenige, der eine Schreckschuss-, Reizstoffoder Signalwaffe mit dem Zulassungszeichen „PTB im Kreis“ erwirbt."
+        },
+        {
+          "label": "c",
+          "text": "Derjenige, der eine Zündnadel-Pistole erwirbt, deren Modell vor dem 01.01.1871 hergestellt worden ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.39",
+      "text": "Wer benötigt keine eigene Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Derjenige, der eine erlaubnispflichtige Schusswaffe nur vorübergehend auf einem Schießstand zum dortigen Schießen erwirbt."
+        },
+        {
+          "label": "b",
+          "text": "Derjenige, der eine erlaubnispflichtige Schusswaffe nur vorübergehend für einen Zeitraum von weniger als einem Monat von einem Berechtigten leiht."
+        },
+        {
+          "label": "c",
+          "text": "Derjenige, der eine erlaubnispflichtige Schusswaffe nur vorübergehend von einem Berechtigten zur gewerbsmäßigen Beförderung, bzw. Lagerung übernimmt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.40",
+      "text": "Welches Dokument berechtigt auch zum Erwerb von Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Europäischer Feuerwaffenpass"
+        },
+        {
+          "label": "b",
+          "text": "Jagdschein (nur für Langwaffenmunition)"
+        },
+        {
+          "label": "c",
+          "text": "Polizeidienstausweis"
+        }
+      ]
+    },
+    {
+      "rawId": "2.41",
+      "text": "Welche Erlaubnisse berechtigen zum Erwerb von Munition?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenbesitzkarte, sofern eine Munitionserwerbsberechtigung eingetragen ist."
+        },
+        {
+          "label": "b",
+          "text": "Gültiger Jagdschein (Langwaffenmunition)"
+        },
+        {
+          "label": "c",
+          "text": "Munitionserwerbsschein"
+        }
+      ]
+    },
+    {
+      "rawId": "2.42",
+      "text": "Berechtigt die grüne Waffenbesitzkarte zum Munitionserwerb?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn ich Sportschütze bin."
+        },
+        {
+          "label": "b",
+          "text": "Nur, soweit für die eingetragenen Waffen die Erlaubnis zum Munitionserwerb in der WBK vermerkt ist."
+        },
+        {
+          "label": "c",
+          "text": "Nein, es ist immer zusätzlich ein Munitionserwerbsschein erforderlich."
+        }
+      ]
+    },
+    {
+      "rawId": "2.43",
+      "text": "Mit welcher Erlaubnis kann Munition erworben werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sportschützenausweis"
+        },
+        {
+          "label": "b",
+          "text": "Sportschützen-WBK (gelbe WBK)"
+        },
+        {
+          "label": "c",
+          "text": "Sprengstofferlaubnis"
+        }
+      ]
+    },
+    {
+      "rawId": "2.44",
+      "text": "Eine Munitionserwerbsberechtigung für Patronen im Kaliber .357 Magnum berechtigt zum Erwerb von Munition...",
+      "options": [
+        {
+          "label": "a",
+          "text": "auch im Kaliber .38 Special."
+        },
+        {
+          "label": "b",
+          "text": "nur im Kaliber .357 Magnum."
+        },
+        {
+          "label": "c",
+          "text": "auch im Kaliber 9 mm Luger."
+        }
+      ]
+    },
+    {
+      "rawId": "2.45",
+      "text": "Ihre WBK lässt den Erwerb von Munition im Kaliber .357 Magnum zu. Dürfen Sie damit auch Munition 9 mm Luger erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, weil der Durchmesser nur einen minimalen Unterschied aufweist."
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        },
+        {
+          "label": "c",
+          "text": "Ja, aber ich muss später die Behörde informieren."
+        }
+      ]
+    },
+    {
+      "rawId": "2.46",
+      "text": "Ihre WBK lässt den Erwerb von Munition im Kaliber 9 mm Luger zu. Dürfen Sie dann auch Munition im Kaliber 9 mm kurz erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, der Kaliberdurchmesser ist ja identisch."
+        },
+        {
+          "label": "b",
+          "text": "Nur, wenn der Händler mir die Munition überlässt."
+        },
+        {
+          "label": "c",
+          "text": "Nein, nur Patronen im Kaliber 9 mm Luger."
+        }
+      ]
+    },
+    {
+      "rawId": "2.47",
+      "text": "Für welche Patronenmunition erhält der Pistolenschütze eine Erlaubnis?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Für Munition mit Hohlspitzgeschossen"
+        },
+        {
+          "label": "b",
+          "text": "Für Leuchtspurmunition"
+        },
+        {
+          "label": "c",
+          "text": "Für Betäubungsmunition zu Angriffszwecken"
+        }
+      ]
+    },
+    {
+      "rawId": "2.48",
+      "text": "Ist der Erwerb von Presslingen erlaubnispflichtig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, Sprengstofferlaubnis erforderlich"
+        },
+        {
+          "label": "b",
+          "text": "Ja, Munitionserwerbsberechtigung erforderlich"
+        },
+        {
+          "label": "c",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "2.49",
+      "text": "Darf man Schrotmunition in unbeschränkter Menge erwerben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, auf dem Schießstand zum sofortigen Verbrauch lediglich auf dieser Schießstätte."
+        },
+        {
+          "label": "b",
+          "text": "Ja, mit Erwerbsberechtigung"
+        },
+        {
+          "label": "c",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "2.50",
+      "text": "Sie überlassen Ihre WBK-pflichtigen Schusswaffen Ihrem Vereinskollegen für die Dauer von 2 Monaten. Er will die Waffen ausprobieren und Ihnen gegebenenfalls abkaufen.",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das ist waffenrechtlich erlaubt."
+        },
+        {
+          "label": "b",
+          "text": "Das ist waffenrechtlich nicht erlaubt."
+        },
+        {
+          "label": "c",
+          "text": "WBK-Inhaber dürfen ihre Schusswaffen grundsätzlich immer tauschen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.51",
+      "text": "Sie überlassen einem Berechtigten auf Dauer Ihr Großkaliber-Sportgewehr. Innerhalb welcher Frist müssen Sie Ihrer Behörde das Überlassen anzeigen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "2 Wochen"
+        },
+        {
+          "label": "b",
+          "text": "4 Wochen"
+        },
+        {
+          "label": "c",
+          "text": "1 Woche"
+        }
+      ]
+    },
+    {
+      "rawId": "2.52",
+      "text": "Darf man einem anderen Waffenbesitzkarteninhaber eine Waffe leihen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, für einen von seinem Bedürfnis umfassten Zweck, aber nur vorübergehend, höchstens für einen Monat."
+        },
+        {
+          "label": "b",
+          "text": "Ja, ohne Zweckbindung, aber nur vorübergehend, für die Dauer von maximal einen Monat."
+        },
+        {
+          "label": "c",
+          "text": "Nein, es ist grundsätzlich eine behördliche Genehmigung erforderlich."
+        }
+      ]
+    },
+    {
+      "rawId": "2.53",
+      "text": "Unter welchen Voraussetzungen darf Ihnen ein Waffenhändler eine erlaubnispflichtige Schusswaffe zum Ausprobieren ohne vorherige Erlaubnis der zuständigen Behörde überlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Überhaupt nicht. Ohne vorherige Erlaubnis ist das immer verboten."
+        },
+        {
+          "label": "b",
+          "text": "Das ist waffenrechtlich für die Dauer von bis zu sechs Wochen ohne weitere Voraussetzung erlaubt."
+        },
+        {
+          "label": "c",
+          "text": "Das ist nur erlaubt, wenn man bereits eine WBK besitzt und der Erwerb vorübergehend ist (höchstens einen Monat)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.54",
+      "text": "Was hat der Erbe einer Schusswaffe zu veranlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Benachrichtigung des Nachlassgerichts"
+        },
+        {
+          "label": "b",
+          "text": "Änderung der WBK des Verstorbenen"
+        },
+        {
+          "label": "c",
+          "text": "Beantragung einer WBK bei der zuständigen Waffenbehörde binnen eines Monats nach Annahme der Erbschaft"
+        }
+      ]
+    },
+    {
+      "rawId": "2.55",
+      "text": "Was muss ein gesetzlicher Erbe einer Schusswaffe tun?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Innerhalb eines Monats nach Annahme der Erbschaft die Ausstellung einer WBK beantragen, sofern die Schusswaffe nicht vorher einem Berechtigten überlassen oder unbrauchbar gemacht wird."
+        },
+        {
+          "label": "b",
+          "text": "Änderung der WBK des Verstorbenen beantragen."
+        },
+        {
+          "label": "c",
+          "text": "Ein Erbe ohne waffenrechtliches Bedürfnis muss die geerbte Waffe blockieren lassen, soweit ein geeignetes Blockiersystem verfügbar ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.56",
+      "text": "Sie wollen eine Waffe mit einem anderen Berechtigten dauerhaft tauschen, was müssen Sie berücksichtigen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein Waffentausch ist gesetzlich nicht vorgesehen, jeder muss für die angestrebte Waffe erwerbsberechtigt sein und den Erwerb, sowie das Überlassen der anderen Waffe seiner zuständigen Behörde fristgerecht melden."
+        },
+        {
+          "label": "b",
+          "text": "Ein Waffentausch ist nur dann waffenrechtlich zulässig, wenn die Waffenart und das Kaliber gleich bleiben Anschließend ist die zuständige Behörde binnen von 14 Tagen zu informieren."
+        },
+        {
+          "label": "c",
+          "text": "Ein Waffentausch darf nur zwischen den Inhabern zweier gleichartiger Erlaubnisse im Rahmen des von ihrem Bedürfnis umfassten Zweckes erfolgen (z.B. nur zwei Sportschützen)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.57",
+      "text": "Welcher Sportschütze muss sich einer amtsoder fachärztlichen oder fachpsychologischen Untersuchung unterziehen, um seine persönliche Eignung zum Waffenerwerb nachzuweisen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "18-jähriger Sportschütze für eine Kleinkaliberpistole (KK-Pistole)"
+        },
+        {
+          "label": "b",
+          "text": "21-jähriger Sportschütze für ein Kleinkalibergewehr (KK-Gewehr)"
+        },
+        {
+          "label": "c",
+          "text": "24-jähriger Sportschütze für eine als erste Großkaliberwaffe zu erwerbende halbautomatische Pistole im Kaliber .45 ACP"
+        }
+      ]
+    },
+    {
+      "rawId": "2.58",
+      "text": "Für den Erwerb welcher Schusswaffe bedarf es einer Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "mehrschüssiger Vorderlader-Revolver"
+        },
+        {
+          "label": "b",
+          "text": "CO2-Pistole mit Zeichen"
+        },
+        {
+          "label": "c",
+          "text": "Gaspistole mit Zulassungszeichen"
+        }
+      ]
+    },
+    {
+      "rawId": "2.59",
+      "text": "Für den Erwerb welcher der nachfolgend genannten Waffen bedarf es einer Waffenbesitzkarte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluftgewehre ohne Zulassungszeichen „F im Fünfeck“, die nach dem 01.01.1970 hergestellt wurden (ausgenommen DDR-Produktion)."
+        },
+        {
+          "label": "b",
+          "text": "Perkussionsrevolver, deren Modell vor dem 01.01.1871 entwickelt wurde."
+        },
+        {
+          "label": "c",
+          "text": "Waffen in 4 mm M20 mit den Zulassungszeichen „F im Fünfeck“ und „PTB im Viereck“."
+        }
+      ]
+    },
+    {
+      "rawId": "2.60",
+      "text": "Schusswaffen können vorübergehend überlassen werden:",
+      "options": [
+        {
+          "label": "a",
+          "text": "dem Inhaber einer WBK."
+        },
+        {
+          "label": "b",
+          "text": "einer Person des persönlichen Vertrauens."
+        },
+        {
+          "label": "c",
+          "text": "einer Person mit bestandener Sachkundeprüfung."
+        }
+      ]
+    },
+    {
+      "rawId": "2.61",
+      "text": "Wem darf auf einer Schießstätte eine Kleinkaliber-Pistole überlassen werden, wenn eine für die Jugendarbeit geeignete Aufsichtsperson zur Verfügung steht?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Einem 12-jährigen, wenn eine schriftliche oder elektronische Einverständniserklärung des Sorgeberechtigten vorliegt."
+        },
+        {
+          "label": "b",
+          "text": "Einem 14-jährigen, wenn eine schriftliche oder elektronische Einverständniserklärung des Sorgeberechtigten vorliegt."
+        },
+        {
+          "label": "c",
+          "text": "Einem 14-jährigen, aber nur wenn er Mitglied der Schützenjugend ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.62",
+      "text": "Wem dürfen Sie während Ihres 3-wöchigen Urlaubs ihre erlaubnispflichtigen Schusswaffen zur Aufbewahrung überlassen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "befreundeten Polizeibeamten"
+        },
+        {
+          "label": "b",
+          "text": "Inhabern einer Waffenbesitzkarte"
+        },
+        {
+          "label": "c",
+          "text": "besonders vertrauenswürdigen Personen (z.B. Notar, Pfarrer)"
+        }
+      ]
+    },
+    {
+      "rawId": "2.63",
+      "text": "Wer benötigt keinen Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Derjenige, der eine erlaubnispflichtige Kurzwaffe als Bewachungsunternehmer im Rahmen seiner Tätigkeit führt."
+        },
+        {
+          "label": "b",
+          "text": "Derjenige, der eine erlaubnispflichtige Kurzwaffe während einer traditionellen Brauchtumsveranstaltung (z.B. Schützenaufmarsch) führt."
+        },
+        {
+          "label": "c",
+          "text": "Derjenige, der als Inhaber eines gültigen Jagdscheins eine erlaubnispflichtige Kurzwaffe während der berechtigten Jagdausübung führt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.64",
+      "text": "Was darf der Inhaber eines Kleinen Waffenscheins?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schreckschuss-, Reizstoffund Signalwaffen mit dem Zulassungszeichen „PTB im Kreis“ in der Öffentlichkeit (ausgenommen öffentliche Veranstaltungen) führen."
+        },
+        {
+          "label": "b",
+          "text": "Druckluftund CO2-Waffen mit dem Zulassungszeichen „F im Fünfeck“ in der Öffentlichkeit (ausgenommen öffentliche Veranstaltungen) führen."
+        },
+        {
+          "label": "c",
+          "text": "Erlaubnispflichtige Schusswaffen lediglich vorübergehend, höchstens aber für einen Monat von einem Berechtigen zur sicheren Lagerung übernehmen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.65",
+      "text": "Wozu berechtigt der Kleine Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zum Erwerb von Schreckschuss-, Reizstoffund Signalwaffen, sofern diese das Zulassungszeichen „PTB im Kreis“ tragen."
+        },
+        {
+          "label": "b",
+          "text": "Zum Besitz von Schreckschuss-, Reizstoffund Signalwaffen, sofern diese das Zulassungszeichen „PTB im Kreis“ tragen."
+        },
+        {
+          "label": "c",
+          "text": "Zum Führen von Schreckschuss-, Reizstoffund Signalwaffen, sofern diese das Zulassungszeichen „PTB im Kreis“ tragen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.66",
+      "text": "Welche Erlaubnisse berechtigen zum zugriffsbereiten Führen außerhalb der eigenen Wohnung, der eigenen Geschäftsräume und des eigenen befriedeten Besitztums einer Druckluftwaffe (mit Zulassungszeichen „F im Fünfeck“)?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Kleiner Waffenschein in Verbindung mit einem gültigen Ausweis"
+        },
+        {
+          "label": "b",
+          "text": "Waffenbesitzkarte in Verbindung mit Sportschützenausweis"
+        },
+        {
+          "label": "c",
+          "text": "Waffenschein oder behördliche Ausnahmegenehmigung"
+        }
+      ]
+    },
+    {
+      "rawId": "2.67",
+      "text": "Welche Gegenstände dürfen grundsätzlich nicht in der Öffentlichkeit geführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Anscheinswaffen (originalgetreue Imitate von Feuerwaffen)"
+        },
+        {
+          "label": "b",
+          "text": "Schweizer Taschenmesser und Gurtschneider"
+        },
+        {
+          "label": "c",
+          "text": "Feststehende Messer mit einer Klingenlänge über 12 cm und Einhandmesser"
+        }
+      ]
+    },
+    {
+      "rawId": "2.68",
+      "text": "Unter welchen Voraussetzungen dürfen Hiebund Stoßwaffen, feststehende Messer mit einer Klingenlänge über 12 cm und Einhandmesser ausnahmsweise in der Öffentlichkeit geführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Für den Fall, dass man sich irgendwann einmal selbst verteidigen muss."
+        },
+        {
+          "label": "b",
+          "text": "Beim Transport in einem verschlossenen Behältnis."
+        },
+        {
+          "label": "c",
+          "text": "Sofern ein berechtigtes Interesse am Führen vorliegt (z. B. im Zusammenhang mit der Berufsausübung, der Brauchtumspflege, dem Sport oder einem allgemein anerkannten Zweck)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.69",
+      "text": "Wer benötigt einen Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wer eine erlaubnispflichtige Schusswaffe besitzt."
+        },
+        {
+          "label": "b",
+          "text": "Wer als Berechtigter mehr als drei Waffen zum Schießstand transportieren will."
+        },
+        {
+          "label": "c",
+          "text": "Wer eine Schusswaffe außerhalb der eigenen Wohnung, Geschäftsräume, des befriedeten Besitztums oder der Schießstätte zugriffsbereit führen möchte."
+        }
+      ]
+    },
+    {
+      "rawId": "2.70",
+      "text": "Zum Führen welcher Waffen benötigt man keine Erlaubnis?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffen mit dem Zeichen"
+        },
+        {
+          "label": "b",
+          "text": "Reizstoff-Sprühdosen mit dem Zeichen"
+        },
+        {
+          "label": "c",
+          "text": "Waffen mit dem Zeichen"
+        }
+      ]
+    },
+    {
+      "rawId": "2.71",
+      "text": "Für welche Art des Umgangs mit Schusswaffen benötigt man einen Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Transport einer erlaubnispflichtigen Waffe zum Schießstand"
+        },
+        {
+          "label": "b",
+          "text": "Selbstschutz zu Hause"
+        },
+        {
+          "label": "c",
+          "text": "Zugriffsbereites Führen einer erlaubnispflichtigen Waffe auf der Straße"
+        }
+      ]
+    },
+    {
+      "rawId": "2.72",
+      "text": "Als Erlaubnis zum zugriffsbereiten Führen einer Waffe braucht man den Kleinen Waffenschein für...",
+      "options": [
+        {
+          "label": "a",
+          "text": "Druckluft-, Federdruck-, CO2 Waffen."
+        },
+        {
+          "label": "b",
+          "text": "Schreckschuss-, Reizstoff-, Signalwaffen mit dem Zeichen „PTB im Kreis“ (PTB = Physikalisch-Technische Bundesanstalt)."
+        },
+        {
+          "label": "c",
+          "text": "Feuerwaffen, die nicht zugriffsund nicht schussbereit transportiert werden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.73",
+      "text": "Wie ist eine Schusswaffe von der Wohnung zu der Schießstätte zu transportieren, wenn kein Waffenschein erteilt wurde? Beim Transport darf die Waffe nicht zugriffsbereit und nicht schussbereit sein.",
+      "options": []
+    },
+    {
+      "rawId": "2.74",
+      "text": "a) Welche Signalwaffen können erlaubnisfrei erworben werden?",
+      "options": [
+        {
+          "label": "b",
+          "text": "Dürfen diese zugriffsbereit geführt werden?"
+        },
+        {
+          "label": "a",
+          "text": "Signalwaffen mit dem Bauartzulassungszeichen „PTB im Kreis“ (PTB = PhysikalischTechnische Bundesanstalt)."
+        },
+        {
+          "label": "b2",
+          "text": "Das Führen ist nur mit dem Kleinen Waffenschein erlaubt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.75",
+      "text": "Benötigen Jäger zur befugten Jagdausübung einen Waffenschein? Nein",
+      "options": []
+    },
+    {
+      "rawId": "2.76",
+      "text": "Wer benötigt einen Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wer eine „scharfe“ Waffe zu Hause führt."
+        },
+        {
+          "label": "b",
+          "text": "Wer eine Druckluftpistole unverpackt auf dem Rücksitz im PKW mitnimmt."
+        },
+        {
+          "label": "c",
+          "text": "Wer mit der Armbrust auf einem Feld schießt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.77",
+      "text": "Bei welcher der nebenstehend aufgeführten Schusswaffen benötigt man einen Waffenschein, wenn man sie außerhalb der Wohnung zugriffsbereit „bei sich“ hat?",
+      "options": [
+        {
+          "label": "a",
+          "text": "doppelläufiges Steinschlossgewehr (Modell vor 1871)"
+        },
+        {
+          "label": "b",
+          "text": "Druckluftpistole mit einer Mündungsenergie bis zu 7,5 Joule"
+        },
+        {
+          "label": "c",
+          "text": "Steinschloss-Duellpistole (Modell vor 1871)"
+        }
+      ]
+    },
+    {
+      "rawId": "2.78",
+      "text": "Einer Erlaubnis zum Führen einer erlaubnispflichtigen Schusswaffe bedarf nicht,",
+      "options": [
+        {
+          "label": "a",
+          "text": "wer diese beim Schießen auf Schießstätten zu einem vom Bedürfnis umfassten Zweck oder im Zusammenhang damit verwendet."
+        },
+        {
+          "label": "b",
+          "text": "wer die Waffe als Sportschütze unverpackt auf dem PKW-Rücksitz zum Büchsenmacher bringt."
+        },
+        {
+          "label": "c",
+          "text": "wer die Waffe seinen Freunden auf der Straße zeigt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.79",
+      "text": "Benötigen Sie zum Führen einer Druckluftpistole (mit Kennzeichnung „F im Fünfeck“) im Gürtelholster einen Waffenschein?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja"
+        },
+        {
+          "label": "b",
+          "text": "Nein"
+        },
+        {
+          "label": "c",
+          "text": "Nur, wenn ich noch nicht volljährig bin."
+        }
+      ]
+    },
+    {
+      "rawId": "2.80",
+      "text": "Welcher der genannten Gegenstände darf nicht ohne weiteres geführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Baseballschläger"
+        },
+        {
+          "label": "b",
+          "text": "Klappmesser mit 14 cm langer, nicht feststellbarer einseitig geschliffener Klinge."
+        },
+        {
+          "label": "c",
+          "text": "Kochmesser mit 14 cm langer Klinge."
+        },
+        {
+          "label": "d",
+          "text": "Samuraischwert"
+        },
+        {
+          "label": "e",
+          "text": "Schlagstock"
+        }
+      ]
+    },
+    {
+      "rawId": "2.81",
+      "text": "Ist der Umgang mit sogenannten Pfeilabschussgeräten im Sinne des Waffengesetzes erlaubnispflichtig und der Eintrag in eine Waffenbesitzkarte erforderlich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, da Pfeilabschussgeräte nicht in der Anlage 2 Unterabschnitt 2 -erlaubnisfreie Arten des Umgangsgenannt sind."
+        },
+        {
+          "label": "b",
+          "text": "Nein, sie sind waffenrechtlich wie Armbrüste einzuordnen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.82",
+      "text": "Um Ihre Vorderschaftrepetierflinte leichter transportieren zu können ersetzen Sie den normalen Schaft durch einen Pistolengriff.",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das ist verboten."
+        },
+        {
+          "label": "b",
+          "text": "Änderungen am Schaft sind zulässig, wenn die Waffe danach noch mindestens 61 cm lang ist."
+        },
+        {
+          "label": "c",
+          "text": "Das ist nur Jägern erlaubt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.83",
+      "text": "Welche Legitimationspapiere sind beim Transport einer erlaubnispflichtigen Schusswaffe durch einen Sportschützen mitzuführen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Personal-/Reisepass und Schützenausweis"
+        },
+        {
+          "label": "b",
+          "text": "Waffenbesitzkarte und Waffenschein"
+        },
+        {
+          "label": "c",
+          "text": "Personalausweis oder Reisepass und Waffenbesitzkarte"
+        }
+      ]
+    },
+    {
+      "rawId": "2.84",
+      "text": "Welche Dokumente muss ein Sportschütze mitführen, der",
+      "options": [
+        {
+          "label": "a",
+          "text": "seine eigene erlaubnispflichtige Waffe zum Schießstand führt (nicht zugriffsbzw. schussbereit)"
+        },
+        {
+          "label": "b",
+          "text": "die erlaubnispflichtige Waffe eines anderen zum Schießstand führt (nicht zugriffsbzw. schussbereit)?"
+        },
+        {
+          "label": "a2",
+          "text": "Personalausweis oder Reisepass und WBK"
+        },
+        {
+          "label": "b2",
+          "text": "Personalausweis oder Reisepass, die eigene WBK und eine Bescheinigung des Überlassens mit Datum der Überlassung."
+        }
+      ]
+    },
+    {
+      "rawId": "2.85",
+      "text": "Welche Dokumente benötigen Sie zum zugriffsbereiten Führen einer bauartzugelassenen Schreckschusswaffe?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keine Dokumente erforderlich, da der Erwerb ja auch genehmigungsfrei ist."
+        },
+        {
+          "label": "b",
+          "text": "Kleiner Waffenschein und Personalausweis oder Reisepass"
+        },
+        {
+          "label": "c",
+          "text": "Waffenbesitzkarte und Personalausweis oder Reisepass"
+        }
+      ]
+    },
+    {
+      "rawId": "2.86",
+      "text": "Der Transport einer KleinkaliberSportpistole durch einen WBK-Inhaber bedarf keiner Erlaubnis, wenn diese…",
+      "options": [
+        {
+          "label": "a",
+          "text": "im nicht einsehbaren Handschuhfach eines Pkw befördert wird."
+        },
+        {
+          "label": "b",
+          "text": "versteckt am Körper getragen wird."
+        },
+        {
+          "label": "c",
+          "text": "ungeladen im verschlossenen Waffenkoffer befördert wird, wenn der Transport zu einem vom Bedürfnis umfassten Zweck erfolgt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.87",
+      "text": "Darf ein Anderer als der WBK-Inhaber dessen Kurzwaffe zur Instandsetzung zum Waffengeschäft bringen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn er Inhaber einer WBK ist oder die Waffe gewerblich transportiert."
+        },
+        {
+          "label": "b",
+          "text": "Nein, das ist nicht erlaubt."
+        },
+        {
+          "label": "c",
+          "text": "Das muss immer erst bei der Behörde beantragt werden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.88",
+      "text": "Sie wollen den defekten Lauf ihrer Pistole zum Waffenhändler bringen. Wie nehmen sie ihn waffenrechtlich einwandfrei mit? Bei einem Lauf handelt es sich um ein wesentliches Teil einer Waffe. Diese stehen den Schusswaffen gleich. Der Lauf ist deshalb nicht zugriffsbereit zu transportieren.",
+      "options": []
+    },
+    {
+      "rawId": "2.89",
+      "text": "Was ist beim Transport einer Schusswaffe von der Wohnung zur Schießstätte zu beachten? Beim Transport darf die Waffe nicht schussbereit und nicht zugriffsbereit sein. Der Transport darf nur zum vom Bedürfnis umfassten Zweck erfolgen.",
+      "options": []
+    },
+    {
+      "rawId": "2.90",
+      "text": "Erlaubnisfreies Führen im Sinne des Waffengesetzes liegt vor, wenn man als WBK-Inhaber die Waffe...",
+      "options": [
+        {
+          "label": "a",
+          "text": "bei einer Schützenhochzeit zum Spalier stehen verwendet."
+        },
+        {
+          "label": "b",
+          "text": "im verschlossenen Kofferraum des PKW, ungeladen und verpackt zum Schießstand fährt."
+        },
+        {
+          "label": "c",
+          "text": "im verschlossenen Waffenkoffer zum Büchsenmacher transportiert."
+        }
+      ]
+    },
+    {
+      "rawId": "2.91",
+      "text": "Unter welchen Voraussetzungen darf man in einem fremden Besitztum eine Schusswaffe ohne Waffenschein bei sich haben? Unter der Voraussetzung, dass das Führen der Waffe vom Bedürfnis umfasst ist oder damit im Zusammenhang steht und der Hausrechtsinhaber zugestimmt hat.",
+      "options": []
+    },
+    {
+      "rawId": "2.92",
+      "text": "Bedarf es zum Führen",
+      "options": [
+        {
+          "label": "1",
+          "text": "einer nicht schussbereiten Waffe im unverschlossenen Handschuhfach oder"
+        },
+        {
+          "label": "2",
+          "text": "einer schussbereiten Waffe im verschlossenen Handschuhfach eines Waffenscheines? Zu 1: Ja Zu 2: Ja"
+        }
+      ]
+    },
+    {
+      "rawId": "2.93",
+      "text": "Dürfen Teilnehmer an öffentlichen Veranstaltungen, insbesondere an Volksfesten und öffentlichen Vergnügungen, Waffen mit sich führen? Nein, es sei denn, die zuständige Behörde hat allgemein oder für den Einzelfall eine Ausnahme zugelassen.",
+      "options": []
+    },
+    {
+      "rawId": "2.94",
+      "text": "Brauchen Sie zum zugriffsbereiten Führen von Druckluft-, Federdruckoder CO2-Waffen in der Öffentlichkeit einen Waffenschein? Ja (Der Kleine Waffenschein reicht nicht aus.)",
+      "options": []
+    },
+    {
+      "rawId": "2.95",
+      "text": "Ist der Transport einer erlaubnispflichtigen Schusswaffe durch den WBK-Inhaber von der Wohnung zum Schießstand zulässig?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur mit Waffenschein."
+        },
+        {
+          "label": "b",
+          "text": "Ja, wenn sie ungeladen und gesichert im Holster am Körper getragen wird."
+        },
+        {
+          "label": "c",
+          "text": "Ja, wenn sie nicht zugriffsbereit und nicht schussbereit transportiert wird und dies vom Bedürfnis umfasst ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.96",
+      "text": "Eine Erlaubnis zum Führen einer Schusswaffe im Sinne des Waffengesetzes ist erforderlich, wenn",
+      "options": [
+        {
+          "label": "a",
+          "text": "... sie entladen in der unverschlossenen Aktentasche mitgeführt wird."
+        },
+        {
+          "label": "b",
+          "text": "... sie geladen in einer verschlossenen Aktentasche mitgeführt wird."
+        },
+        {
+          "label": "c",
+          "text": "... sie sich entladen im unverschlossenen Handschuhfach eines PKW befindet und die Munition in einem Metallbehältnis mit Schwenkriegelschloss im Kofferraum mitgeführt wird."
+        }
+      ]
+    },
+    {
+      "rawId": "2.97",
+      "text": "Wer ist zum zugriffsbereiten Führen von Schreckschuss-, Reizstoffund Signalwaffen, deren Erwerb und Besitz erlaubnisfrei ist, berechtigt? Inhaber des Kleinen Waffenscheines",
+      "options": []
+    },
+    {
+      "rawId": "2.98",
+      "text": "Welche Schusswaffen bzw. sonstigen Waffen dürfen Sie bei öffentlichen Veranstaltungen „bei sich“ haben?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Erlaubt ist das Führen eines Schreckschussrevolvers, wenn ich den Kleinen Waffenschein habe."
+        },
+        {
+          "label": "b",
+          "text": "Steinschlosspistole, weil diese nach dem WaffG ohnehin geführt werden darf."
+        },
+        {
+          "label": "c",
+          "text": "Es dürfen keine Waffen im Sinne des § 1 Abs. 2 WaffG bei sich geführt werden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.99",
+      "text": "Kann man eine im Ausland erworbene erlaubnispflichtige Schusswaffe in die Bundesrepublik einführen/verbringen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, ohne Einschränkung."
+        },
+        {
+          "label": "b",
+          "text": "Ja, mit Waffenbesitzkarte."
+        },
+        {
+          "label": "c",
+          "text": "Ja, mit Verbringungserlaubnissen der zuständigen Behörden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.100",
+      "text": "Unter welchen Voraussetzungen darf man eine im Ausland erworbene Schusswaffe, die in der Bundesrepublik Deutschland erlaubnispflichtig ist, in das Bundesgebiet einführen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur, wenn man im Besitz einer in Deutschland gültigen Waffenbesitzkarte mit Voreintrag ist."
+        },
+        {
+          "label": "b",
+          "text": "Nur, wenn man im Besitz eines Europäischen Feuerwaffenpasses ist."
+        },
+        {
+          "label": "c",
+          "text": "Nur, wenn man im Besitz der entsprechenden Verbringungserlaubnisse ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.101",
+      "text": "Was ist beim Verbringen von Schusswaffen über Staatsgrenzen immer zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Beim Verbringen von Waffen nach Deutschland müssen vor Grenzübertritt die erforderlichen Erlaubnisse (z.B. Verbringungserlaubnis) vorliegen."
+        },
+        {
+          "label": "b",
+          "text": "Beim Verbringen von Waffen aus Deutschland müssen vor Grenzübertritt die erforderlichen Erlaubnisse des Ziellandes, der Bundesrepublik Deutschland und ggf. aller Transitländer vorliegen."
+        },
+        {
+          "label": "c",
+          "text": "Es genügt immer eine deutsche WBK."
+        }
+      ]
+    },
+    {
+      "rawId": "2.102",
+      "text": "Was muss ein Waffenbesitzer veranlassen, wenn er seine erlaubnispflichtige Schusswaffe in einem anderen Mitgliedsstaat der Europäischen Union verkaufen möchte?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nichts, der Verkauf von erlaubnispflichtigen Schusswaffen in das europäische Ausland ist generell erlaubnisfrei."
+        },
+        {
+          "label": "b",
+          "text": "Der Waffenbesitzer lässt sich die Erwerbserlaubnis des Käufers vorlegen und überlässt diesem dann die Waffe. Der Käufer meldet die Waffe nach Erhalt in seinem Heimatland an. Anschließend schickt er dem Verkäufer eine Kopie der Anmeldung, damit dieser die Waffe bei seiner Behörde abmelden kann."
+        },
+        {
+          "label": "c",
+          "text": "Er bittet den Käufer um Übersendung einer Erlaubnis des Empfängerlandes zur Einfuhr der Waffe. Anschließend beantragt der Verkäufer bei seiner zuständigen Behörde eine Erlaubnis zum dauerhaften Verbringen der Waffe ins Ausland. Erst nach Erlaubniserteilung darf die Waffe verbracht werden. (Die Behörde meldet die Erteilung der Ausfuhrerlaubnis dem Bundesverwaltungsamt, EU-Meldedienst)"
+        }
+      ]
+    },
+    {
+      "rawId": "2.103",
+      "text": "Darf man als Inhaber einer Waffenbesitzkarte eine im Ausland erworbene Schusswaffe in die Bundesrepublik Deutschland einführen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, aber nur wenn sich in der Waffenbesitzkarte ein entsprechender Voreintrag der zuständigen Erlaubnisbehörde befindet."
+        },
+        {
+          "label": "b",
+          "text": "Ja, die Waffe ist innerhalb von 14 Tagen bei der zuständigen Erlaubnisbehörde anzumelden."
+        },
+        {
+          "label": "c",
+          "text": "Nein, man benötigt vor der Einfuhr zunächst eine Verbringungserlaubnis seiner zuständigen Waffenbehörde und dann eine Verbringungserlaubnis des ausländischen Staates."
+        }
+      ]
+    },
+    {
+      "rawId": "2.104",
+      "text": "Wozu berechtigt der Europäische Feuerwaffenpass? Zur Mitnahme der dort eingetragenen Feuerwaffen und für diese bestimmten Munition in einen anderen Mitgliedsstaat. Eventuell ist eine Genehmigung des Mitgliedstaates notwendig.",
+      "options": []
+    },
+    {
+      "rawId": "2.105",
+      "text": "Wozu berechtigt mich der Europäische Feuerwaffenpass?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Zum dauerhaften Verbringen von Feuerwaffen in Mitgliedstaaten."
+        },
+        {
+          "label": "b",
+          "text": "Zur Feuerwaffenmitnahme bei Reisen in Mitgliedstaaten, beispielsweise zur Teilnahme an schießsportlichen Veranstaltungen oder zur Jagd."
+        },
+        {
+          "label": "c",
+          "text": "Zur Feuerwaffenmitnahme bei Reisen in Mitgliedstaaten, muss ich die Reise mindestens 14 Tage vorher meiner zuständigen Erlaubnisbehörde schriftlich anzeigen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.106",
+      "text": "Wie können Feuerwaffen dauerhaft in einen anderen Mitgliedstaat verbracht werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Feuerwaffen können mit einem Europäischen Feuerwaffenpass verbracht werden."
+        },
+        {
+          "label": "b",
+          "text": "Eine Verbringungserlaubnis zum Verbringen in einen Mitgliedstaat ist nicht erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Durch vorherige Verbringungserlaubnis des Mitgliedsstaates und darauf folgend einer Verbringungserlaubnis der zuständigen deutschen Waffenbehörde."
+        }
+      ]
+    },
+    {
+      "rawId": "2.107",
+      "text": "Welche Handlung erfüllt einen Straftatbestand im Sinne des Waffengesetzes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Feuerwaffen werden dauerhaft ohne entsprechende Erlaubnisse zum Verbringen in einen Mitgliedstaat verbracht."
+        },
+        {
+          "label": "b",
+          "text": "Feuerwaffen werden ohne eine waffenrechtliche Erlaubnis zur Ausfuhr in einen Drittstaat verbracht."
+        },
+        {
+          "label": "c",
+          "text": "Feuerwaffen werden mit einem Europäischen Feuerwaffenpasses dauerhaft in einen Mitgliedstaat verbracht."
+        }
+      ]
+    },
+    {
+      "rawId": "2.108",
+      "text": "Was ist bei einer dauerhaften Ausfuhr von Schusswaffen in einen Drittstaat zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Es ist nichts zu beachten."
+        },
+        {
+          "label": "b",
+          "text": "Es ist eine Ausfuhrerlaubnis der zuständigen Waffenbehörde erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Außenwirtschaftsrechtliche Bestimmungen sind zu beachten (Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)."
+        }
+      ]
+    },
+    {
+      "rawId": "2.109",
+      "text": "Berechtigt der Europäische Feuerwaffenpass zur Einfuhr von erlaubnispflichtiger Munition aus einem Mitgliedstaat, sofern die Munition dort von Ihnen berechtigterweise erworben wurde?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja"
+        },
+        {
+          "label": "b",
+          "text": "Nein. Eine Verbringungserlaubnis ist erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Ja, aber nur wenn eine Waffe entsprechenden Kalibers in den EFP eingetragen ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.110",
+      "text": "Welche Waffen dürfen ohne Beschusszeichen einem anderen zum Schießen überlassen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "alle Schusswaffen"
+        },
+        {
+          "label": "b",
+          "text": "Grundsätzlich keine Schusswaffen, außer diejenigen, die vor dem 1. Januar 1891 hergestellt wurden oder für die von einem Beschussamt eine Bescheinigung darüber ausgestellt wurde, dass der Beschuss der Waffe nicht durchgeführt werden kann."
+        },
+        {
+          "label": "c",
+          "text": "Doppelflinten"
+        }
+      ]
+    },
+    {
+      "rawId": "2.111",
+      "text": "Dürfen Sie als Sportschütze mit einer Schusswaffe, die der Beschusspflicht unterliegt, auf dem Schießstand „Probeschüsse“ abgeben, wenn kein Beschussstempel angebracht ist?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, das Probeschießen ist gestattet."
+        },
+        {
+          "label": "b",
+          "text": "Nein, das ist niemals gestattet."
+        },
+        {
+          "label": "c",
+          "text": "Solche Schüsse sind nur durch die verantwortliche Aufsicht zulässig."
+        }
+      ]
+    },
+    {
+      "rawId": "2.112",
+      "text": "Wann ist eine Waffe erneut zu beschießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Neuwaffen nach 15 Jahren, bei Gebrauchtwaffen nach 10 Jahren."
+        },
+        {
+          "label": "b",
+          "text": "Ein Beschuss ist unter anderem dann erforderlich, wenn eine Waffe von einem gewerblichen Waffenhändler an einen Kunden verkauft wird."
+        },
+        {
+          "label": "c",
+          "text": "Ein erneuter Beschuss muss immer dann erfolgen, wenn wesentliche Teile der Waffe verändert oder instand gesetzt wurden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.113",
+      "text": "Ist die zuständige Erlaubnisbehörde zu unterrichten, wenn durch einen Büchsenmacher der Lauf ersetzt und die Waffe anschließend neu beschossen wurde?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Erlaubnisbehörde ist immer zu unterrichten."
+        },
+        {
+          "label": "b",
+          "text": "Die Erlaubnisbehörde ist zu unterrichten, wenn ein wesentliches Teil erworben wurde."
+        },
+        {
+          "label": "c",
+          "text": "Die Erlaubnisbehörde ist nie zu unterrichten."
+        }
+      ]
+    },
+    {
+      "rawId": "2.114",
+      "text": "Was bedeutet die Überstempelung eines Beschusszeichens mit einem „X“?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Die Waffe wurde in England erneut beschossen, es ist nur noch der englische Beschuss gültig."
+        },
+        {
+          "label": "b",
+          "text": "Die Waffe wurde bei einer erneuten Beschussprüfung als nicht mehr beschusstauglich befunden, der bereits vorhandene Beschussstempel ist ungültig."
+        },
+        {
+          "label": "c",
+          "text": "Die Waffe wurde für den Export nach Großbritannien erneut beschossen, da dort der deutsche Beschuss nicht gültig ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.115",
+      "text": "Wann ist eine Waffe erneut zum Beschuss vorzulegen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ein neuer Lauf (kein Austauschlauf) wurde eingebaut"
+        },
+        {
+          "label": "b",
+          "text": "Sportgriffschalen wurden montiert"
+        },
+        {
+          "label": "c",
+          "text": "der Verschluss wurde erneuert"
+        },
+        {
+          "label": "d",
+          "text": "die Schussfolge wurde geändert e) der Lauf wurde mit Kompensatoröffnungen versehen f) das Abzugsgewicht wurde durch Einbau einer anderen Feder verringert"
+        }
+      ]
+    },
+    {
+      "rawId": "2.116",
+      "text": "Darf mit einer amerikanischen Schusswaffe mit französischem Beschusszeichen in der Bundesrepublik geschossen werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, die Waffe braucht ein deutsches Beschusszeichen."
+        },
+        {
+          "label": "b",
+          "text": "Ja, das französische Beschusszeichen ist anerkannt."
+        },
+        {
+          "label": "c",
+          "text": "Nein, die Waffe braucht ein amerikanisches Beschusszeichen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.117",
+      "text": "Eine Feuerwaffe wird aus einem der nebenstehenden Länder eingeführt. Bei welchem Land muss die Feuerwaffe einem Beschussamt der C.I.P. (Internationale Kommission zur Prüfung von Handfeuerwaffen und Munition) vorgelegt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USA"
+        },
+        {
+          "label": "b",
+          "text": "Ungarn"
+        },
+        {
+          "label": "c",
+          "text": "Chile"
+        }
+      ]
+    },
+    {
+      "rawId": "2.118",
+      "text": "Wo dürfen Sie mit Druckluftwaffen, die das Zeichen „F im Fünfeck“ tragen, schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "In Ihrem eingezäunten Garten, wenn sichergestellt ist, dass die Geschosse den Garten nicht verlassen können."
+        },
+        {
+          "label": "b",
+          "text": "In einem verlassenen Steinbruch (kein Geschoss kann das Gelände verlassen)."
+        },
+        {
+          "label": "c",
+          "text": "Nur auf zugelassenen Schießständen."
+        },
+        {
+          "label": "d",
+          "text": "Im eigenen Keller, wenn hierbei niemand gefährdet werden kann."
+        }
+      ]
+    },
+    {
+      "rawId": "2.119",
+      "text": "Benötigen Sie zum Schießen mit einer Waffe im Kaliber 6 mm Flobert (kein F im Fünfeck auf der Waffe vorhanden) eine behördliche Erlaubnis?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Ja, außerhalb von Schießstätten."
+        },
+        {
+          "label": "c",
+          "text": "Nicht auf dafür zugelassenen Schießstätten."
+        }
+      ]
+    },
+    {
+      "rawId": "2.120",
+      "text": "Wo darf man ohne Erlaubnis mit einem Gewehr im Kaliber .22lr schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Im Wald"
+        },
+        {
+          "label": "b",
+          "text": "Außerhalb des befriedeten Besitztums"
+        },
+        {
+          "label": "c",
+          "text": "Auf dafür zugelassenen Schießstätten"
+        }
+      ]
+    },
+    {
+      "rawId": "2.121",
+      "text": "Wann darf ein 14-jähriger mit dem Einverständnis des/der Sorgeberechtigten auf dem Schießstand mit einer Waffe für Randfeuerpatronen bis Kaliber 5,6 mm lfB (.22lr) und einer Mündungsenergie von maximal 200 Joule schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn der Schießstandbetreiber zustimmt."
+        },
+        {
+          "label": "b",
+          "text": "Wenn der erforderlichen Aufsichtsperson das Einverständnis des/der Sorgeberechtigten vorliegt."
+        },
+        {
+          "label": "c",
+          "text": "Wenn die behördliche Ausnahmegenehmigung vorliegt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.122",
+      "text": "In welchem Alter darf ein Jugendlicher auf dem Schießstand, ohne unter einer besonderen Obhut (durch den/die Sorgeberechtigten oder der zur Kinderund Jugendarbeit für das Schießen geeigneten Aufsichtsperson) zu stehen, mit einem Kleinkaliber-Match-Gewehr schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "mit 12 Jahren"
+        },
+        {
+          "label": "b",
+          "text": "mit 14 Jahren"
+        },
+        {
+          "label": "c",
+          "text": "mit 17 Jahren"
+        }
+      ]
+    },
+    {
+      "rawId": "2.123",
+      "text": "Mit welchen Waffen dürfen ein 13jähriger und ein 15-jähriger auf einer zugelassenen Schießstätte schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ein 13-jähriger darf mit Druckluft-, Federdruckund CO2-Waffen schießen, wenn der/die Sorgeberechtigte/n schriftlich oder elektronisch sein/ihr Einverständnis erklärt hat/haben und eine geeignete Aufsichtsperson ständig anwesend ist."
+        },
+        {
+          "label": "b",
+          "text": "Ein 15-jähriger darf mit halbautomatischen Waffen bis Kaliber 9mm schießen, wenn der/die Sorgeberechtigte/n schriftlich oder elektronisch sein/ihr Einverständnis er-klärt hat/haben und eine geeignete Aufsichtsperson ständig anwesend."
+        },
+        {
+          "label": "c",
+          "text": "Ein 15-jähriger darf mit Waffen für Randfeuerpatronen bis Kaliber 5,6 mm lfB (.22 l. r.) und einer Mündungsenergie von maximal 200 Joule und mit Einzellader-Langwaffen mit glatten Läufen im Kaliber 12 oder kleiner schießen, wenn der/die Sorgeberechtigte/n schriftlich oder elektronisch sein/ihr Einverständnis erklärt hat/haben und eine geeignete Aufsichtsperson ständig anwesend ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.124",
+      "text": "Darf ein 16-jähriger Schütze auf einer dafür zugelassenen Schießstätte mit einer halbautomatischen Pistole im Kaliber .40 S&W schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Wenn eine verantwortliche Aufsichtsperson anwesend ist, ist dies möglich."
+        },
+        {
+          "label": "b",
+          "text": "Nur unter Aufsicht eines Behördenvertreters."
+        },
+        {
+          "label": "c",
+          "text": "Nein, der Schütze muss dafür mindestens 18 Jahre alt sein."
+        }
+      ]
+    },
+    {
+      "rawId": "2.125",
+      "text": "Unter welchen Voraussetzungen darf ein Jugendlicher nach Vollendung des 15. Lebensjahres und noch nicht vollendetem 16. Lebensjahr auf dem Schießstand eines Vereins schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mit schriftlichem Einverständnis der Sorgeberechtigten bei Druckluftwaffen bis zu 7,5 Joule Bewegungsenergie."
+        },
+        {
+          "label": "b",
+          "text": "Hierfür ist die behördliche Genehmigung (§3 WaffG) erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Mit schriftlichem Einverständnis der Sorgeberechtigten und unter Aufsicht einer hierfür geeigneten Person beim Schießen mit einem Kleinkalibergewehr (.22lr) mit maximal 200 Joule Mündungsenergie."
+        }
+      ]
+    },
+    {
+      "rawId": "2.126",
+      "text": "Unter welchen Voraussetzungen darf ein Kind nach Vollendung seines 12. Lebensjahres mit einer Druckluftpistole auf dem Schießstand eines Vereins schießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Das Kind darf nur mit der vereinseigenen Druckluftpistole schießen."
+        },
+        {
+          "label": "b",
+          "text": "Hierfür ist die behördliche Genehmigung (§3 WaffG) erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Das Kind darf mit schriftlichem Einverständnis seiner Eltern und unter Aufsicht einer hierfür geeigneten Person schießen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.127",
+      "text": "Darf eine kombinierte Langwaffe (z.B. Drilling) zum sportlichen Schießen benutzt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, nur wenn es die Sportordnung und die Schießstandzulassung erlauben."
+        },
+        {
+          "label": "b",
+          "text": "Nein, kombinierte Waffen sind vom sportlichen Schießen ausgeschlossen."
+        },
+        {
+          "label": "c",
+          "text": "Ja, ohne jede Einschränkung."
+        }
+      ]
+    },
+    {
+      "rawId": "2.128",
+      "text": "Wo darf der Sportschütze Patronen mit Hohlspitzgeschossen aus Kurzwaffen im Kaliber .22lr verschießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Auf dem eigenen Grundstück."
+        },
+        {
+          "label": "b",
+          "text": "Auf dafür zugelassenen Schießständen."
+        },
+        {
+          "label": "c",
+          "text": "Nirgends, das ist gesetzlich verboten."
+        }
+      ]
+    },
+    {
+      "rawId": "2.129",
+      "text": "Welche Dokumente benötigt ein Brauchtumsschütze beim Schießen in der Öffentlichkeit?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Waffenschein und Pass"
+        },
+        {
+          "label": "b",
+          "text": "Waffenbesitzkarte und Sportschützenausweis"
+        },
+        {
+          "label": "c",
+          "text": "Schießerlaubnis, evtl. Waffenbesitzkarte und Personalausweis, bei Vorderladern: „Erlaubnis nach dem Sprengstoffgesetz“."
+        }
+      ]
+    },
+    {
+      "rawId": "2.130",
+      "text": "Ist für das Schießen mit einem Gewehr im Kaliber .22lr im Keller eines Wohnhauses eine behördliche Erlaubnis erforderlich?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein, wenn die Sicherheit gewährleistet ist."
+        },
+        {
+          "label": "b",
+          "text": "Ja, eine Erlaubnis zum Betrieb einer Schießstätte oder eine Schießerlaubnis."
+        },
+        {
+          "label": "c",
+          "text": "Nein, die des Hauseigentümers reicht aus."
+        }
+      ]
+    },
+    {
+      "rawId": "2.131",
+      "text": "Sie wollen an Silvester mit Ihrer Repetierbüchse auf der öffentlichen Straße vor Ihrem Haus Kartuschenmunition verschießen. Was ist dabei zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ich benötige einen kleinen Waffenschein."
+        },
+        {
+          "label": "b",
+          "text": "Es sind lediglich die Zeiten an Silvester zu beachten, an denen Pyrotechnisches Material gezündet werden darf."
+        },
+        {
+          "label": "c",
+          "text": "Ich benötige einen Waffenschein und eine Schießerlaubnis."
+        }
+      ]
+    },
+    {
+      "rawId": "2.132",
+      "text": "Darf man zu Silvester mit einem Revolver im Kaliber .38 Spezial ohne behördliche Erlaubnis Platzpatronen (Kartuschenmunition) verschießen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nein"
+        },
+        {
+          "label": "b",
+          "text": "Ja. Dies ist aber nur innerhalb der behördlich genehmigten „Knallzeit“ zulässig, wenn man sich zudem auf einem befriedeten Grundstück befindet."
+        },
+        {
+          "label": "c",
+          "text": "Ja. Dies ist aber nur innerhalb der behördlich genehmigten „Knallzeit“ zulässig, wenn man sich zudem auf seinem eigenen, befriedeten Grundstück befindet."
+        }
+      ]
+    },
+    {
+      "rawId": "2.133",
+      "text": "Ist das nichtgewerbliche Wiederladen von Patronenhülsen erlaubt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, für Inhaber einer Munitionserwerbserlaubnis."
+        },
+        {
+          "label": "b",
+          "text": "Ja, nur mit einer Erlaubnis nach § 27 Sprengstoffgesetz."
+        },
+        {
+          "label": "c",
+          "text": "Nein"
+        }
+      ]
+    },
+    {
+      "rawId": "2.134",
+      "text": "Das nichtgewerbliche Wiederladen von Patronenmunition ist...",
+      "options": [
+        {
+          "label": "a",
+          "text": "für jeden erlaubt, der eine Waffensachkundeprüfung bestanden hat."
+        },
+        {
+          "label": "b",
+          "text": "für jeden erlaubt, der gefahrlos mit Schwarzpulver umgehen kann."
+        },
+        {
+          "label": "c",
+          "text": "für jeden erlaubt, der die Fachkundeprüfung nach dem Sprengstoffgesetz nachgewiesen hat und dem durch die Behörde eine entsprechende Erlaubnis nach § 27 SprengG erteilt wurde."
+        }
+      ]
+    },
+    {
+      "rawId": "2.135",
+      "text": "Berechtigt die abgelegte Sachkundeprüfung zum nichtgewerblichen Wiederladen von Hülsen? Nein, hierzu bedarf es einer gesonderten Fachkundeprüfung nach dem Sprengstoffgesetz und einer Erlaubnis nach § 27 SprengG.",
+      "options": []
+    },
+    {
+      "rawId": "2.136",
+      "text": "Berechtigt die abgelegte Sachkundeprüfung zum nichtgewerblichen Wiederladen von Hülsen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, durch die Sachkundeprüfung ist man berechtigt Hülsen wiederzuladen."
+        },
+        {
+          "label": "b",
+          "text": "Nein, es ist eine Erlaubnis nach § 27 Sprengstoffgesetz erforderlich."
+        },
+        {
+          "label": "c",
+          "text": "Das Wiederladen von Hülsen ist immer erlaubt."
+        }
+      ]
+    },
+    {
+      "rawId": "2.137",
+      "text": "Welche Änderung an einer Schusswaffe dürfen nur von hierzu berechtigten Personen durchgeführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Schaftmodifizierung"
+        },
+        {
+          "label": "b",
+          "text": "Änderung am Visier"
+        },
+        {
+          "label": "c",
+          "text": "Anbringen von Bohrungen an der Systemhülse zur Zielfernrohrmontage"
+        }
+      ]
+    },
+    {
+      "rawId": "2.138",
+      "text": "Welche Änderung an einer Schusswaffe dürfen nur von hierzu berechtigten Personen durchgeführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Änderung des Verschlusses von Randauf Zentralfeuer"
+        },
+        {
+          "label": "b",
+          "text": "Aufsetzen eines Wechselsystems"
+        },
+        {
+          "label": "c",
+          "text": "Anbringen von Sportgriffschalen"
+        }
+      ]
+    },
+    {
+      "rawId": "2.139",
+      "text": "Welche Änderungen an Schusswaffen dürfen nur von hierzu berechtigten Personen durchgeführt werden?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Verkürzung des Laufes"
+        },
+        {
+          "label": "b",
+          "text": "Die Schussfolge der Waffe wird verändert."
+        },
+        {
+          "label": "c",
+          "text": "Die Schusswaffe wird so geändert, dass andere Munition oder Geschosse mit anderem Kaliber aus ihr verschossen werden können."
+        },
+        {
+          "label": "d",
+          "text": "Wesentliche Teile, zu deren Einpassung eine Nacharbeit erforderlich ist, werden ausgewechselt. e) Der gesamte Schaft wird getauscht."
+        }
+      ]
+    },
+    {
+      "rawId": "2.140",
+      "text": "Sie brauchen eine behördliche Erlaubnis...",
+      "options": [
+        {
+          "label": "a",
+          "text": "zum Austausch eines Trainingsabzuges."
+        },
+        {
+          "label": "b",
+          "text": "zur Verwendung eines 10 Schussanstelle eines 5 SchussMagazins."
+        },
+        {
+          "label": "c",
+          "text": "zur Änderung des Patronenlagers / Laufinneren auf ein größeres Kaliber."
+        }
+      ]
+    },
+    {
+      "rawId": "2.141",
+      "text": "Dürfen Sie Schusswaffen für bessere Ergebnisse ohne Erlaubnis bearbeiten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Nur, wenn ich in der Metallbearbeitung erfahren bin."
+        },
+        {
+          "label": "b",
+          "text": "Abzug, Visierung und Schaft dürfen von mir bearbeitet werden."
+        },
+        {
+          "label": "c",
+          "text": "Auch wesentliche Teile dürfen von mir geändert werden."
+        }
+      ]
+    },
+    {
+      "rawId": "2.142",
+      "text": "Eine Langwaffe wird unzulässigerweise bearbeitet, wenn Sie ohne Erlaubnis...",
+      "options": [
+        {
+          "label": "a",
+          "text": "den Gewehrlauf kürzen."
+        },
+        {
+          "label": "b",
+          "text": "eine Schaftkappe montieren."
+        },
+        {
+          "label": "c",
+          "text": "die Griffschalen austauschen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.143",
+      "text": "Eine Kurzwaffe wird von Ihnen unzulässigerweise bearbeitet, wenn ohne Erlaubnis...",
+      "options": [
+        {
+          "label": "a",
+          "text": "der Lauf mit Kompensatorbohrungen versehen wird."
+        },
+        {
+          "label": "b",
+          "text": "ein Balkenkorn eingesetzt wird."
+        }
+      ]
+    },
+    {
+      "rawId": "2.144",
+      "text": "Darf zugelassene pyrotechnische Munition im Aufbau verändert werden? Nein",
+      "options": []
+    },
+    {
+      "rawId": "2.145",
+      "text": "Wenn ein Mitglied, das als Sportschütze eine waffenrechtliche Erlaubnis besitzt, aus dem Schießsportverein austritt, muss der Verein ...",
+      "options": [
+        {
+          "label": "a",
+          "text": "den Austritt unverzüglich der zuständigen Behörde melden."
+        },
+        {
+          "label": "b",
+          "text": "die Waffen des Mitgliedes in Verwahrung nehmen."
+        },
+        {
+          "label": "c",
+          "text": "nichts tun."
+        }
+      ]
+    },
+    {
+      "rawId": "2.146",
+      "text": "Dürfen Sorgeberechtigte minderjährige Schützen beim Schießbetrieb beaufsichtigen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ja, wenn sie zur Standaufsicht berechtigt sind, dürfen sie ihre Kinder beaufsichtigen."
+        },
+        {
+          "label": "b",
+          "text": "Nein, das dürfen nur in der Kinderund Jugendarbeit ausgebildete Obhutspersonen."
+        },
+        {
+          "label": "c",
+          "text": "Ja, Sorgeberechtigte dürfen alle minderjährigen Schützen beim Schießbetrieb beaufsichtigen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.147",
+      "text": "Was hat ein schießsportlicher Verein eines anerkannten Schießsportverbandes im Hinblick auf die Aufsicht zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Aufsichtspersonen im Verein registrieren."
+        },
+        {
+          "label": "b",
+          "text": "Voraussetzungen der Sachkunde prüfen."
+        },
+        {
+          "label": "c",
+          "text": "Ein Nachweisdokument ausstellen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.148",
+      "text": "Ab welchem Alter dürfen Kinder und Jugendliche mit Druckluft-, Federdruckoder CO2-Waffen schießen und was ist dabei zu beachten?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Ab 12 Jahren, wenn die Sorgeberechtigten schriftlich oder elektronisch dabei sind."
+        },
+        {
+          "label": "b",
+          "text": "Ab 12 Jahren, sofern die Personensorgeberechtigten ihr Einverständnis erklärt haben und eine geeignete Aufsichtsperson zur Betreuung vorhanden ist."
+        },
+        {
+          "label": "c",
+          "text": "Ab 12 Jahren, wenn die Sorgeberechtigten schriftlich oder elektronisch ihr Einverständnis erklärt haben."
+        }
+      ]
+    },
+    {
+      "rawId": "2.149",
+      "text": "Wer darf auf einer Schießstätte Aufsicht führen?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Alle Vereinsmitglieder"
+        },
+        {
+          "label": "b",
+          "text": "Der Eigentümer der Schießstätte"
+        },
+        {
+          "label": "c",
+          "text": "Alle vom Betreiber bestellten Personen."
+        }
+      ]
+    },
+    {
+      "rawId": "2.150",
+      "text": "Wer darf die Schießaufsicht ausüben? Der Aufsichtsberechtigte muss volljährig, zuverlässig, persönlich geeignet und sachkundig sowie zur Aufsicht bestellt sein.",
+      "options": []
+    },
+    {
+      "rawId": "2.151",
+      "text": "Darf eine Aufsicht selbst am Schießen teilnehmen? Nein",
+      "options": []
+    },
+    {
+      "rawId": "2.152",
+      "text": "Welche Anforderungen werden an die verantwortliche Aufsichtsperson gestellt?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Volljährigkeit, persönliche Eignung"
+        },
+        {
+          "label": "b",
+          "text": "Zuverlässigkeit, Sachkunde"
+        },
+        {
+          "label": "c",
+          "text": "Bei Aufsicht über Minderjährige die Eignung für Kinderund Jugendarbeit"
+        }
+      ]
+    },
+    {
+      "rawId": "2.153",
+      "text": "Was zählt zu den Aufgaben der verantwortlichen Aufsichtsperson?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Dafür Sorge zu tragen, dass von den Schützen und ihren Waffen keine Gefahr ausgeht."
+        },
+        {
+          "label": "b",
+          "text": "Die Betreuung von Zuschauern und Gästen."
+        },
+        {
+          "label": "c",
+          "text": "Überprüfen, ob der Verbandskasten aufgefüllt ist."
+        }
+      ]
+    },
+    {
+      "rawId": "2.154",
+      "text": "Nennen sie mindestens vier Pflichten der verantwortlichen Aufsichtsperson beim Schießen! - Das Schießen ständig beaufsichtigen, insbesondere - dafür zu sorgen, dass nur mit für die Schießstätte zugelassenen Waffen und Munition geschossen wird, - sicherzustellen, dass nur Kinder und Jugendliche ab den vorgeschriebenen Altersgrenzen und mit den altersmäßig zugelassenen Waffen teilnehmen und - die dafür eventuell notwendigen Einverständniserklärungen der Personensorgeberechtigten aufbewahren und der zuständigen Behörde auf Verlangen aushändigen. - Dafür Sorge tragen, dass die in der Schießstätte anwesenden Personen durch ihr Verhalten keine vermeidbaren Gefahren verursachen.",
+      "options": []
+    }
+  ]
+}
