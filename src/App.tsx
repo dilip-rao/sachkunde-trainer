@@ -1,41 +1,56 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Opt = { label: string; text: string; correct?: boolean };
 type Q = { rawId: string; text: string; options: Opt[]; multi?: boolean };
 
-// ✅ Supports both: "2.100 ..." and "01 ..."
-const RX_QID_DOTTED = /^\s*(\d+)\.(\d{2,})\s+(.*)$/; // 2.100, 1.02
-const RX_QID_PLAIN = /^\s*(\d{1,3})\s+(.*)$/; // 01, 02, 103
+type AnswersFile =
+  | { version?: string; answers: Record<string, string[] | string> }
+  | Record<string, string[] | string>;
 
+// --------------------
+// Versioning
+// --------------------
+const APP_VERSION = "2026-05-20";
+const CACHE_VERSION = "v1";
+
+// --------------------
+// Parsing helpers (Import tab)
+// --------------------
+const RX_QID_DOTTED = /^\s*(\d+)\.(\d{2,})\s+(.*)$/;
+const RX_QID_PLAIN = /^\s*(\d{1,3})\s+(.*)$/;
 const RX_OPT = /^\s*([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
 const RX_INLINE_OPT = /^(.*)\s+([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
 
+// --------------------
+// Vite / GitHub Pages base URL helpers
+// --------------------
+function baseUrl() {
+  // On GH Pages (repo subpath) this becomes "/sachkunde-trainer/"
+  const b = (import.meta as any)?.env?.BASE_URL || "/";
+  return b.endsWith("/") ? b : b + "/";
+}
+function toUrl(path: string) {
+  const clean = String(path || "").replace(/^\//, "");
+  return baseUrl() + clean;
+}
+
 function norm(s: string) {
   return (s || "")
-    .replace(/\u00AD/g, "") // soft hyphen
-    .replace(/\u00A0/g, " ") // NBSP -> space
+    .replace(/\u00AD/g, "")
+    .replace(/\u00A0/g, " ")
     .replace(/\r\n/g, "\n")
     .replace(/\r/g, "\n")
-    .replace(/(\w)-\s+(\w)/g, "$1$2") // mit- nimmt -> mitnimmt
+    .replace(/(\w)-\s+(\w)/g, "$1$2")
     .replace(/[ \t]+/g, " ")
     .trim();
 }
 
-/**
- * ✅ Heuristic: does the text after a plain number look like a real question title?
- * Prevents table rows like "4 mm M20" / "300 m" and wrapped lines like "12 gleich große Kugeln."
- * from being interpreted as new questions.
- */
 function looksLikeQuestionStart(rest: string) {
   const r = (rest || "").trim();
   if (!r) return false;
-
-  if (/^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(r))
-    return true;
-
+  if (/^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(r)) return true;
   if (r.includes("?")) return true;
   if (/^[A-ZÄÖÜ]/.test(r)) return true;
-
   return false;
 }
 
@@ -48,29 +63,21 @@ function computeMulti(q: Q) {
   return cc > 1;
 }
 
-function isAnswerCorrect(q: Q, selectedLabels: string[] | string | undefined) {
+function isAnswerCorrect(q: Q, selected: string[] | string | undefined) {
   if (!hasAnswerKey(q)) return null;
 
   const correctLabels = q.options
     .filter((o) => o.correct)
-    .map((o) => o.label)
+    .map((o) => String(o.label))
     .sort();
 
-  const userLabels = (Array.isArray(selectedLabels) ? selectedLabels : [selectedLabels].filter(Boolean))
+  const userLabels = (Array.isArray(selected) ? selected : [selected].filter(Boolean))
     .map(String)
     .sort();
 
-  return (
-    correctLabels.length === userLabels.length &&
-    correctLabels.every((v, i) => v === userLabels[i])
-  );
+  return correctLabels.length === userLabels.length && correctLabels.every((v, i) => v === userLabels[i]);
 }
 
-/**
- * ✅ Paste-text parser: supports BOTH formats:
- *  - DOTTED: 2.100 Question...
- *  - PLAIN: 01 Question...  (converted to `${importPrefix}.01`)
- */
 function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
   const lines = norm(pasted)
     .split("\n")
@@ -93,7 +100,6 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
   for (const lineRaw of lines) {
     const line = norm(lineRaw);
 
-    // 1) DOTTED IDs
     const md = line.match(RX_QID_DOTTED);
     if (md) {
       push();
@@ -113,7 +119,6 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       continue;
     }
 
-    // 2) PLAIN IDs (guarded)
     const mp = line.match(RX_QID_PLAIN);
     if (mp) {
       const plainNum = mp[1];
@@ -121,11 +126,8 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
 
       if (!looksLikeQuestionStart(rest)) {
         if (!cur) continue;
-
         if (inOptions && cur.options.length > 0) {
-          cur.options[cur.options.length - 1].text = norm(
-            cur.options[cur.options.length - 1].text + " " + line
-          );
+          cur.options[cur.options.length - 1].text = norm(cur.options[cur.options.length - 1].text + " " + line);
         } else {
           cur.text = norm(cur.text + " " + line);
         }
@@ -151,7 +153,6 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
 
     if (!cur) continue;
 
-    // 3) options
     const mo = line.match(RX_OPT);
     if (mo) {
       inOptions = true;
@@ -159,11 +160,8 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       continue;
     }
 
-    // 4) continuation
     if (inOptions && cur.options.length) {
-      cur.options[cur.options.length - 1].text = norm(
-        cur.options[cur.options.length - 1].text + " " + line
-      );
+      cur.options[cur.options.length - 1].text = norm(cur.options[cur.options.length - 1].text + " " + line);
     } else {
       cur.text = norm(cur.text + " " + line);
     }
@@ -191,18 +189,9 @@ function downloadJson(filename: string, obj: any) {
   URL.revokeObjectURL(url);
 }
 
-// ✅ GitHub Pages / Vite base path safe fetch
-async function fetchJson(path: string) {
-  const base = import.meta.env.BASE_URL || "/"; // "/sachkunde-trainer/" on GH pages
-  const clean = path.replace(/^\//, "");
-  const url = `${base}${clean}`;
-
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
-  return res.json();
-}
-
-// ✅ Chapters
+// --------------------
+// Chapters (files must be in public/)
+// --------------------
 const CHAPTERS: { id: string; label: string; files: string[] }[] = [
   {
     id: "ALL",
@@ -234,11 +223,9 @@ function lsQuestionsKey(chapterId: string) {
 function lsAnswersKey(chapterId: string) {
   return `answers::${chapterId}`;
 }
-
 function importedChapterId(prefix: string) {
   return `IMPORTED_${prefix}`;
 }
-
 function listImportedChapters(): string[] {
   return Object.keys(localStorage)
     .filter((k) => k.startsWith("questions::IMPORTED_"))
@@ -246,7 +233,93 @@ function listImportedChapters(): string[] {
     .sort((a, b) => a.localeCompare(b));
 }
 
+// --------------------
+// Persistent cache (memory + localStorage + in-flight de-dupe)
+// --------------------
+const jsonCache = new Map<string, any>();
+const jsonPromiseCache = new Map<string, Promise<any>>();
+
+async function fetchJsonCached(path: string) {
+  if (jsonCache.has(path)) return jsonCache.get(path);
+
+  const storageKey = `cache::${CACHE_VERSION}::${path}`;
+  try {
+    const cached = localStorage.getItem(storageKey);
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      jsonCache.set(path, parsed);
+      return parsed;
+    }
+  } catch {}
+
+  if (jsonPromiseCache.has(path)) return jsonPromiseCache.get(path)!;
+
+  const url = toUrl(path);
+
+  const p = fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`${url} -> ${res.status}`);
+      return res.json();
+    })
+    .then((json) => {
+      jsonCache.set(path, json);
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(json));
+      } catch {}
+      return json;
+    })
+    .finally(() => {
+      jsonPromiseCache.delete(path);
+    });
+
+  jsonPromiseCache.set(path, p);
+  return p;
+}
+
+function clearOfflineCache() {
+  Object.keys(localStorage)
+    .filter((k) => k.startsWith("cache::"))
+    .forEach((k) => localStorage.removeItem(k));
+  jsonCache.clear();
+  jsonPromiseCache.clear();
+}
+
+// --------------------
+// Answer key utils
+// --------------------
+function normalizeAnswersFile(payload: AnswersFile): Record<string, string[]> {
+  const anyPayload = payload as any;
+  const raw: Record<string, string[] | string> = anyPayload.answers ? anyPayload.answers : (payload as any);
+
+  const out: Record<string, string[]> = {};
+  for (const [qid, labels] of Object.entries(raw || {})) {
+    if (Array.isArray(labels)) out[qid] = labels.map(String);
+    else if (labels != null) out[qid] = [String(labels)];
+  }
+  return out;
+}
+
+function applyAnswerKey(bank: Q[], key: Record<string, string[]>) {
+  return bank.map((q) => {
+    const corr = key[q.rawId];
+    if (!corr || !q.options?.length) return q;
+
+    const options = q.options.map((o) => ({
+      ...o,
+      correct: corr.includes(String(o.label)),
+    }));
+
+    const multi = options.filter((o) => o.correct).length > 1;
+    return { ...q, options, multi };
+  });
+}
+
 export default function App() {
+  // AnswerKey paging (20 visible at once)
+  const [keyPage, setKeyPage] = useState(0);
+  const keyPageSize = 20;
+  const [keySearch, setKeySearch] = useState("");
+
   const [tab, setTab] = useState<"quiz" | "import" | "key">("quiz");
 
   const [chapterId, setChapterId] = useState<string>("ALL");
@@ -254,31 +327,63 @@ export default function App() {
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
 
-  const [importPrefix, setImportPrefix] = useState<string>("K2A");
+  // answers.json
+  const [answerKey, setAnswerKey] = useState<Record<string, string[]>>({});
+  const [answersLoaded, setAnswersLoaded] = useState(false);
 
+  // Import
+  const [importPrefix, setImportPrefix] = useState<string>("K2A");
   const [paste, setPaste] = useState("");
   const [parsed, setParsed] = useState<Q[]>([]);
   const [chunkSize, setChunkSize] = useState(20);
   const [chunkIndex, setChunkIndex] = useState(0);
 
+  // AnswerKey editor selection
   const [keyQid, setKeyQid] = useState<string>("");
 
   const [importedIds, setImportedIds] = useState<string[]>([]);
+  const mountedRef = useRef(true);
 
-  // ✅ GitHub Pages base URL for static assets like logo.png
-  const BASE = import.meta.env.BASE_URL || "/";
+  const BASE = baseUrl();
+
+  // Reset paging/search when switching chapter/tab
+  useEffect(() => {
+    setKeyPage(0);
+    setKeySearch("");
+  }, [chapterId, tab]);
+
+  useEffect(() => {
+    return () => {
+      mountedRef.current = false;
+    };
+  }, []);
 
   useEffect(() => {
     setImportedIds(listImportedChapters());
   }, []);
 
+  // Load answers.json (optional)
+  useEffect(() => {
+    (async () => {
+      try {
+        const payload = (await fetchJsonCached("/answers.json")) as AnswersFile;
+        setAnswerKey(normalizeAnswersFile(payload));
+      } catch (e) {
+        console.warn("answers.json not found (optional):", e);
+        setAnswerKey({});
+      } finally {
+        setAnswersLoaded(true);
+      }
+    })();
+  }, []);
+
   async function loadChapter(chId: string) {
+    setIndex(0);
+
     const qKey = lsQuestionsKey(chId);
     const aKey = lsAnswersKey(chId);
 
-    const savedQ = localStorage.getItem(qKey);
     const savedA = localStorage.getItem(aKey);
-
     if (savedA) {
       try {
         setAnswers(JSON.parse(savedA));
@@ -289,26 +394,31 @@ export default function App() {
       setAnswers({});
     }
 
-    // Use cached questions first
+    // Try cached bank
+    const savedQ = localStorage.getItem(qKey);
     if (savedQ) {
       try {
         const parsedQ = JSON.parse(savedQ);
         if (Array.isArray(parsedQ)) {
-          setQuestions(parsedQ);
-          setIndex(0);
-          setKeyQid("");
+          setQuestions(applyAnswerKey(parsedQ, answerKey));
           return;
         }
-      } catch {
-        // ignore and fall through to fetching
-      }
+      } catch {}
     }
 
-    // Imported chapters live in localStorage only
+    // Imported chapters
     if (chId.startsWith("IMPORTED_")) {
+      const raw = localStorage.getItem(qKey);
+      if (raw) {
+        try {
+          const parsedQ = JSON.parse(raw);
+          if (Array.isArray(parsedQ)) {
+            setQuestions(applyAnswerKey(parsedQ, answerKey));
+            return;
+          }
+        } catch {}
+      }
       setQuestions([]);
-      setIndex(0);
-      setKeyQid("");
       return;
     }
 
@@ -317,35 +427,30 @@ export default function App() {
     let all: Q[] = [];
     for (const file of c.files) {
       try {
-        const json = await fetchJson(file);
+        const json = await fetchJsonCached(file);
         if (Array.isArray(json?.bank)) all = all.concat(json.bank);
       } catch (e) {
         console.warn("Missing:", file, e);
       }
     }
 
-    setQuestions(all);
-    setIndex(0);
-    setKeyQid("");
+    setQuestions(applyAnswerKey(all, answerKey));
 
+    // Persist raw bank (without keys)
     localStorage.setItem(qKey, JSON.stringify(all));
     localStorage.setItem(aKey, JSON.stringify(savedA ? JSON.parse(savedA) : {}));
   }
 
+  // Load after answers.json attempt so keys can be applied
   useEffect(() => {
+    if (!answersLoaded) return;
     loadChapter(chapterId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [chapterId]);
+  }, [chapterId, answersLoaded]);
 
   useEffect(() => {
     localStorage.setItem(lsAnswersKey(chapterId), JSON.stringify(answers));
   }, [answers, chapterId]);
-
-  useEffect(() => {
-    if (questions.length) {
-      localStorage.setItem(lsQuestionsKey(chapterId), JSON.stringify(questions));
-    }
-  }, [questions, chapterId]);
 
   const q = questions[index];
 
@@ -380,18 +485,10 @@ export default function App() {
       const res = isAnswerCorrect(qq, answers[qq.rawId]);
       if (res === true) correct++;
     }
-    return {
-      correct,
-      total: keyed.length,
-      pct: Math.round((correct / keyed.length) * 100),
-    };
+    return { correct, total: keyed.length, pct: Math.round((correct / keyed.length) * 100) };
   }, [questions, answers]);
 
-  const totalChunks = useMemo(
-    () => (parsed.length ? Math.ceil(parsed.length / chunkSize) : 0),
-    [parsed.length, chunkSize]
-  );
-
+  const totalChunks = useMemo(() => (parsed.length ? Math.ceil(parsed.length / chunkSize) : 0), [parsed.length, chunkSize]);
   const currentChunk = useMemo(() => {
     const start = chunkIndex * chunkSize;
     return parsed.slice(start, start + chunkSize);
@@ -405,7 +502,6 @@ export default function App() {
 
   function saveParsedAsImportedChapter() {
     if (parsed.length === 0) return;
-
     const id = importedChapterId(importPrefix);
     localStorage.setItem(lsQuestionsKey(id), JSON.stringify(parsed));
     localStorage.setItem(lsAnswersKey(id), JSON.stringify({}));
@@ -430,52 +526,74 @@ export default function App() {
     downloadJson(`sachkunde_part_${idx}.json`, { bank: currentChunk });
   }
 
-  const keyCandidates = useMemo(() => questions, [questions]);
+  // --------------------
+  // AnswerKey: 20 questions visible at once (list + editor)
+  // --------------------
+  const filteredKeyCandidates = useMemo(() => {
+    const s = keySearch.trim().toLowerCase();
+    if (!s) return questions;
+    return questions.filter((qq) => {
+      const id = (qq.rawId || "").toLowerCase();
+      const text = (qq.text || "").toLowerCase();
+      return id.includes(s) || text.includes(s);
+    });
+  }, [questions, keySearch]);
+
+  const keyTotalPages = useMemo(() => {
+    return filteredKeyCandidates.length ? Math.ceil(filteredKeyCandidates.length / keyPageSize) : 1;
+  }, [filteredKeyCandidates.length]);
+
+  const keyPageClamped = Math.max(0, Math.min(keyPage, keyTotalPages - 1));
+
+  const keyPageItems = useMemo(() => {
+    const start = keyPageClamped * keyPageSize;
+    return filteredKeyCandidates.slice(start, start + keyPageSize);
+  }, [filteredKeyCandidates, keyPageClamped]);
+
   const keyQ = useMemo(() => {
-    const id = keyQid || keyCandidates[0]?.rawId || "";
-    return keyCandidates.find((x) => x.rawId === id) || null;
-  }, [keyQid, keyCandidates]);
+    const id = keyQid || filteredKeyCandidates[0]?.rawId || "";
+    return filteredKeyCandidates.find((x) => x.rawId === id) || null;
+  }, [keyQid, filteredKeyCandidates]);
 
   useEffect(() => {
-    if (!keyQid && keyCandidates.length) setKeyQid(keyCandidates[0].rawId);
-  }, [keyCandidates, keyQid]);
+    if (!keyQid && filteredKeyCandidates.length) setKeyQid(filteredKeyCandidates[0].rawId);
+  }, [filteredKeyCandidates, keyQid]);
 
   function toggleCorrect(optLabel: string) {
     if (!keyQ || !keyQ.options?.length) return;
-    setQuestions((prev) =>
-      prev.map((qq) => {
+
+    setQuestions((prev) => {
+      const next = prev.map((qq) => {
         if (qq.rawId !== keyQ.rawId) return qq;
-        const options = qq.options.map((o) =>
-          o.label === optLabel ? { ...o, correct: !o.correct } : o
-        );
+        const options = qq.options.map((o) => (o.label === optLabel ? { ...o, correct: !o.correct } : o));
         const multi = options.filter((o) => o.correct).length > 1;
         return { ...qq, options, multi };
-      })
-    );
+      });
+
+      try {
+        localStorage.setItem(lsQuestionsKey(chapterId), JSON.stringify(next));
+      } catch {}
+      return next;
+    });
   }
 
   return (
-    <div style={{ padding: 16, maxWidth: 860, margin: "0 auto", fontFamily: "Arial" }}>
-      {/* ✅ Logo + Header */}
-      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 10, flexWrap: "wrap" }}>
-        <img
-          src={`${BASE}logo.png`}
-          alt="Club logo"
-          style={{ height: 64, width: "auto", display: "block" }}
-        />
+    <div style={{ padding: 16, maxWidth: 980, margin: "0 auto", fontFamily: "Arial" }}>
+      {/* Header */}
+      <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 10, flexWrap: "wrap" }}>
+        <img src={`${BASE}logo.png`} alt="Club logo" style={{ height: 72, width: "auto", display: "block" }} />
         <div>
           <h2 style={{ margin: 0 }}>Sachkunde Trainer</h2>
-          <div style={{ fontSize: 12, color: "#666" }}>Schützenverein „Waidmannsheil“ e.V. Erzhausen</div>
+          <div style={{ fontSize: 12, color: "#666" }}>
+            App: {APP_VERSION} • Cache: {CACHE_VERSION} • answers.json: {answersLoaded ? "ok" : "loading"}
+          </div>
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 12, flexWrap: "wrap" }}>
+      {/* Mode selector */}
+      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 8, flexWrap: "wrap" }}>
         <b>Mode:</b>
-        <select
-          value={chapterId}
-          onChange={(e) => setChapterId(e.target.value)}
-          style={{ padding: 6, minWidth: 360 }}
-        >
+        <select value={chapterId} onChange={(e) => setChapterId(e.target.value)} style={{ padding: 6, minWidth: 360 }}>
           <optgroup label="Built-in">
             {CHAPTERS.map((c) => (
               <option key={c.id} value={c.id}>
@@ -496,7 +614,7 @@ export default function App() {
         </select>
 
         <span style={{ color: "#555" }}>
-          Loaded: <b>{questions.length}</b> questions
+          Loaded: <b>{questions.length}</b>
         </span>
 
         <button
@@ -507,6 +625,17 @@ export default function App() {
           }}
         >
           Reset this mode
+        </button>
+
+        <button
+          onClick={() => {
+            clearOfflineCache();
+            alert("Offline cache cleared. Reloading…");
+            window.location.reload();
+          }}
+          title="Clears offline JSON cache and reloads"
+        >
+          Clear offline cache
         </button>
 
         {chapterId.startsWith("IMPORTED_") && (
@@ -521,12 +650,14 @@ export default function App() {
         )}
       </div>
 
+      {/* Tabs */}
       <div style={{ display: "flex", gap: 10, marginBottom: 14 }}>
         <button onClick={() => setTab("quiz")}>Quiz</button>
         <button onClick={() => setTab("import")}>PDF Text → JSON</button>
         <button onClick={() => setTab("key")}>AnswerKey</button>
       </div>
 
+      {/* Quiz */}
       {tab === "quiz" && (
         <>
           {questions.length === 0 ? (
@@ -580,18 +711,15 @@ export default function App() {
               </div>
 
               <div style={{ marginTop: 12 }}>
-                <button onClick={prev} disabled={index === 0}>
-                  ← Prev
-                </button>
-                <button onClick={next} disabled={index === questions.length - 1} style={{ marginLeft: 10 }}>
-                  Next →
-                </button>
+                <button onClick={prev} disabled={index === 0}>← Prev</button>
+                <button onClick={next} disabled={index === questions.length - 1} style={{ marginLeft: 10 }}>Next →</button>
               </div>
             </>
           )}
         </>
       )}
 
+      {/* Import */}
       {tab === "import" && (
         <>
           <p style={{ color: "#555" }}>
@@ -606,9 +734,7 @@ export default function App() {
               Import prefix:
               <input
                 value={importPrefix}
-                onChange={(e) =>
-                  setImportPrefix(e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A")
-                }
+                onChange={(e) => setImportPrefix(e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A")}
                 style={{ width: 110, padding: 6 }}
                 placeholder="K2A"
               />
@@ -621,9 +747,7 @@ export default function App() {
                 min={5}
                 max={200}
                 value={chunkSize}
-                onChange={(e) =>
-                  setChunkSize(Math.max(5, Math.min(200, Number(e.target.value) || 20)))
-                }
+                onChange={(e) => setChunkSize(Math.max(5, Math.min(200, Number(e.target.value) || 20)))}
                 style={{ width: 90, padding: 6 }}
               />
             </label>
@@ -643,14 +767,7 @@ export default function App() {
             value={paste}
             onChange={(e) => setPaste(e.target.value)}
             placeholder="Paste PDF text here…"
-            style={{
-              width: "100%",
-              minHeight: 240,
-              padding: 12,
-              borderRadius: 10,
-              border: "1px solid #ccc",
-              marginTop: 10,
-            }}
+            style={{ width: "100%", minHeight: 240, padding: 12, borderRadius: 10, border: "1px solid #ccc", marginTop: 10 }}
           />
 
           {parsed.length > 0 && (
@@ -661,10 +778,7 @@ export default function App() {
               <div>
                 Chunk <b>{chunkIndex + 1}</b> / <b>{totalChunks}</b>
               </div>
-              <button
-                onClick={() => setChunkIndex((i) => Math.min(totalChunks - 1, i + 1))}
-                disabled={chunkIndex >= totalChunks - 1}
-              >
+              <button onClick={() => setChunkIndex((i) => Math.min(totalChunks - 1, i + 1))} disabled={chunkIndex >= totalChunks - 1}>
                 Next chunk
               </button>
 
@@ -677,86 +791,111 @@ export default function App() {
               </button>
             </div>
           )}
-
-          {parsed.length > 0 && (
-            <div style={{ marginTop: 12, border: "1px solid #eee", borderRadius: 12, padding: 12 }}>
-              <b>Preview (current chunk)</b>
-              <div style={{ marginTop: 8, display: "grid", gap: 10 }}>
-                {currentChunk.map((x) => (
-                  <div key={x.rawId} style={{ padding: 10, border: "1px solid #f0f0f0", borderRadius: 10 }}>
-                    <div style={{ fontWeight: 800 }}>
-                      {x.rawId} — {x.text}
-                    </div>
-
-                    {x.options?.length ? (
-                      <ul style={{ margin: "6px 0 0 18px" }}>
-                        {x.options.map((o) => (
-                          <li key={o.label}>
-                            <b>{o.label})</b> {o.text}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <div style={{ color: "#777", marginTop: 6 }}>(No options / free-text)</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </>
       )}
 
+      {/* AnswerKey */}
       {tab === "key" && (
         <>
-          <p style={{ color: "#555" }}>AnswerKey per mode/chapter.</p>
+          <p style={{ color: "#555" }}>AnswerKey: 20 questions visible at once. Click one to edit.</p>
 
-          {keyCandidates.length === 0 ? (
+          {filteredKeyCandidates.length === 0 ? (
             <div>No questions loaded yet.</div>
           ) : (
             <>
-              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-                <select value={keyQ?.rawId || ""} onChange={(e) => setKeyQid(e.target.value)} style={{ minWidth: 560 }}>
-                  {keyCandidates.map((qq) => (
-                    <option key={qq.rawId} value={qq.rawId}>
-                      {qq.rawId} — {qq.text.slice(0, 80)}
-                    </option>
-                  ))}
-                </select>
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginBottom: 10 }}>
+                <input
+                  value={keySearch}
+                  onChange={(e) => {
+                    setKeySearch(e.target.value);
+                    setKeyPage(0);
+                  }}
+                  placeholder="Search by ID or text..."
+                  style={{ padding: 6, minWidth: 260 }}
+                />
+
+                <button onClick={() => setKeyPage((p) => Math.max(0, p - 1))} disabled={keyPageClamped === 0}>
+                  ◀ Prev 20
+                </button>
+
+                <div style={{ fontSize: 12, color: "#555" }}>
+                  Page <b>{keyPageClamped + 1}</b> / <b>{keyTotalPages}</b> — showing{" "}
+                  <b>{keyPageItems.length}</b> of <b>{filteredKeyCandidates.length}</b>
+                </div>
+
+                <button onClick={() => setKeyPage((p) => Math.min(keyTotalPages - 1, p + 1))} disabled={keyPageClamped >= keyTotalPages - 1}>
+                  Next 20 ▶
+                </button>
 
                 <button onClick={() => downloadJson(`sachkunde_with_keys_${chapterId}.json`, { bank: questions })}>
                   Export bank (with keys)
                 </button>
               </div>
 
-              {keyQ && (
-                <div style={{ marginTop: 12, border: "1px solid #eee", borderRadius: 12, padding: 12 }}>
-                  <div style={{ fontWeight: 800 }}>
-                    {keyQ.rawId} — {keyQ.text}
-                  </div>
-
-                  {keyQ.options?.length ? (
-                    <div style={{ marginTop: 10, display: "grid", gap: 10 }}>
-                      {keyQ.options.map((o) => (
-                        <label key={o.label} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                          <input type="checkbox" checked={!!o.correct} onChange={() => toggleCorrect(o.label)} />
-                          <div>
-                            <b>{o.label})</b> {o.text}
-                          </div>
-                        </label>
-                      ))}
-                    </div>
-                  ) : (
-                    <div style={{ marginTop: 10, color: "#777" }}>Free-text question (no options). Nothing to set.</div>
-                  )}
-
-                  {keyQ.options?.length ? (
-                    <div style={{ marginTop: 10, color: "#666", fontSize: 12 }}>
-                      Multi detected: <b>{String(computeMulti(keyQ))}</b>
-                    </div>
-                  ) : null}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                <div style={{ border: "1px solid #eee", borderRadius: 12, padding: 10, maxHeight: 460, overflow: "auto" }}>
+                  <div style={{ fontWeight: 700, marginBottom: 8 }}>Questions (showing 20)</div>
+                  {keyPageItems.map((qq) => {
+                    const active = qq.rawId === (keyQ?.rawId || "");
+                    return (
+                      <button
+                        key={qq.rawId}
+                        onClick={() => setKeyQid(qq.rawId)}
+                        style={{
+                          width: "100%",
+                          textAlign: "left",
+                          padding: 10,
+                          marginBottom: 8,
+                          borderRadius: 10,
+                          border: "1px solid #ddd",
+                          background: active ? "#e3f2fd" : "#fff",
+                        }}
+                      >
+                        <div style={{ fontWeight: 800 }}>{qq.rawId}</div>
+                        <div style={{ fontSize: 12, color: "#666" }}>
+                          {qq.text.slice(0, 100)}
+                          {qq.text.length > 100 ? "…" : ""}
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
-              )}
+
+                <div style={{ border: "1px solid #eee", borderRadius: 12, padding: 12 }}>
+                  {!keyQ ? (
+                    <div>Select a question on the left.</div>
+                  ) : (
+                    <>
+                      <div style={{ fontWeight: 800 }}>
+                        {keyQ.rawId} — {keyQ.text}
+                      </div>
+
+                      {keyQ.options?.length ? (
+                        <div style={{ marginTop: 10, display: "grid", gap: 10 }}>
+                          {keyQ.options.map((o) => (
+                            <label key={o.label} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                              <input type="checkbox" checked={!!o.correct} onChange={() => toggleCorrect(o.label)} />
+                              <div>
+                                <b>{o.label})</b> {o.text}
+                              </div>
+                            </label>
+                          ))}
+                        </div>
+                      ) : (
+                        <div style={{ marginTop: 10, color: "#777" }}>
+                          Free-text question (no options). Nothing to set.
+                        </div>
+                      )}
+
+                      {keyQ.options?.length ? (
+                        <div style={{ marginTop: 10, color: "#666", fontSize: 12 }}>
+                          Multi detected: <b>{String(computeMulti(keyQ))}</b>
+                        </div>
+                      ) : null}
+                    </>
+                  )}
+                </div>
+              </div>
             </>
           )}
         </>
