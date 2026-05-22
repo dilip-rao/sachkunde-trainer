@@ -463,8 +463,8 @@ export default function App() {
     const normalizedLabel = String(label).trim().toLowerCase();
     const existing = answers[q.rawId];
 
-    const multi = q.multi ?? computeMulti(q) || Array.isArray(existing);
-
+    const multi = (q.multi ?? computeMulti(q)) || Array.isArray(existing);
+    
     setAnswers((prev) => {
       const curSel = prev[q.rawId];
 
@@ -699,7 +699,7 @@ export default function App() {
 
               <div>
                 {q?.options?.map((opt) => {
-                  const multi = q.multi ?? computeMulti(q) || Array.isArray(answers[q.rawId]);
+                  const multi = (q.multi ?? computeMulti(q)) || Array.isArray(answers[q.rawId]);
                   const sel = answers[q.rawId];
 
                   const selected = multi
