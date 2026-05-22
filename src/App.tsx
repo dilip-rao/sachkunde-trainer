@@ -25,7 +25,6 @@ const RX_INLINE_OPT = /^(.*)\s+([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
 // Vite / GitHub Pages base URL helpers
 // --------------------
 function baseUrl() {
-  // On GH Pages (repo subpath) this becomes "/sachkunde-trainer/"
   const b = (import.meta as any)?.env?.BASE_URL || "/";
   return b.endsWith("/") ? b : b + "/";
 }
@@ -68,11 +67,11 @@ function isAnswerCorrect(q: Q, selected: string[] | string | undefined) {
 
   const correctLabels = q.options
     .filter((o) => o.correct)
-    .map((o) => String(o.label))
+    .map((o) => String(o.label).trim().toLowerCase())
     .sort();
 
   const userLabels = (Array.isArray(selected) ? selected : [selected].filter(Boolean))
-    .map(String)
+    .map((x) => String(x).trim().toLowerCase())
     .sort();
 
   return correctLabels.length === userLabels.length && correctLabels.every((v, i) => v === userLabels[i]);
@@ -285,7 +284,7 @@ function clearOfflineCache() {
 }
 
 // --------------------
-// Answer key utils
+// Answer key utils (FIXED: lowercase normalization)
 // --------------------
 function normalizeAnswersFile(payload: AnswersFile): Record<string, string[]> {
   const anyPayload = payload as any;
@@ -293,20 +292,23 @@ function normalizeAnswersFile(payload: AnswersFile): Record<string, string[]> {
 
   const out: Record<string, string[]> = {};
   for (const [qid, labels] of Object.entries(raw || {})) {
-    if (Array.isArray(labels)) out[qid] = labels.map(String);
-    else if (labels != null) out[qid] = [String(labels)];
+    const arr = Array.isArray(labels) ? labels : labels != null ? [labels] : [];
+    out[qid] = arr.map((x) => String(x).trim().toLowerCase()); // ✅ normalize
   }
   return out;
 }
 
+// FIXED: apply keys case-insensitively + sets q.multi
 function applyAnswerKey(bank: Q[], key: Record<string, string[]>) {
   return bank.map((q) => {
     const corr = key[q.rawId];
     if (!corr || !q.options?.length) return q;
 
+    const corrSet = new Set(corr.map((x) => String(x).trim().toLowerCase()));
+
     const options = q.options.map((o) => ({
       ...o,
-      correct: corr.includes(String(o.label)),
+      correct: corrSet.has(String(o.label).trim().toLowerCase()),
     }));
 
     const multi = options.filter((o) => o.correct).length > 1;
@@ -454,19 +456,28 @@ export default function App() {
 
   const q = questions[index];
 
+  // ✅ FIXED: multi-select works, normalizes selection values
   function selectAnswer(label: string) {
     if (!q) return;
-    const multi = q.multi ?? computeMulti(q);
+
+    const normalizedLabel = String(label).trim().toLowerCase();
+    const existing = answers[q.rawId];
+
+    const multi = q.multi ?? computeMulti(q) || Array.isArray(existing);
 
     setAnswers((prev) => {
       const curSel = prev[q.rawId];
+
       if (multi) {
-        const arr = Array.isArray(curSel) ? [...curSel] : [];
-        const exists = arr.includes(label);
-        const next = exists ? arr.filter((x) => x !== label) : arr.concat(label);
+        const arr = Array.isArray(curSel)
+          ? curSel.map((x) => String(x).trim().toLowerCase())
+          : [];
+        const exists = arr.includes(normalizedLabel);
+        const next = exists ? arr.filter((x) => x !== normalizedLabel) : arr.concat(normalizedLabel);
         return { ...prev, [q.rawId]: next };
       }
-      return { ...prev, [q.rawId]: label };
+
+      return { ...prev, [q.rawId]: normalizedLabel };
     });
   }
 
@@ -526,9 +537,7 @@ export default function App() {
     downloadJson(`sachkunde_part_${idx}.json`, { bank: currentChunk });
   }
 
-  // --------------------
   // AnswerKey: 20 questions visible at once (list + editor)
-  // --------------------
   const filteredKeyCandidates = useMemo(() => {
     const s = keySearch.trim().toLowerCase();
     if (!s) return questions;
@@ -541,14 +550,14 @@ export default function App() {
 
   const keyTotalPages = useMemo(() => {
     return filteredKeyCandidates.length ? Math.ceil(filteredKeyCandidates.length / keyPageSize) : 1;
-  }, [filteredKeyCandidates.length]);
+  }, [filteredKeyCandidates.length, keyPageSize]);
 
   const keyPageClamped = Math.max(0, Math.min(keyPage, keyTotalPages - 1));
 
   const keyPageItems = useMemo(() => {
     const start = keyPageClamped * keyPageSize;
     return filteredKeyCandidates.slice(start, start + keyPageSize);
-  }, [filteredKeyCandidates, keyPageClamped]);
+  }, [filteredKeyCandidates, keyPageClamped, keyPageSize]);
 
   const keyQ = useMemo(() => {
     const id = keyQid || filteredKeyCandidates[0]?.rawId || "";
@@ -562,18 +571,23 @@ export default function App() {
   function toggleCorrect(optLabel: string) {
     if (!keyQ || !keyQ.options?.length) return;
 
+    const normalized = String(optLabel).trim().toLowerCase();
+
     setQuestions((prev) => {
-      const next = prev.map((qq) => {
+      const nextQ = prev.map((qq) => {
         if (qq.rawId !== keyQ.rawId) return qq;
-        const options = qq.options.map((o) => (o.label === optLabel ? { ...o, correct: !o.correct } : o));
+        const options = qq.options.map((o) => {
+          const ol = String(o.label).trim().toLowerCase();
+          return ol === normalized ? { ...o, correct: !o.correct } : o;
+        });
         const multi = options.filter((o) => o.correct).length > 1;
         return { ...qq, options, multi };
       });
 
       try {
-        localStorage.setItem(lsQuestionsKey(chapterId), JSON.stringify(next));
+        localStorage.setItem(lsQuestionsKey(chapterId), JSON.stringify(nextQ));
       } catch {}
-      return next;
+      return nextQ;
     });
   }
 
@@ -685,10 +699,14 @@ export default function App() {
 
               <div>
                 {q?.options?.map((opt) => {
-                  const multi = q.multi ?? computeMulti(q);
+                  const multi = q.multi ?? computeMulti(q) || Array.isArray(answers[q.rawId]);
+                  const sel = answers[q.rawId];
+
                   const selected = multi
-                    ? (answers[q.rawId] as string[] | undefined)?.includes(opt.label)
-                    : answers[q.rawId] === opt.label;
+                    ? (Array.isArray(sel) ? sel : [])
+                        .map((x) => String(x).trim().toLowerCase())
+                        .includes(String(opt.label).trim().toLowerCase())
+                    : String(sel || "").trim().toLowerCase() === String(opt.label).trim().toLowerCase();
 
                   return (
                     <button
@@ -711,8 +729,12 @@ export default function App() {
               </div>
 
               <div style={{ marginTop: 12 }}>
-                <button onClick={prev} disabled={index === 0}>← Prev</button>
-                <button onClick={next} disabled={index === questions.length - 1} style={{ marginLeft: 10 }}>Next →</button>
+                <button onClick={prev} disabled={index === 0}>
+                  ← Prev
+                </button>
+                <button onClick={next} disabled={index === questions.length - 1} style={{ marginLeft: 10 }}>
+                  Next →
+                </button>
               </div>
             </>
           )}
@@ -882,9 +904,7 @@ export default function App() {
                           ))}
                         </div>
                       ) : (
-                        <div style={{ marginTop: 10, color: "#777" }}>
-                          Free-text question (no options). Nothing to set.
-                        </div>
+                        <div style={{ marginTop: 10, color: "#777" }}>Free-text question (no options). Nothing to set.</div>
                       )}
 
                       {keyQ.options?.length ? (
@@ -903,3 +923,4 @@ export default function App() {
     </div>
   );
 }
+``
