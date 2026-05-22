@@ -25,7 +25,7 @@ const RX_INLINE_OPT = /^(.*)\s+([a-kA-K]|\d{1,2})[)\.]\s+(.*)$/;
 // Vite / GitHub Pages base URL helpers
 // --------------------
 function baseUrl() {
-  const b = (import.meta as any)?.env?.BASE_URL || "/";
+  const b = import.meta.env.BASE_URL || "/";
   return b.endsWith("/") ? b : b + "/";
 }
 function toUrl(path: string) {
@@ -47,7 +47,12 @@ function norm(s: string) {
 function looksLikeQuestionStart(rest: string) {
   const r = (rest || "").trim();
   if (!r) return false;
-  if (/^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(r)) return true;
+  if (
+    /^(Was|Wer|Wie|Welche|Woran|Wodurch|Wann|Darf|Ist|Sind|Kann|Nennen)\b/.test(
+      r
+    )
+  )
+    return true;
   if (r.includes("?")) return true;
   if (/^[A-ZÄÖÜ]/.test(r)) return true;
   return false;
@@ -70,11 +75,17 @@ function isAnswerCorrect(q: Q, selected: string[] | string | undefined) {
     .map((o) => String(o.label).trim().toLowerCase())
     .sort();
 
-  const userLabels = (Array.isArray(selected) ? selected : [selected].filter(Boolean))
+  const userLabels = (Array.isArray(selected)
+    ? selected
+    : [selected].filter(Boolean)
+  )
     .map((x) => String(x).trim().toLowerCase())
     .sort();
 
-  return correctLabels.length === userLabels.length && correctLabels.every((v, i) => v === userLabels[i]);
+  return (
+    correctLabels.length === userLabels.length &&
+    correctLabels.every((v, i) => v === userLabels[i])
+  );
 }
 
 function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
@@ -90,7 +101,10 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
   const push = () => {
     if (!cur) return;
     cur.text = norm(cur.text);
-    cur.options = (cur.options || []).map((o) => ({ ...o, text: norm(o.text) }));
+    cur.options = (cur.options || []).map((o) => ({
+      ...o,
+      text: norm(o.text),
+    }));
     out.push(cur);
     cur = null;
     inOptions = false;
@@ -112,7 +126,10 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       const im = cur.text.match(RX_INLINE_OPT);
       if (im) {
         cur.text = norm(im[1]);
-        cur.options.push({ label: String(im[2]).toLowerCase(), text: norm(im[3]) });
+        cur.options.push({
+          label: String(im[2]).toLowerCase(),
+          text: norm(im[3]),
+        });
         inOptions = true;
       }
       continue;
@@ -126,7 +143,9 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       if (!looksLikeQuestionStart(rest)) {
         if (!cur) continue;
         if (inOptions && cur.options.length > 0) {
-          cur.options[cur.options.length - 1].text = norm(cur.options[cur.options.length - 1].text + " " + line);
+          cur.options[cur.options.length - 1].text = norm(
+            cur.options[cur.options.length - 1].text + " " + line
+          );
         } else {
           cur.text = norm(cur.text + " " + line);
         }
@@ -144,7 +163,10 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
       const im = cur.text.match(RX_INLINE_OPT);
       if (im) {
         cur.text = norm(im[1]);
-        cur.options.push({ label: String(im[2]).toLowerCase(), text: norm(im[3]) });
+        cur.options.push({
+          label: String(im[2]).toLowerCase(),
+          text: norm(im[3]),
+        });
         inOptions = true;
       }
       continue;
@@ -155,12 +177,17 @@ function parseQuestionsFromText(pasted: string, importPrefix: string): Q[] {
     const mo = line.match(RX_OPT);
     if (mo) {
       inOptions = true;
-      cur.options.push({ label: String(mo[1]).toLowerCase(), text: norm(mo[2]) });
+      cur.options.push({
+        label: String(mo[1]).toLowerCase(),
+        text: norm(mo[2]),
+      });
       continue;
     }
 
     if (inOptions && cur.options.length) {
-      cur.options[cur.options.length - 1].text = norm(cur.options[cur.options.length - 1].text + " " + line);
+      cur.options[cur.options.length - 1].text = norm(
+        cur.options[cur.options.length - 1].text + " " + line
+      );
     } else {
       cur.text = norm(cur.text + " " + line);
     }
@@ -284,21 +311,22 @@ function clearOfflineCache() {
 }
 
 // --------------------
-// Answer key utils (FIXED: lowercase normalization)
+// Answer key utils (lowercase normalization)
 // --------------------
 function normalizeAnswersFile(payload: AnswersFile): Record<string, string[]> {
   const anyPayload = payload as any;
-  const raw: Record<string, string[] | string> = anyPayload.answers ? anyPayload.answers : (payload as any);
+  const raw: Record<string, string[] | string> = anyPayload.answers
+    ? anyPayload.answers
+    : (payload as any);
 
   const out: Record<string, string[]> = {};
   for (const [qid, labels] of Object.entries(raw || {})) {
     const arr = Array.isArray(labels) ? labels : labels != null ? [labels] : [];
-    out[qid] = arr.map((x) => String(x).trim().toLowerCase()); // ✅ normalize
+    out[qid] = arr.map((x) => String(x).trim().toLowerCase());
   }
   return out;
 }
 
-// FIXED: apply keys case-insensitively + sets q.multi
 function applyAnswerKey(bank: Q[], key: Record<string, string[]>) {
   return bank.map((q) => {
     const corr = key[q.rawId];
@@ -317,7 +345,7 @@ function applyAnswerKey(bank: Q[], key: Record<string, string[]>) {
 }
 
 export default function App() {
-  // AnswerKey paging (20 visible at once)
+  // AnswerKey: 20 visible at once
   const [keyPage, setKeyPage] = useState(0);
   const keyPageSize = 20;
   const [keySearch, setKeySearch] = useState("");
@@ -340,7 +368,7 @@ export default function App() {
   const [chunkSize, setChunkSize] = useState(20);
   const [chunkIndex, setChunkIndex] = useState(0);
 
-  // AnswerKey editor selection
+  // AnswerKey selected Q
   const [keyQid, setKeyQid] = useState<string>("");
 
   const [importedIds, setImportedIds] = useState<string[]>([]);
@@ -348,7 +376,6 @@ export default function App() {
 
   const BASE = baseUrl();
 
-  // Reset paging/search when switching chapter/tab
   useEffect(() => {
     setKeyPage(0);
     setKeySearch("");
@@ -396,7 +423,6 @@ export default function App() {
       setAnswers({});
     }
 
-    // Try cached bank
     const savedQ = localStorage.getItem(qKey);
     if (savedQ) {
       try {
@@ -408,7 +434,6 @@ export default function App() {
       } catch {}
     }
 
-    // Imported chapters
     if (chId.startsWith("IMPORTED_")) {
       const raw = localStorage.getItem(qKey);
       if (raw) {
@@ -438,12 +463,10 @@ export default function App() {
 
     setQuestions(applyAnswerKey(all, answerKey));
 
-    // Persist raw bank (without keys)
     localStorage.setItem(qKey, JSON.stringify(all));
     localStorage.setItem(aKey, JSON.stringify(savedA ? JSON.parse(savedA) : {}));
   }
 
-  // Load after answers.json attempt so keys can be applied
   useEffect(() => {
     if (!answersLoaded) return;
     loadChapter(chapterId);
@@ -456,15 +479,21 @@ export default function App() {
 
   const q = questions[index];
 
-  // ✅ FIXED: multi-select works, normalizes selection values
+  // ✅ MULTI SELECT FIX:
+  // Decide multi using answers.json (answerKey) FIRST.
   function selectAnswer(label: string) {
     if (!q) return;
 
     const normalizedLabel = String(label).trim().toLowerCase();
     const existing = answers[q.rawId];
 
-    const multi = (q.multi ?? computeMulti(q)) || Array.isArray(existing);
-    
+    const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
+
+    const multi =
+      (q.multi ?? keyMulti) ||
+      computeMulti(q) ||
+      Array.isArray(existing);
+
     setAnswers((prev) => {
       const curSel = prev[q.rawId];
 
@@ -473,7 +502,9 @@ export default function App() {
           ? curSel.map((x) => String(x).trim().toLowerCase())
           : [];
         const exists = arr.includes(normalizedLabel);
-        const next = exists ? arr.filter((x) => x !== normalizedLabel) : arr.concat(normalizedLabel);
+        const next = exists
+          ? arr.filter((x) => x !== normalizedLabel)
+          : arr.concat(normalizedLabel);
         return { ...prev, [q.rawId]: next };
       }
 
@@ -537,7 +568,9 @@ export default function App() {
     downloadJson(`sachkunde_part_${idx}.json`, { bank: currentChunk });
   }
 
+  // --------------------
   // AnswerKey: 20 questions visible at once (list + editor)
+  // --------------------
   const filteredKeyCandidates = useMemo(() => {
     const s = keySearch.trim().toLowerCase();
     if (!s) return questions;
@@ -549,7 +582,9 @@ export default function App() {
   }, [questions, keySearch]);
 
   const keyTotalPages = useMemo(() => {
-    return filteredKeyCandidates.length ? Math.ceil(filteredKeyCandidates.length / keyPageSize) : 1;
+    return filteredKeyCandidates.length
+      ? Math.ceil(filteredKeyCandidates.length / keyPageSize)
+      : 1;
   }, [filteredKeyCandidates.length, keyPageSize]);
 
   const keyPageClamped = Math.max(0, Math.min(keyPage, keyTotalPages - 1));
@@ -593,7 +628,6 @@ export default function App() {
 
   return (
     <div style={{ padding: 16, maxWidth: 980, margin: "0 auto", fontFamily: "Arial" }}>
-      {/* Header */}
       <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 10, flexWrap: "wrap" }}>
         <img src={`${BASE}logo.png`} alt="Club logo" style={{ height: 72, width: "auto", display: "block" }} />
         <div>
@@ -604,7 +638,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* Mode selector */}
       <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 8, flexWrap: "wrap" }}>
         <b>Mode:</b>
         <select value={chapterId} onChange={(e) => setChapterId(e.target.value)} style={{ padding: 6, minWidth: 360 }}>
@@ -664,14 +697,12 @@ export default function App() {
         )}
       </div>
 
-      {/* Tabs */}
       <div style={{ display: "flex", gap: 10, marginBottom: 14 }}>
         <button onClick={() => setTab("quiz")}>Quiz</button>
         <button onClick={() => setTab("import")}>PDF Text → JSON</button>
         <button onClick={() => setTab("key")}>AnswerKey</button>
       </div>
 
-      {/* Quiz */}
       {tab === "quiz" && (
         <>
           {questions.length === 0 ? (
@@ -693,13 +724,15 @@ export default function App() {
                 <b>{q?.rawId}</b> — {q?.text}
               </div>
 
-              {(q?.multi ?? computeMulti(q || { rawId: "", text: "", options: [] })) && (
+              {/* ✅ multi hint based on answers.json too */}
+              {q && ((answerKey[q.rawId]?.length ?? 0) > 1 || q.multi || computeMulti(q)) && (
                 <div style={{ color: "gray", marginBottom: 8 }}>Multiple answers possible</div>
               )}
 
               <div>
                 {q?.options?.map((opt) => {
-                  const multi = (q.multi ?? computeMulti(q)) || Array.isArray(answers[q.rawId]);
+                  const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
+                  const multi = (q.multi ?? keyMulti) || computeMulti(q) || Array.isArray(answers[q.rawId]);
                   const sel = answers[q.rawId];
 
                   const selected = multi
@@ -741,7 +774,6 @@ export default function App() {
         </>
       )}
 
-      {/* Import */}
       {tab === "import" && (
         <>
           <p style={{ color: "#555" }}>
@@ -816,7 +848,6 @@ export default function App() {
         </>
       )}
 
-      {/* AnswerKey */}
       {tab === "key" && (
         <>
           <p style={{ color: "#555" }}>AnswerKey: 20 questions visible at once. Click one to edit.</p>
@@ -923,4 +954,3 @@ export default function App() {
     </div>
   );
 }
-``
