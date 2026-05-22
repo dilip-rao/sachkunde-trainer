@@ -340,7 +340,10 @@ function applyAnswerKey(bank: Q[], key: Record<string, string[]>) {
     }));
 
     const multi = options.filter((o) => o.correct).length > 1;
-    return { ...q, options, multi };
+
+    // NOTE: we only force multi to true; we do not force it to false.
+    // This prevents a stored multi:false from blocking answers.json multi questions.
+    return { ...q, options, multi: multi || q.multi === true };
   });
 }
 
@@ -479,8 +482,8 @@ export default function App() {
 
   const q = questions[index];
 
-  // ✅ MULTI SELECT FIX:
-  // Decide multi using answers.json (answerKey) FIRST.
+  // ✅ Multi-select FIX:
+  // q.multi === true OR answers.json says multi OR computed multi OR array already exists
   function selectAnswer(label: string) {
     if (!q) return;
 
@@ -490,7 +493,8 @@ export default function App() {
     const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
 
     const multi =
-      (q.multi ?? keyMulti) ||
+      (q.multi === true) ||
+      keyMulti ||
       computeMulti(q) ||
       Array.isArray(existing);
 
@@ -527,10 +531,18 @@ export default function App() {
       const res = isAnswerCorrect(qq, answers[qq.rawId]);
       if (res === true) correct++;
     }
-    return { correct, total: keyed.length, pct: Math.round((correct / keyed.length) * 100) };
+    return {
+      correct,
+      total: keyed.length,
+      pct: Math.round((correct / keyed.length) * 100),
+    };
   }, [questions, answers]);
 
-  const totalChunks = useMemo(() => (parsed.length ? Math.ceil(parsed.length / chunkSize) : 0), [parsed.length, chunkSize]);
+  const totalChunks = useMemo(
+    () => (parsed.length ? Math.ceil(parsed.length / chunkSize) : 0),
+    [parsed.length, chunkSize]
+  );
+
   const currentChunk = useMemo(() => {
     const start = chunkIndex * chunkSize;
     return parsed.slice(start, start + chunkSize);
@@ -600,7 +612,8 @@ export default function App() {
   }, [keyQid, filteredKeyCandidates]);
 
   useEffect(() => {
-    if (!keyQid && filteredKeyCandidates.length) setKeyQid(filteredKeyCandidates[0].rawId);
+    if (!keyQid && filteredKeyCandidates.length)
+      setKeyQid(filteredKeyCandidates[0].rawId);
   }, [filteredKeyCandidates, keyQid]);
 
   function toggleCorrect(optLabel: string) {
@@ -611,12 +624,14 @@ export default function App() {
     setQuestions((prev) => {
       const nextQ = prev.map((qq) => {
         if (qq.rawId !== keyQ.rawId) return qq;
+
         const options = qq.options.map((o) => {
           const ol = String(o.label).trim().toLowerCase();
           return ol === normalized ? { ...o, correct: !o.correct } : o;
         });
+
         const multi = options.filter((o) => o.correct).length > 1;
-        return { ...qq, options, multi };
+        return { ...qq, options, multi: multi || qq.multi === true };
       });
 
       try {
@@ -666,16 +681,6 @@ export default function App() {
 
         <button
           onClick={() => {
-            localStorage.removeItem(lsQuestionsKey(chapterId));
-            localStorage.removeItem(lsAnswersKey(chapterId));
-            loadChapter(chapterId);
-          }}
-        >
-          Reset this mode
-        </button>
-
-        <button
-          onClick={() => {
             clearOfflineCache();
             alert("Offline cache cleared. Reloading…");
             window.location.reload();
@@ -688,7 +693,8 @@ export default function App() {
         {chapterId.startsWith("IMPORTED_") && (
           <button
             onClick={() => {
-              if (confirm(`Delete ${chapterId}? This cannot be undone.`)) deleteImportedChapter(chapterId);
+              if (confirm(`Delete ${chapterId}? This cannot be undone.`))
+                deleteImportedChapter(chapterId);
             }}
             style={{ background: "#c62828", color: "white" }}
           >
@@ -724,22 +730,31 @@ export default function App() {
                 <b>{q?.rawId}</b> — {q?.text}
               </div>
 
-              {/* ✅ multi hint based on answers.json too */}
-              {q && ((answerKey[q.rawId]?.length ?? 0) > 1 || q.multi || computeMulti(q)) && (
-                <div style={{ color: "gray", marginBottom: 8 }}>Multiple answers possible</div>
+              {q && (
+                ((q.multi === true) || ((answerKey[q.rawId]?.length ?? 0) > 1) || computeMulti(q))
+              ) && (
+                <div style={{ color: "gray", marginBottom: 8 }}>
+                  Multiple answers possible
+                </div>
               )}
 
               <div>
                 {q?.options?.map((opt) => {
                   const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
-                  const multi = (q.multi ?? keyMulti) || computeMulti(q) || Array.isArray(answers[q.rawId]);
+                  const multi =
+                    (q.multi === true) ||
+                    keyMulti ||
+                    computeMulti(q) ||
+                    Array.isArray(answers[q.rawId]);
+
                   const sel = answers[q.rawId];
 
                   const selected = multi
                     ? (Array.isArray(sel) ? sel : [])
                         .map((x) => String(x).trim().toLowerCase())
                         .includes(String(opt.label).trim().toLowerCase())
-                    : String(sel || "").trim().toLowerCase() === String(opt.label).trim().toLowerCase();
+                    : String(sel || "").trim().toLowerCase() ===
+                      String(opt.label).trim().toLowerCase();
 
                   return (
                     <button
@@ -788,7 +803,9 @@ export default function App() {
               Import prefix:
               <input
                 value={importPrefix}
-                onChange={(e) => setImportPrefix(e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A")}
+                onChange={(e) =>
+                  setImportPrefix(e.target.value.replace(/[^A-Za-z0-9_-]/g, "") || "K2A")
+                }
                 style={{ width: 110, padding: 6 }}
                 placeholder="K2A"
               />
@@ -801,7 +818,9 @@ export default function App() {
                 min={5}
                 max={200}
                 value={chunkSize}
-                onChange={(e) => setChunkSize(Math.max(5, Math.min(200, Number(e.target.value) || 20)))}
+                onChange={(e) =>
+                  setChunkSize(Math.max(5, Math.min(200, Number(e.target.value) || 20)))
+                }
                 style={{ width: 90, padding: 6 }}
               />
             </label>
@@ -815,6 +834,12 @@ export default function App() {
             <div style={{ color: "#333" }}>
               Parsed: <b>{parsed.length}</b> • Chunks: <b>{totalChunks}</b>
             </div>
+
+            {parsed.length > 0 && (
+              <button onClick={downloadChunk} style={{ background: "#0b5", color: "#fff" }}>
+                Download this chunk JSON
+              </button>
+            )}
           </div>
 
           <textarea
@@ -823,34 +848,14 @@ export default function App() {
             placeholder="Paste PDF text here…"
             style={{ width: "100%", minHeight: 240, padding: 12, borderRadius: 10, border: "1px solid #ccc", marginTop: 10 }}
           />
-
-          {parsed.length > 0 && (
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 10 }}>
-              <button onClick={() => setChunkIndex((i) => Math.max(0, i - 1))} disabled={chunkIndex === 0}>
-                Prev chunk
-              </button>
-              <div>
-                Chunk <b>{chunkIndex + 1}</b> / <b>{totalChunks}</b>
-              </div>
-              <button onClick={() => setChunkIndex((i) => Math.min(totalChunks - 1, i + 1))} disabled={chunkIndex >= totalChunks - 1}>
-                Next chunk
-              </button>
-
-              <button onClick={downloadChunk} style={{ background: "#0b5", color: "#fff" }}>
-                Download this chunk JSON
-              </button>
-
-              <button onClick={() => downloadJson("sachkunde_full.json", { bank: parsed })}>
-                Download FULL JSON
-              </button>
-            </div>
-          )}
         </>
       )}
 
       {tab === "key" && (
         <>
-          <p style={{ color: "#555" }}>AnswerKey: 20 questions visible at once. Click one to edit.</p>
+          <p style={{ color: "#555" }}>
+            AnswerKey: 20 questions visible at once. Click one to edit.
+          </p>
 
           {filteredKeyCandidates.length === 0 ? (
             <div>No questions loaded yet.</div>
@@ -887,7 +892,10 @@ export default function App() {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                 <div style={{ border: "1px solid #eee", borderRadius: 12, padding: 10, maxHeight: 460, overflow: "auto" }}>
-                  <div style={{ fontWeight: 700, marginBottom: 8 }}>Questions (showing 20)</div>
+                  <div style={{ fontWeight: 700, marginBottom: 8 }}>
+                    Questions (showing 20)
+                  </div>
+
                   {keyPageItems.map((qq) => {
                     const active = qq.rawId === (keyQ?.rawId || "");
                     return (
@@ -935,14 +943,10 @@ export default function App() {
                           ))}
                         </div>
                       ) : (
-                        <div style={{ marginTop: 10, color: "#777" }}>Free-text question (no options). Nothing to set.</div>
-                      )}
-
-                      {keyQ.options?.length ? (
-                        <div style={{ marginTop: 10, color: "#666", fontSize: 12 }}>
-                          Multi detected: <b>{String(computeMulti(keyQ))}</b>
+                        <div style={{ marginTop: 10, color: "#777" }}>
+                          Free-text question (no options). Nothing to set.
                         </div>
-                      ) : null}
+                      )}
                     </>
                   )}
                 </div>
