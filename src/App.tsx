@@ -762,10 +762,12 @@ function selectAnswer(label: string) {
                   const sel = answers[q.rawId];
 
                   const selected = multi
-                  ? (Array.isArray(sel)
-                  ? sel.map((x) => String(x).trim().toLowerCase())
-                    : []
-                  ).includes(String(opt.label).trim().toLowerCase())
+                    ? (Array.isArray(sel)
+                        ? sel.map((x) => String(x).trim().toLowerCase())
+                        : []
+                      ).includes(String(opt.label).trim().toLowerCase())
+                    : String(sel || "").trim().toLowerCase() ===
+                      String(opt.label).trim().toLowerCase();
 
                   return (
                     <button
