@@ -495,10 +495,9 @@ function selectAnswer(label: string) {
     const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
 
     const multi =
-      q.multi === true ||
-      keyMulti ||
-      computeMulti(q) ||
-      Array.isArray(existing);
+    q.multi === true ||
+    keyMulti ||
+    computeMulti(q);
 
     // ✅ ALWAYS normalize existing values
     const currentArr = Array.isArray(existing)
@@ -754,11 +753,10 @@ function selectAnswer(label: string) {
               <div>
                 {q?.options?.map((opt) => {
                   const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
-                  const multi =
-                    (q.multi === true) ||
-                    keyMulti ||
-                    computeMulti(q) ||
-                    Array.isArray(answers[q.rawId]);
+                 const multi =
+                 q.multi === true ||
+                 keyMulti ||
+                computeMulti(q);
 
                   const sel = answers[q.rawId];
 
