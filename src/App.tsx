@@ -484,37 +484,50 @@ export default function App() {
 
   // ✅ Multi-select FIX:
   // q.multi === true OR answers.json says multi OR computed multi OR array already exists
-  function selectAnswer(label: string) {
-    if (!q) return;
+function selectAnswer(label: string) {
+  if (!q) return;
 
-    const normalizedLabel = String(label).trim().toLowerCase();
-    const existing = answers[q.rawId];
+  const normalizedLabel = String(label).trim().toLowerCase();
+
+  setAnswers((prev) => {
+    const existing = prev[q.rawId];
 
     const keyMulti = (answerKey[q.rawId]?.length ?? 0) > 1;
 
     const multi =
-      (q.multi === true) ||
+      q.multi === true ||
       keyMulti ||
       computeMulti(q) ||
       Array.isArray(existing);
 
-    setAnswers((prev) => {
-      const curSel = prev[q.rawId];
+    // ✅ ALWAYS normalize existing values
+    const currentArr = Array.isArray(existing)
+      ? existing.map((x) => String(x).trim().toLowerCase())
+      : [];
 
-      if (multi) {
-        const arr = Array.isArray(curSel)
-          ? curSel.map((x) => String(x).trim().toLowerCase())
-          : [];
-        const exists = arr.includes(normalizedLabel);
-        const next = exists
-          ? arr.filter((x) => x !== normalizedLabel)
-          : arr.concat(normalizedLabel);
-        return { ...prev, [q.rawId]: next };
+    if (multi) {
+      let next: string[];
+
+      if (currentArr.includes(normalizedLabel)) {
+        // ✅ remove
+        next = currentArr.filter((x) => x !== normalizedLabel);
+      } else {
+        // ✅ add
+        next = [...currentArr, normalizedLabel];
       }
 
-      return { ...prev, [q.rawId]: normalizedLabel };
-    });
-  }
+      return {
+        ...prev,
+        [q.rawId]: [...next], // ✅ force new reference (important!)
+      };
+    }
+
+    return {
+      ...prev,
+      [q.rawId]: normalizedLabel,
+    };
+  });
+}
 
   function next() {
     setIndex((i) => Math.min(i + 1, questions.length - 1));
