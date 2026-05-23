@@ -431,8 +431,20 @@ export default function App() {
       try {
         const parsedQ = JSON.parse(savedQ);
         if (Array.isArray(parsedQ)) {
-          setQuestions(applyAnswerKey(parsedQ, answerKey));
-          return;
+                const updated = applyAnswerKey(parsedQ, answerKey);
+      setQuestions(updated);
+      
+      // ✅ preload here too
+      const initialAnswers: Record<string, string | string[]> = {};
+      
+      for (const q of updated) {
+        if (answerKey[q.rawId]) {
+          initialAnswers[q.rawId] = answerKey[q.rawId];
+        }
+      }
+      
+      setAnswers(initialAnswers);
+      return;
         }
       } catch {}
     }
@@ -465,6 +477,18 @@ export default function App() {
     }
 
     setQuestions(applyAnswerKey(all, answerKey));
+    
+    // ✅ PRELOAD answers from answers.json
+    const initialAnswers: Record<string, string | string[]> = {};
+
+    for (const q of all) {
+    if (answerKey[q.rawId]) {
+      initialAnswers[q.rawId] = answerKey[q.rawId];
+      }
+    }
+
+  setAnswers(initialAnswers);
+    
 
     localStorage.setItem(qKey, JSON.stringify(all));
     localStorage.setItem(aKey, JSON.stringify(savedA ? JSON.parse(savedA) : {}));
