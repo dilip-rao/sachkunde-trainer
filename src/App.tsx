@@ -742,12 +742,13 @@ function selectAnswer(label: string) {
                 <b>{q?.rawId}</b> — {q?.text}
               </div>
 
-              {q && (
-                ((q.multi === true) || ((answerKey[q.rawId]?.length ?? 0) > 1) || computeMulti(q))
-              ) && (
-                <div style={{ color: "gray", marginBottom: 8 }}>
-                  Multiple answers possible
-                </div>
+             {q &&
+              (q.multi === true ||
+              (answerKey[q.rawId]?.length ?? 0) > 1 ||
+              computeMulti(q)) && (
+              <div style={{ color: "gray", marginBottom: 8 }}>
+              Multiple answers possible
+              </div>
               )}
 
               <div>
